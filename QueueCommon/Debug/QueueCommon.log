@@ -1,0 +1,6 @@
+﻿  App.c
+C:\Users\HP\OneDrive\QueueCommon\Code\App.c(25,7): warning C4101: “dataForTest”: 未引用的局部变量
+C:\Users\HP\OneDrive\QueueCommon\Code\App.c(19,7): warning C4101: “len”: 未引用的局部变量
+  QueueCommon.c
+  正在生成代码...
+  QueueCommon.vcxproj -> C:\Users\HP\OneDrive\QueueCommon\Debug\QueueCommon.exe
