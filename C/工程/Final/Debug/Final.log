@@ -1,0 +1,10 @@
+﻿  Final.c
+M:\C语言\工程\Final\Final.c(240,16): warning C4473: “fscanf_s”: 没有为格式字符串传递足够的参数
+M:\C语言\工程\Final\Final.c(240,16): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+M:\C语言\工程\Final\Final.c(240,16): message : 缺失的可变参数 2 为格式字符串“%c”所需
+M:\C语言\工程\Final\Final.c(240,16): message : 此参数用作缓冲区大小
+M:\C语言\工程\Final\Final.c(244,18): warning C4473: “fscanf_s”: 没有为格式字符串传递足够的参数
+M:\C语言\工程\Final\Final.c(244,18): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+M:\C语言\工程\Final\Final.c(244,18): message : 缺失的可变参数 2 为格式字符串“%c”所需
+M:\C语言\工程\Final\Final.c(244,18): message : 此参数用作缓冲区大小
+  Final.vcxproj -> M:\C语言\工程\Final\Debug\Final.exe

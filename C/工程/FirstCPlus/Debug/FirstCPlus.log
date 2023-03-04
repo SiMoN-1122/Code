@@ -1,0 +1,3 @@
+﻿  FirstCPlus.cpp
+M:\C语言\工程\FirstCPlus\Code\FirstCPlus.cpp(19,3): warning C4326: “main”的返回类型应为“int”而非“void”
+  FirstCPlus.vcxproj -> M:\C语言\工程\FirstCPlus\Debug\FirstCPlus.exe
