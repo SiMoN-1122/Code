@@ -57,6 +57,7 @@ def collatz(x, num):
 
 
 # 全排列，通过递归实现，num-待排列数据 outcome-排列结果输出
+# total experiment costed my 2 hours and forgot to take a shower
 def full_arrange(num, outcome):
     if len(outcome) == len(num):    # 如果outcome中存储的数据长度和总输入数据长度相同
         for i in outcome:           # 证明排列完成，输出结果
@@ -86,6 +87,8 @@ def main():
     outcome = []
 
     full_arrange(num, outcome)
+
+    print("Hello, new computer!")
 
 
 
