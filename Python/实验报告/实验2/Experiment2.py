@@ -89,6 +89,7 @@ def main():
     full_arrange(num, outcome)
 
     print("Hello, new computer!")
+    print("glad to see you, study advanced")
 
 
 
