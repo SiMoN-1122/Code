@@ -59,11 +59,11 @@ static void ConfigADC(int ch);     //配置ADC
 **********************************************************************************************************/
 static void ConfigADC(int ch)
 {  
-  if(ch == ECG_CHANNEL)
+  if(ch == ECG_CHANNEL)//看看心电
   {
     g_adc_handle.init.channel_n  = ADC_INPUT_SRC_IO0;
   }
-  else if(ch == BATT_CHANNEL)
+  else if(ch == BATT_CHANNEL)//看看电池
   {
     g_adc_handle.init.channel_n  = ADC_INPUT_SRC_IO1;
     

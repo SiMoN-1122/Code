@@ -188,16 +188,19 @@ static  void  Proc1SecTask(void)
   if(Get1SecFlag()) //判断1s标志状态
   {
     //获取电池电量
-    SetADCChannel(BATT_CHANNEL);
+    SetADCChannel(BATT_CHANNEL);//借你ADC用一下
     
-    while(ReadADCBuf(&V_num) == 0)hal_gr551x_adc_voltage_intern(&g_adc_handle, &V_num, &BattADC, 1);
+    while(ReadADCBuf(&V_num) == 0)//ADC缓冲区的数据如何区分？？？。。懂了，双ADC通道，一个接心电数据，一个接电量数据
+		{
+			hal_gr551x_adc_voltage_intern(&g_adc_handle, &V_num, &BattADC, 1);//对V_num处理之后传给BattADC
+		}
     
-    g_structECGPara.batteryCapacity = (u8)(100/BatteryDiff * (BattADC - BatteryMin));
+    g_structECGPara.batteryCapacity = (u8)(100/BatteryDiff * (BattADC - BatteryMin));//算出电池电量百分比之后传递给结构体电量参数
    
     
-    SetADCChannel(ECG_CHANNEL);
+    SetADCChannel(ECG_CHANNEL);//马上还
   
-    ECGParaSend();
+    ECGParaSend();//发送心电参数数据包，上面那个是波形数据包
     //printf("This is the first ？？？ Project, by Zhangsan\r\n");
     
     
