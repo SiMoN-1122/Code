@@ -72,13 +72,25 @@ def primelist(upper):
 
 
 # Write a function that returns a list which hold the first n primes.
+def primes_ton(n):
+    cnt, i = 0, 0
+    outcome = []
 
+    while cnt < n:
+        if is_prime_promote(i):
+            outcome.append(i)
+            cnt += 1
+        i += 1
 
+    return outcome
 
 
 # main
 def main():
-    print(primelist(int(input())))
+    print(primes_ton((int(input()))))
+
+
+    # print(primelist(int(input())))
 
 
     # flag = is_prime_promote(eval(input()))
