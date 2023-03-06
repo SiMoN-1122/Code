@@ -22,10 +22,14 @@ def printlist_b(num):
 
 # Write your own implementation of the len function that returns the number of elements in a list.
 def my_len(num):
-    for cnt in num:
-        pass
-    return cnt
+    if num:
+        for cnt in num:
+            pass
+        return cnt
+    else:
+        return 0
 
 
 if __name__ == '__main__':
     main()
+
