@@ -31,9 +31,9 @@
 
 #define NF_50HZ  (309)
 #define NF_60HZ  (500)                   //该值应为63，采样率为360才是500
-#define BUFFSIZE_PRE (FS/12)
+#define BUFFSIZE_PRE (FS/12)  //FS=250
 
-#define BUFFSIZE (FFT_SAMPLE_LEN)
+#define BUFFSIZE (FFT_SAMPLE_LEN) //=512
 #define WINDOWSIZE (0.12*FS) 
 
 #define BASE_LINE (2048) 	              	//基线位置 
@@ -133,7 +133,7 @@ bool analyzStartFlag = false;           //算法开始标志
 *                                              内部函数声明
 *********************************************************************************************************/
 static void  Filter_RT_Comb(int* wave, int* output, int num);    //去基线滤波器
-static int   QRS_PrepSig(int data);                              //心电信号预处理（工频、去基线、低通、高通、微分、平方和移动窗积分）
+static int   QRS_PrepSig(int data);                              //心电信号预处理（工频、去基线、低通、高通、微分、平方和移动窗积分）https://blog.csdn.net/weixin_51281862/article/details/115857266
 static void  QRS_DrawWaveProc(void);                             //波形处理
 static bool  QRS_findQS(int rloc);                               //QS寻波
 static void  QRS_CacuTHD(void);                                  //初始阈值计算
