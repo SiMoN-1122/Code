@@ -368,7 +368,7 @@ void Buff_uIntClear(int *buff,int len)
            fc = 50 hz  cos(2*pi*fc/fs) = cos(360*50/360) = cos50 = 0.643
            err避免小数放大1000倍
 *********************************************************************************************************/
-int Adapt60HZ_notchFilter(int data,int err)
+int Adapt60HZ_notchFilter(int data,int err)//好像就是一个带阻滤波？？？
 {
 	static int e1 = 0,e2 = 0,x1 = 0,x2 = 0;
 	int e0,y0,f0;

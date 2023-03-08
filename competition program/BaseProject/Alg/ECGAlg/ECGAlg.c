@@ -97,7 +97,7 @@ unsigned int DataNum = 0;	       //数据个数（表示当前数据点出现的次序）
 unsigned int LastRwaveNum = 0;	 //上一个R波出现时，对应数据点的持续
 
 
-static int  s_arrRRDistance[8];  //存储每个R波之间的间距
+static int  s_arrRRDistance[8];  //存储每个R波之间的间距，RR间期，可计算心率
 static int  s_iRRAverage;        //当前R波间距的均值
 static int  s_arrRRAverage[8];   //存储R波间距的均值（若次数太少，即少于回检次数，则直接存储R波间距）
 static int  s_iRRAverage2;
@@ -167,9 +167,9 @@ static void Filter_RT_Comb(int* wave, int* output, int num)
 	{
 		sum += wave[i];
 	}
-	sum /= (len - 0); 
+	sum /= (len - 0); //求平均
 	
-	*output = wave[median-0] - sum;	
+	*output = wave[median-0] - sum;	//中间值-平均值
 }
 
 /*********************************************************************************************************
@@ -191,17 +191,17 @@ static int QRS_PrepSig(int data)
   int sum = 0;
 				
 	//工频滤波 
-	notch_out = Adapt60HZ_notchFilter(data,NF_50HZ); 
+	notch_out = Adapt60HZ_notchFilter(data,NF_50HZ); //陷波器，即带阻滤波，去除50Hz信号，具体算法待看！！Q：是怎么仅对一个数据处理，然后滤除一个数据中特定频率的信号的？？
   
 	//去基线 
   #if 1
-	if (s_iIsFirstData >= 1)
+	if (s_iIsFirstData >= 1)//如果不是第一个数据
 	{
 		//dc_cancel = signal[0] - signal[1] + 1.000*dc_cancel;		//系数为1测量更准	
 		//dc_cancel = signal[0];
-		if(s_iUnbaseCnt < UNBASE_FILTER_CNT)
+		if(s_iUnbaseCnt < UNBASE_FILTER_CNT)//不平衡滤波（？？？）计数值上限为200
 		{
-			s_arrUnbaseBuff[s_iUnbaseCnt] = notch_out;
+			s_arrUnbaseBuff[s_iUnbaseCnt] = notch_out;//将滤除工频信号后的数据放入缓冲区
 			s_iUnbaseCnt++;
 			return 0; 	
 		}
@@ -229,14 +229,14 @@ static int QRS_PrepSig(int data)
 				s_iUnbaseCnt++;
 			}
 	    #else
-		
-			Smooth_Int(s_arrUnbaseBuff,notch_out,UNBASE_FILTER_CNT);
-			Filter_RT_Comb(s_arrUnbaseBuff,&s_iUnbaseVal,UNBASE_FILTER_CNT);
-			dc_cancel = s_iUnbaseVal;
+		  //计数值达到200，即有200个数据
+			Smooth_Int(s_arrUnbaseBuff,notch_out,UNBASE_FILTER_CNT);//插入notch_out数据到Buf的队尾，eg：1, 2, 3, 4 -> 2, 3, 4, {notch_out} ，相当于挤掉第一个数据，存满缓冲区
+			Filter_RT_Comb(s_arrUnbaseBuff,&s_iUnbaseVal,UNBASE_FILTER_CNT);//去基线滤波器，梳状滤波器（幅频特性出现周期性的“凹陷”，适用于处理周期性杂波型号），对buf中的所有数据的中间数据减去平均值，存放在s_iUnbaseVal中
+			dc_cancel = s_iUnbaseVal;//一整个数据的数据变成了一个啊啊
 	    #endif
 		}
 	} 	
-	else
+	else//如果是第一个数据
 	{
 		dc_cancel = 0;	
 	}
@@ -246,8 +246,16 @@ static int QRS_PrepSig(int data)
 	dc_cancel = signal[0];
   #endif		
 		
-	Smooth_Int1(s_arrDCBlock,dc_cancel,BUFFSIZE_PRE);		
+	Smooth_Int1(s_arrDCBlock,dc_cancel,BUFFSIZE_PRE);		//dc_cancel为工频滤波及去基线后数据，插入到存储数组的20处位置（也是末尾
 
+	/*Pan-Tompkins法检测R波峰值的具体步骤如下：
+	1）将信号通过给定的滤波器；
+	2）对滤波后的信号求一阶导数；
+	3）对求导之后的信号进行平方运算；
+	4）将信号通过滑动窗口进行积分；
+	5）使用阈值法检测经过处理之后的R波峰值。
+	*/
+	
 	// 低通滤波器（增益36） ：y(nT) = 2y(nT - T) - y(nT - 2T) + x(nT) - 2x(nT - 6T) + x(nT - 12T)
 	s_iLowPassData = (s_iLowPassData_Last * 2) - s_iLowPassData_BeforeLast + s_arrDCBlock[0] - (s_arrDCBlock[6] * 2) + s_arrDCBlock[12];
 	s_iLowPassData_BeforeLast = s_iLowPassData_Last;
@@ -844,7 +852,7 @@ void ECG_Init(void)
 * 创建日期: 2022年01月01日
 * 注 	 意:
 *********************************************************************************************************/
-int ECG_Test(int data,int *hr)
+int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
 {
 	int cnt = 0;
 	int num = 0;
@@ -863,11 +871,11 @@ int ECG_Test(int data,int *hr)
 		draw_wave = num;
 	  #endif
 	
-		DataNum++;
+		DataNum++;//数据个数（表示当前数据点出现的次序），全局变量
 
 		//printf("%d\r\n",num); 		
 	
-		QRS_PrepSig(num); 
+		QRS_PrepSig(num); //这是什么！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
     #if 0 //丢掉前面的数 
 		if(abandon_cnt < 100)
 		{
