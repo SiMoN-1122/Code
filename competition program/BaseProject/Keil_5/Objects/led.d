@@ -6,7 +6,7 @@
 .\objects\led.o: ..\Src\config\custom_config.h
 .\objects\led.o: ..\..\toolchain\gr551x\include\gr551xx.h
 .\objects\led.o: ..\..\toolchain\cmsis\include\core_cm4.h
-.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\led.o: ..\..\toolchain\cmsis\include\cmsis_version.h
 .\objects\led.o: ..\..\toolchain\cmsis\include\cmsis_compiler.h
 .\objects\led.o: ..\..\toolchain\cmsis\include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 .\objects\led.o: ..\..\drivers\inc\gr55xx_hal_conf.h
 .\objects\led.o: ..\..\drivers\inc\gr55xx_hal_cortex.h
 .\objects\led.o: ..\..\drivers\inc\gr55xx_hal_def.h
-.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\led.o: ..\..\drivers\inc\gr55xx_hal_adc.h
 .\objects\led.o: ..\..\drivers\inc\gr55xx_ll_adc.h
 .\objects\led.o: ..\..\drivers\inc\gr55xx_hal_dma.h

@@ -217,7 +217,7 @@ void Smooth_Int(int *buff,int data,int len)
 	{
 		buff[i] = buff[i+1];		
 	}
-	buff[len-1] = data;	
+	buff[len-1] = data;	//从队尾插入，顶出队首元素
 }
 
 /*********************************************************************************************************
@@ -286,10 +286,10 @@ void SmoothMean_Int(int *buff,int *data,int len)
 		
 	for(i = 0; i < len-1; i++)
 	{
-		buff[i] = buff[i+1];
+		buff[i] = buff[i+1];//舍弃第一个数据buff[0]
 		sum += buff[i];	
 	}
-	buff[len-1] = (*data);
+	buff[len-1] = (*data);//数据插入队尾
 	
 	sum += buff[len-1];	
 	

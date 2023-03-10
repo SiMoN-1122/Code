@@ -6,7 +6,7 @@
 .\objects\adc.o: ..\Src\config\custom_config.h
 .\objects\adc.o: ..\..\toolchain\gr551x\include\gr551xx.h
 .\objects\adc.o: ..\..\toolchain\cmsis\include\core_cm4.h
-.\objects\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\adc.o: ..\..\toolchain\cmsis\include\cmsis_version.h
 .\objects\adc.o: ..\..\toolchain\cmsis\include\cmsis_compiler.h
 .\objects\adc.o: ..\..\toolchain\cmsis\include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_hal_conf.h
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_hal_cortex.h
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_hal_def.h
-.\objects\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adc.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_hal_adc.h
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_ll_adc.h
 .\objects\adc.o: ..\..\drivers\inc\gr55xx_hal_dma.h

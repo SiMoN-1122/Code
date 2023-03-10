@@ -4,7 +4,7 @@
 .\objects\gr55xx_hal_aon_gpio.o: ..\Src\config\custom_config.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\toolchain\gr551x\include\gr551xx.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\toolchain\cmsis\include\core_cm4.h
-.\objects\gr55xx_hal_aon_gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gr55xx_hal_aon_gpio.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\toolchain\cmsis\include\cmsis_version.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\toolchain\cmsis\include\cmsis_compiler.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\toolchain\cmsis\include\cmsis_armcc.h
@@ -13,7 +13,7 @@
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_hal_conf.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_hal_cortex.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_hal_def.h
-.\objects\gr55xx_hal_aon_gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gr55xx_hal_aon_gpio.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_hal_adc.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_ll_adc.h
 .\objects\gr55xx_hal_aon_gpio.o: ..\..\drivers\inc\gr55xx_hal_dma.h

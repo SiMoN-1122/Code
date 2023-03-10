@@ -1,6 +1,6 @@
 .\objects\uart0.o: ..\HW\UART0\UART0.c
 .\objects\uart0.o: ..\HW\UART0\UART0.h
-.\objects\uart0.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart0.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\uart0.o: ..\APP\DataType\DataType.h
 .\objects\uart0.o: ..\HW\UART0\Queue.h
 .\objects\uart0.o: ..\..\drivers\inc\gr55xx_hal.h
@@ -8,7 +8,7 @@
 .\objects\uart0.o: ..\Src\config\custom_config.h
 .\objects\uart0.o: ..\..\toolchain\gr551x\include\gr551xx.h
 .\objects\uart0.o: ..\..\toolchain\cmsis\include\core_cm4.h
-.\objects\uart0.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart0.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\uart0.o: ..\..\toolchain\cmsis\include\cmsis_version.h
 .\objects\uart0.o: ..\..\toolchain\cmsis\include\cmsis_compiler.h
 .\objects\uart0.o: ..\..\toolchain\cmsis\include\cmsis_armcc.h

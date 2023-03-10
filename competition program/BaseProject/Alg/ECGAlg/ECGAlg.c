@@ -93,8 +93,8 @@ bool rWaveFlag;              //R波标志
 bool rrRegularFlag = false;  //RR规律标志，默认无规律
 bool prevRRregularFlag;	     //之前RR规律标志
 
-unsigned int DataNum = 0;	       //数据个数（表示当前数据点出现的次序）
-unsigned int LastRwaveNum = 0;	 //上一个R波出现时，对应数据点的持续
+unsigned int DataNum = 0;	       //数据个数（表示当前数据点出现的次序）从开机开始一直在增加
+unsigned int LastRwaveNum = 0;	 //上一个R波出现时，对应数据点的持续，通过DataNum-LastRwaveNum计算完RR周期后，更新为DataNum，也是一直增加，差值是所需要的
 
 
 static int  s_arrRRDistance[8];  //存储每个R波之间的间距，RR间期，可计算心率
@@ -470,10 +470,10 @@ static int QRS_findPeaks(void)
             SquareMax = s_arrSquaredResult[j];
           }
         }
-				
+				//如果斜率的最大值小于上一个斜率最大值的一半
 			  if (SquareMax <= (int)(LastSquareMax/2))	//保留意见，没看到证据支撑 。静态变量，初始为0
         {
-          rWaveFlag = false;//全局变量，R波标志，代表这个峰值不是R波（太小了）
+          rWaveFlag = false;//全局变量，R波标志，代表这个峰值不是R波（太小/平了）
         }
         else//如果是R波，则根据这个R波数据开始动态调节阈值
         {
@@ -485,32 +485,32 @@ static int QRS_findPeaks(void)
           threshold_f1 = npk_f + 0.25*(spk_f - npk_f);//最开始为1/4的spk_f
           threshold_f2 = 0.5*threshold_f1;
 
-          LastSquareMax = SquareMax;//将最新的R波信号，平方的最大值更新到LastSSquareMax中
+          LastSquareMax = SquareMax;//将最新的R波信号，求导后平方的最大值更新到LastSSquareMax中
           rWaveFlag = true;//代表这个峰值是R波
           //printf("2.%d\r\n",DataNum);
         }
 			}
 			// If it was above both thresholds and respects both latency periods, it certainly is a R peak.
-			//如果啥？？？？？？？？
+			//如果超过360ms（时间太长），能够直接判定是R波（？？？），不用再计算斜率来判断是否是R波
 			else
 			{
 			  SquareMax = 0;
-        for (j = 0; j <= 10; j++)
+        for (j = 0; j <= 10; j++)//筛选出求导后平方的最大值（但是为什么是10个里面筛）
         {
           if (s_arrSquaredResult[j] > SquareMax)
           {
             SquareMax = s_arrSquaredResult[j];
           }
         }
-
+        //和上一步一样
         spk_i = RATE1F*peak_i + RATE1B*spk_i;
         threshold_i1 = npk_i + 0.25*(spk_i - npk_i);
         threshold_i2 = 0.5*threshold_i1;
-
+        
         spk_f = RATE1F*peak_f + RATE1B*spk_f;
         threshold_f1 = npk_f + 0.25*(spk_f - npk_f);
         threshold_f2 = 0.5*threshold_f1;
-
+        
         LastSquareMax = SquareMax;
         rWaveFlag = true;
         
@@ -518,6 +518,7 @@ static int QRS_findPeaks(void)
 			}
 		}
 		// If the new peak doesn't respect the 200ms latency, it's noise. Update thresholds and move on to the next sample.
+    // 如果超过200ms的延迟（啥玩意？）判断为噪声，更新阈值然后跳到下一个样本
 		else
     {
       peak_i = s_arrIntegralResult[0];
@@ -529,7 +530,7 @@ static int QRS_findPeaks(void)
 			threshold_f1 = npk_f + 0.25*(spk_f - npk_f);
       threshold_f2 = 0.5*threshold_f1;
       
-      rWaveFlag = false;
+      rWaveFlag = false;//代表不是R波，跳出函数，不参与后续处理
       
       //printf("8.%d\r\n",DataNum); 
             
@@ -540,72 +541,72 @@ static int QRS_findPeaks(void)
 
 	
 	// If a R-peak was detected, the RR-averages must be updated.	
-	if (rWaveFlag)	
+	if (rWaveFlag)	//确定为R波之后，计算RR间期
 	{
-		qrsFlag = true;  //给arr算法标志 
+		qrsFlag = true;  //给arr算法标志 ，QRS检测标志
 		
-		// Add the newest RR-interval to the buffer and get the new average.
+		// Add the newest RR-interval to the buffer and get the new average.将最新的RR间隔添加到缓冲区并获得新的平均值。
 		//if(LastRwaveNum > 0)		//从第二个波峰开始，第一个波峰的时候LastRwaveNum=0; 
 		{
 			s_iRRAverage = 0;
 		
-			rr = DataNum - LastRwaveNum;
-			LastRwaveNum = DataNum;
-			rr_last = rr;
-			SmoothMean_Int(s_arrRRDistance,&rr,BACK_CHK_CNT);
+			rr = DataNum - LastRwaveNum;//计算两次R波间隔
+			LastRwaveNum = DataNum;//更新这次为上次
+			rr_last = rr;//意义不明，我要两个干嘛。好像是rr用来存回检求平均之后的数据，rr_last用来存原始的每次的RR间期
+			SmoothMean_Int(s_arrRRDistance,&rr,BACK_CHK_CNT);//第三个参数为回检次数为4，即每次只检查数组前四项的平均值（那一开始只有一组数据，其他三项为0怎么办），将rr数据插入s_arr数组末尾，然后把数组的平均值赋给rr。数组是存储每个R波之间的间距，RR间期，用于计算心率
 			
-			s_iBackCheckNum++;
+			s_iBackCheckNum++;//回检次数，表示已经回检了多少次
 			
 			if(s_iBackCheckNum >= BACK_CHK_CNT+1)
 			{
-				s_iRRAverage = rr;
+				s_iRRAverage = rr;//回检四次之后，取出平均值
 			}
 			else
 			{
-				s_iRRAverage = rr_last;
+				s_iRRAverage = rr_last;//否则是上一次的RR间隔
 			}
 			
-			Smooth_Int(s_arrRRDistanceAnalyze,rr_last,8);		//存入分析数组 
+			Smooth_Int(s_arrRRDistanceAnalyze,rr_last,8);		//把每次的RR间期存入用于分析的数组
 			
 			//printf("RR=%d, %.3f, %d\r\n",rr_last,(float)(60*FS)/rr_last,DataNum);
 			
-			s_iRRLow = 0.92*s_iRRAverage;
-			s_iRRHigh = 1.16*s_iRRAverage;
-			s_iRRMiss = 1.66*s_iRRAverage;
+			s_iRRLow = 0.92*s_iRRAverage;//R波间距下限
+			s_iRRHigh = 1.16*s_iRRAverage;//R波间距上限
+			s_iRRMiss = 1.66*s_iRRAverage;//R波漏检的限度
 			
-			if((rr_last >= s_iRRLow) && (rr_last <= s_iRRHigh))
+			if((rr_last >= s_iRRLow) && (rr_last <= s_iRRHigh))//如果测量得到的最新的RR间期符合上下限区间
 			{
 				s_iRRAverage2 = 0;
 				
 				rr2_last = rr_last;
-				SmoothMean_Int(s_arrRRAverage,&s_iRRAverage,BACK_CHK_CNT);
+				SmoothMean_Int(s_arrRRAverage,&s_iRRAverage,BACK_CHK_CNT);//存储R波间距的均值（若次数太少，即少于回检次数，则直接存储R波间距），计算完后存储当前RR间期均值到s_iRRAverage中
 				s_iBackCheckNum2++;
 			
 				if(s_iBackCheckNum2 >= BACK_CHK_CNT+1)
 				{
-					s_iRRAverage2 = s_iRRAverage;
+					s_iRRAverage2 = s_iRRAverage;//回检次数足够，把mean后的数据赋值给2
 				}
 				else
 				{
-					s_iRRAverage2 = rr2_last;
+					s_iRRAverage2 = rr2_last;//次数不够，直接取当此RR间期
 				}			
 			}
 			
-			s_iQRSWaveNum++;		//qrs波计数 
+			s_iQRSWaveNum++;		//qrs波计数，表示总QRS波数目（应该就是R波数目？）
 			
 			
 			//printf("%d,%d,%d\r\n",rrAverage,s_iRRAverage2,s_iRRMiss);		  
-       prevRRregularFlag = rrRegularFlag;
-       if (s_iRRAverage == s_iRRAverage2)
+       prevRRregularFlag = rrRegularFlag;//后者是RR波规律的标志位，这里把这次变为上次
+       if (s_iRRAverage == s_iRRAverage2)//如果两值相等意味回检次数足够（？？巧合怎么办）
        {
-         rrRegularFlag = true;
+         rrRegularFlag = true;//RR波规律
          if(s_iRRAverage2 != 0)
          {
-           s_iHeartRateAverage = 60*FS/s_iRRAverage2;
+           s_iHeartRateAverage = 60*FS/s_iRRAverage2;//平均心率
            g_structECGPara.HeartRateH   = s_iHeartRateAverage>>8;  
-           g_structECGPara.HeartRateL   = (u8)s_iHeartRateAverage;
+           g_structECGPara.HeartRateL   = (u8)s_iHeartRateAverage;//高八位和低八位？？
            
-         }
+         }//在这里打住，我要回宿舍吃美味的pizza了
          analyzStartFlag = true;		//心律失常算法开始 
          //printf("regular RR=%d, %d\r\n",s_iRRAverage2,s_iHeartRateAverage);
        }

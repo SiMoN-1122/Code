@@ -6,7 +6,7 @@
 .\objects\ad8233.o: ..\Src\config\custom_config.h
 .\objects\ad8233.o: ..\..\toolchain\gr551x\include\gr551xx.h
 .\objects\ad8233.o: ..\..\toolchain\cmsis\include\core_cm4.h
-.\objects\ad8233.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ad8233.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ad8233.o: ..\..\toolchain\cmsis\include\cmsis_version.h
 .\objects\ad8233.o: ..\..\toolchain\cmsis\include\cmsis_compiler.h
 .\objects\ad8233.o: ..\..\toolchain\cmsis\include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_hal_conf.h
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_hal_cortex.h
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_hal_def.h
-.\objects\ad8233.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ad8233.o: M:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_hal_adc.h
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_ll_adc.h
 .\objects\ad8233.o: ..\..\drivers\inc\gr55xx_hal_dma.h
