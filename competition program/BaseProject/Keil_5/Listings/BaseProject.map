@@ -5741,54 +5741,54 @@ Memory Map of the image
     0x008041a4   COMPRESSED   0x00000004   PAD
     0x008041a8   COMPRESSED   0x0000005c   Data   RW         1031    .data               main.o
     0x00804204   COMPRESSED   0x00000004   PAD
-    0x00804208   COMPRESSED   0x00000010   Data   RW         1383    .data               gr551x_adc_voltage_api.o
-    0x00804218   COMPRESSED   0x0000000c   Data   RW         1432    .data               ad8233.o
-    0x00804224   COMPRESSED   0x00000004   Data   RW         1485    .data               user_app.o
-    0x00804228   COMPRESSED   0x00000008   Data   RW         1555    .data               jumperdata.o
-    0x00804230   COMPRESSED   0x00000008   Data   RW         1611    .data               timer.o
-    0x00804238   COMPRESSED   0x00000001   Data   RW         1727    .data               uart0.o
+    0x00804208   COMPRESSED   0x00000010   Data   RW         1113    .data               gr551x_adc_voltage_api.o
+    0x00804218   COMPRESSED   0x0000000c   Data   RW         1162    .data               ad8233.o
+    0x00804224   COMPRESSED   0x00000004   Data   RW         1212    .data               user_app.o
+    0x00804228   COMPRESSED   0x00000008   Data   RW         1273    .data               jumperdata.o
+    0x00804230   COMPRESSED   0x00000008   Data   RW         1326    .data               timer.o
+    0x00804238   COMPRESSED   0x00000001   Data   RW         1439    .data               uart0.o
     0x00804239   COMPRESSED   0x00000003   PAD
-    0x0080423c   COMPRESSED   0x0000009c   Data   RW         1912    .data               ecgalg.o
-    0x008042d8   COMPRESSED   0x00000020   Data   RW         1992    .data               funtool.o
-    0x008042f8   COMPRESSED   0x0000000c   Data   RW         2126    .data               gus.o
-    0x00804304   COMPRESSED   0x00000014   Data   RW         2127    .data               gus.o
-    0x00804318   COMPRESSED   0x00000158   Data   RW         2329    .data               app_error.o
-    0x00804470   COMPRESSED   0x00000010   Data   RW         2374    .data               app_log.o
-    0x00804480   COMPRESSED   0x00000004   Data   RW         2375    .data               app_log.o
-    0x00804484   COMPRESSED   0x00000004   Data   RW         2565    .data               ble_sdk.lib(fpb_patch_init.o)
-    0x00804488   COMPRESSED   0x00000008   Data   RW         2590    .data               ble_sdk.lib(llm_hci_patch.o)
-    0x00804490   COMPRESSED   0x00000004   Data   RW         2630    .data               ble_sdk.lib(llc_llcp_patch.o)
-    0x00804494   COMPRESSED   0x00000008   Data   RW         2775    .data               ble_sdk.lib(gapm_task_patch.o)
-    0x0080449c   COMPRESSED   0x00000008   Data   RW         2788    .data               ble_sdk.lib(ke_task_patch.o)
-    0x008044a4   COMPRESSED   0x00000004   Data   RW         2800    .data               ble_sdk.lib(llc_dl_upd_patch.o)
-    0x008044a8   COMPRESSED   0x00000004   Data   RW         2812    .data               ble_sdk.lib(gr55xx_hal_patch.o)
-    0x008044ac   COMPRESSED   0x00000001   Data   RW         2859    .data               ble_sdk.lib(gr55xx_hal_aon_gpio_patch.o)
+    0x0080423c   COMPRESSED   0x0000009c   Data   RW         1614    .data               ecgalg.o
+    0x008042d8   COMPRESSED   0x00000020   Data   RW         1688    .data               funtool.o
+    0x008042f8   COMPRESSED   0x0000000c   Data   RW         1822    .data               gus.o
+    0x00804304   COMPRESSED   0x00000014   Data   RW         1823    .data               gus.o
+    0x00804318   COMPRESSED   0x00000158   Data   RW         2025    .data               app_error.o
+    0x00804470   COMPRESSED   0x00000010   Data   RW         2070    .data               app_log.o
+    0x00804480   COMPRESSED   0x00000004   Data   RW         2071    .data               app_log.o
+    0x00804484   COMPRESSED   0x00000004   Data   RW         2261    .data               ble_sdk.lib(fpb_patch_init.o)
+    0x00804488   COMPRESSED   0x00000008   Data   RW         2286    .data               ble_sdk.lib(llm_hci_patch.o)
+    0x00804490   COMPRESSED   0x00000004   Data   RW         2326    .data               ble_sdk.lib(llc_llcp_patch.o)
+    0x00804494   COMPRESSED   0x00000008   Data   RW         2471    .data               ble_sdk.lib(gapm_task_patch.o)
+    0x0080449c   COMPRESSED   0x00000008   Data   RW         2484    .data               ble_sdk.lib(ke_task_patch.o)
+    0x008044a4   COMPRESSED   0x00000004   Data   RW         2496    .data               ble_sdk.lib(llc_dl_upd_patch.o)
+    0x008044a8   COMPRESSED   0x00000004   Data   RW         2508    .data               ble_sdk.lib(gr55xx_hal_patch.o)
+    0x008044ac   COMPRESSED   0x00000001   Data   RW         2555    .data               ble_sdk.lib(gr55xx_hal_aon_gpio_patch.o)
     0x008044ad   COMPRESSED   0x00000003   PAD
-    0x008044b0   COMPRESSED   0x0000000c   Data   RW         3020    .data               ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x008044bc   COMPRESSED   0x00000008   Data   RW         3049    .data               ble_sdk.lib(warm_boot_patch.o)
-    0x008044c4   COMPRESSED   0x00000018   Data   RW         3069    .data               ble_sdk.lib(hal_flash_patch.o)
-    0x008044dc   COMPRESSED   0x00000148   Data   RW         3254    .data               ble_sdk.lib(platform_sdk.o)
-    0x00804624   COMPRESSED   0x00000004   Data   RW         3255    .data               ble_sdk.lib(platform_sdk.o)
-    0x00804628   COMPRESSED   0x00000004   Data   RW         3256    .data               ble_sdk.lib(platform_sdk.o)
-    0x0080462c   COMPRESSED   0x00000004   Data   RW         3257    .data               ble_sdk.lib(platform_sdk.o)
-    0x00804630   COMPRESSED   0x0000000c   Data   RW         3326    .data               ble_sdk.lib(platform_clock.o)
-    0x0080463c   COMPRESSED   0x00000010   Data   RW         3425    .data               ble_sdk.lib(sch_prog_patch.o)
-    0x0080464c   COMPRESSED   0x00000002   Data   RW         3446    .data               ble_sdk.lib(lld_scan_patch.o)
-    0x0080464e   COMPRESSED   0x00000001   Data   RW         3473    .data               ble_sdk.lib(hci_patch.o)
-    0x0080464f   COMPRESSED   0x00000001   Data   RW         3497    .data               ble_sdk.lib(lld_con_patch.o)
-    0x00804650   COMPRESSED   0x00000001   Data   RW         3529    .data               ble_sdk.lib(l2cm_patch.o)
-    0x00804651   COMPRESSED   0x00000001   Data   RW         3545    .data               ble_sdk.lib(gr55xx_hal_comp_patch.o)
+    0x008044b0   COMPRESSED   0x0000000c   Data   RW         2716    .data               ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x008044bc   COMPRESSED   0x00000008   Data   RW         2745    .data               ble_sdk.lib(warm_boot_patch.o)
+    0x008044c4   COMPRESSED   0x00000018   Data   RW         2765    .data               ble_sdk.lib(hal_flash_patch.o)
+    0x008044dc   COMPRESSED   0x00000148   Data   RW         2950    .data               ble_sdk.lib(platform_sdk.o)
+    0x00804624   COMPRESSED   0x00000004   Data   RW         2951    .data               ble_sdk.lib(platform_sdk.o)
+    0x00804628   COMPRESSED   0x00000004   Data   RW         2952    .data               ble_sdk.lib(platform_sdk.o)
+    0x0080462c   COMPRESSED   0x00000004   Data   RW         2953    .data               ble_sdk.lib(platform_sdk.o)
+    0x00804630   COMPRESSED   0x0000000c   Data   RW         3022    .data               ble_sdk.lib(platform_clock.o)
+    0x0080463c   COMPRESSED   0x00000010   Data   RW         3121    .data               ble_sdk.lib(sch_prog_patch.o)
+    0x0080464c   COMPRESSED   0x00000002   Data   RW         3142    .data               ble_sdk.lib(lld_scan_patch.o)
+    0x0080464e   COMPRESSED   0x00000001   Data   RW         3169    .data               ble_sdk.lib(hci_patch.o)
+    0x0080464f   COMPRESSED   0x00000001   Data   RW         3193    .data               ble_sdk.lib(lld_con_patch.o)
+    0x00804650   COMPRESSED   0x00000001   Data   RW         3225    .data               ble_sdk.lib(l2cm_patch.o)
+    0x00804651   COMPRESSED   0x00000001   Data   RW         3241    .data               ble_sdk.lib(gr55xx_hal_comp_patch.o)
     0x00804652   COMPRESSED   0x00000002   PAD
-    0x00804654   COMPRESSED   0x00000004   Data   RW         3559    .data               ble_sdk.lib(gr55xx_hal_exflash_patch.o)
-    0x00804658   COMPRESSED   0x00000018   Data   RW         3649    .data               ble_sdk.lib(rwip_sleep_common.o)
-    0x00804670   COMPRESSED   0x0000000c   Data   RW         3672    .data               ble_sdk.lib(rwip_sleep_patch.o)
-    0x0080467c   COMPRESSED   0x00000014   Data   RW         3702    .data               ble_sdk.lib(rf_gdx_patch.o)
-    0x00804690   COMPRESSED   0x00000008   Data   RW         3729    .data               ble_sdk.lib(sdk_pwr_mgmt_patch.o)
-    0x00804698   COMPRESSED   0x00000004   Data   RW         3774    .data               ble_sdk.lib(sdk_nvds_patch.o)
-    0x0080469c   COMPRESSED   0x000000c8   Data   RW         3863    .data               ble_sdk.lib(platform_sys_context.o)
-    0x00804764   COMPRESSED   0x00000004   Data   RW         3894    .data               ble_sdk.lib(platform_adc.o)
-    0x00804768   COMPRESSED   0x00000008   Data   RW         3920    .data               ble_sdk.lib(rwble_patch.o)
-    0x00804770   COMPRESSED   0x00000004   Data   RW         4145    .data               mc_w.l(rand.o)
+    0x00804654   COMPRESSED   0x00000004   Data   RW         3255    .data               ble_sdk.lib(gr55xx_hal_exflash_patch.o)
+    0x00804658   COMPRESSED   0x00000018   Data   RW         3345    .data               ble_sdk.lib(rwip_sleep_common.o)
+    0x00804670   COMPRESSED   0x0000000c   Data   RW         3368    .data               ble_sdk.lib(rwip_sleep_patch.o)
+    0x0080467c   COMPRESSED   0x00000014   Data   RW         3398    .data               ble_sdk.lib(rf_gdx_patch.o)
+    0x00804690   COMPRESSED   0x00000008   Data   RW         3425    .data               ble_sdk.lib(sdk_pwr_mgmt_patch.o)
+    0x00804698   COMPRESSED   0x00000004   Data   RW         3470    .data               ble_sdk.lib(sdk_nvds_patch.o)
+    0x0080469c   COMPRESSED   0x000000c8   Data   RW         3559    .data               ble_sdk.lib(platform_sys_context.o)
+    0x00804764   COMPRESSED   0x00000004   Data   RW         3590    .data               ble_sdk.lib(platform_adc.o)
+    0x00804768   COMPRESSED   0x00000008   Data   RW         3616    .data               ble_sdk.lib(rwble_patch.o)
+    0x00804770   COMPRESSED   0x00000004   Data   RW         3841    .data               mc_w.l(rand.o)
     0x00804774   COMPRESSED   0x00000010   Data   RW          337    SVC_TABLE           platform_gr55xx.o
 
 
@@ -5799,62 +5799,62 @@ Memory Map of the image
     0x00804784   0x01011570   0x00000034   Code   RO           12    RAM_CODE            interrupt_gr55xx.o
     0x008047b8   0x010115a4   0x0000000c   Code   RO           13    RAM_CODE            interrupt_gr55xx.o
     0x008047c4   0x010115b0   0x00000008   Code   RO          569    RAM_CODE            gr55xx_hal_exflash.o
-    0x008047cc   0x010115b8   0x00000498   Code   RO         2883    RAM_CODE            ble_sdk.lib(gr55xx_hal_xqspi_patch.o)
-    0x00804c64   0x01011a50   0x000001d8   Code   RO         3046    RAM_CODE            ble_sdk.lib(warm_boot_patch.o)
-    0x00804e3c   0x01011c28   0x00000492   Code   RO         3193    RAM_CODE            ble_sdk.lib(gr55xx_hal_exflash_read_patch.o)
+    0x008047cc   0x010115b8   0x00000498   Code   RO         2579    RAM_CODE            ble_sdk.lib(gr55xx_hal_xqspi_patch.o)
+    0x00804c64   0x01011a50   0x000001d8   Code   RO         2742    RAM_CODE            ble_sdk.lib(warm_boot_patch.o)
+    0x00804e3c   0x01011c28   0x00000492   Code   RO         2889    RAM_CODE            ble_sdk.lib(gr55xx_hal_exflash_read_patch.o)
     0x008052ce   0x010120ba   0x00000002   PAD
-    0x008052d0   0x010120bc   0x000003e4   Code   RO         3209    RAM_CODE            ble_sdk.lib(platform_sdk.o)
-    0x008056b4   0x010124a0   0x00000044   Code   RO         3308    RAM_CODE            ble_sdk.lib(platform_clock.o)
-    0x008056f8   0x010124e4   0x00000300   Code   RO         3350    RAM_CODE            ble_sdk.lib(platform_exflash.o)
-    0x008059f8   0x010127e4   0x000000f0   Code   RO         3362    RAM_CODE            ble_sdk.lib(platform_sram.o)
-    0x00805ae8   0x010128d4   0x000002b4   Code   RO         3415    RAM_CODE            ble_sdk.lib(sch_prog_patch.o)
-    0x00805d9c   0x01012b88   0x00000c80   Code   RO         3439    RAM_CODE            ble_sdk.lib(lld_scan_patch.o)
-    0x00806a1c   0x01013808   0x00000884   Code   RO         3481    RAM_CODE            ble_sdk.lib(lld_con_patch.o)
-    0x008072a0   0x0101408c   0x00000754   Code   RO         3558    RAM_CODE            ble_sdk.lib(gr55xx_hal_exflash_patch.o)
-    0x008079f4   0x010147e0   0x000002b0   Code   RO         3607    RAM_CODE            ble_sdk.lib(gr55xx_ll_xqspi_patch.o)
-    0x00807ca4   0x01014a90   0x0000022c   Code   RO         3639    RAM_CODE            ble_sdk.lib(rwip_sleep_common.o)
-    0x00807ed0   0x01014cbc   0x00000428   Code   RO         3666    RAM_CODE            ble_sdk.lib(rwip_sleep_patch.o)
-    0x008082f8   0x010150e4   0x00000084   Code   RO         3684    RAM_CODE            ble_sdk.lib(rf_gdx_patch.o)
-    0x0080837c   0x01015168   0x0000003c   Code   RO         3725    RAM_CODE            ble_sdk.lib(sdk_pwr_mgmt_patch.o)
-    0x008083b8   0x010151a4   0x00000098   Code   RO         3861    RAM_CODE            ble_sdk.lib(platform_sys_context.o)
-    0x00808450   0x0101523c   0x000002c4   Code   RO         3905    RAM_CODE            ble_sdk.lib(sch_arb_patch.o)
-    0x00808714   0x01015500   0x00000150   Code   RO         3915    RAM_CODE            ble_sdk.lib(rwble_patch.o)
-    0x00808864   0x01015650   0x00000150   Code   RO         3952    RAM_CODE            ble_sdk.lib(lld_init_patch.o)
-    0x008089b4   0x010157a0   0x000000e8   Code   RO         4006    RAM_CODE            ble_sdk.lib(gr55xx_hal_pwr_patch.o)
-    0x00808a9c   0x01015888   0x00000004   Ven    RO         4539    Veneer$$Code        anon$$obj.o
-    0x00808aa0   0x0101588c   0x00000004   Ven    RO         4540    Veneer$$Code        anon$$obj.o
-    0x00808aa4   0x01015890   0x00000004   Ven    RO         4541    Veneer$$Code        anon$$obj.o
-    0x00808aa8   0x01015894   0x00000004   Ven    RO         4542    Veneer$$Code        anon$$obj.o
-    0x00808aac   0x01015898   0x00000004   Ven    RO         4543    Veneer$$Code        anon$$obj.o
-    0x00808ab0   0x0101589c   0x00000004   Ven    RO         4544    Veneer$$Code        anon$$obj.o
-    0x00808ab4   0x010158a0   0x00000004   Ven    RO         4545    Veneer$$Code        anon$$obj.o
-    0x00808ab8   0x010158a4   0x00000004   Ven    RO         4546    Veneer$$Code        anon$$obj.o
-    0x00808abc   0x010158a8   0x00000004   Ven    RO         4547    Veneer$$Code        anon$$obj.o
-    0x00808ac0   0x010158ac   0x00000004   Ven    RO         4548    Veneer$$Code        anon$$obj.o
-    0x00808ac4   0x010158b0   0x00000004   Ven    RO         4549    Veneer$$Code        anon$$obj.o
-    0x00808ac8   0x010158b4   0x00000004   Ven    RO         4550    Veneer$$Code        anon$$obj.o
-    0x00808acc   0x010158b8   0x00000004   Ven    RO         4551    Veneer$$Code        anon$$obj.o
-    0x00808ad0   0x010158bc   0x00000004   Ven    RO         4552    Veneer$$Code        anon$$obj.o
-    0x00808ad4   0x010158c0   0x00000004   Ven    RO         4553    Veneer$$Code        anon$$obj.o
-    0x00808ad8   0x010158c4   0x00000004   Ven    RO         4554    Veneer$$Code        anon$$obj.o
-    0x00808adc   0x010158c8   0x00000004   Ven    RO         4555    Veneer$$Code        anon$$obj.o
-    0x00808ae0   0x010158cc   0x00000004   Ven    RO         4556    Veneer$$Code        anon$$obj.o
-    0x00808ae4   0x010158d0   0x00000004   Ven    RO         4557    Veneer$$Code        anon$$obj.o
-    0x00808ae8   0x010158d4   0x00000004   Ven    RO         4558    Veneer$$Code        anon$$obj.o
-    0x00808aec   0x010158d8   0x00000004   Ven    RO         4559    Veneer$$Code        anon$$obj.o
-    0x00808af0   0x010158dc   0x00000004   Ven    RO         4560    Veneer$$Code        anon$$obj.o
-    0x00808af4   0x010158e0   0x00000004   Ven    RO         4561    Veneer$$Code        anon$$obj.o
-    0x00808af8   0x010158e4   0x00000004   Ven    RO         4562    Veneer$$Code        anon$$obj.o
-    0x00808afc   0x010158e8   0x00000004   Ven    RO         4563    Veneer$$Code        anon$$obj.o
-    0x00808b00   0x010158ec   0x00000004   Ven    RO         4564    Veneer$$Code        anon$$obj.o
-    0x00808b04   0x010158f0   0x00000004   Ven    RO         4565    Veneer$$Code        anon$$obj.o
-    0x00808b08   0x010158f4   0x00000004   Ven    RO         4566    Veneer$$Code        anon$$obj.o
-    0x00808b0c   0x010158f8   0x00000004   Ven    RO         4567    Veneer$$Code        anon$$obj.o
-    0x00808b10   0x010158fc   0x00000004   Ven    RO         4568    Veneer$$Code        anon$$obj.o
-    0x00808b14   0x01015900   0x00000004   Ven    RO         4569    Veneer$$Code        anon$$obj.o
-    0x00808b18   0x01015904   0x00000004   Ven    RO         4570    Veneer$$Code        anon$$obj.o
-    0x00808b1c   0x01015908   0x0000000a   Ven    RO         4597    Veneer$$Code        anon$$obj.o
-    0x00808b26   0x01015912   0x0000000a   Ven    RO         4598    Veneer$$Code        anon$$obj.o
+    0x008052d0   0x010120bc   0x000003e4   Code   RO         2905    RAM_CODE            ble_sdk.lib(platform_sdk.o)
+    0x008056b4   0x010124a0   0x00000044   Code   RO         3004    RAM_CODE            ble_sdk.lib(platform_clock.o)
+    0x008056f8   0x010124e4   0x00000300   Code   RO         3046    RAM_CODE            ble_sdk.lib(platform_exflash.o)
+    0x008059f8   0x010127e4   0x000000f0   Code   RO         3058    RAM_CODE            ble_sdk.lib(platform_sram.o)
+    0x00805ae8   0x010128d4   0x000002b4   Code   RO         3111    RAM_CODE            ble_sdk.lib(sch_prog_patch.o)
+    0x00805d9c   0x01012b88   0x00000c80   Code   RO         3135    RAM_CODE            ble_sdk.lib(lld_scan_patch.o)
+    0x00806a1c   0x01013808   0x00000884   Code   RO         3177    RAM_CODE            ble_sdk.lib(lld_con_patch.o)
+    0x008072a0   0x0101408c   0x00000754   Code   RO         3254    RAM_CODE            ble_sdk.lib(gr55xx_hal_exflash_patch.o)
+    0x008079f4   0x010147e0   0x000002b0   Code   RO         3303    RAM_CODE            ble_sdk.lib(gr55xx_ll_xqspi_patch.o)
+    0x00807ca4   0x01014a90   0x0000022c   Code   RO         3335    RAM_CODE            ble_sdk.lib(rwip_sleep_common.o)
+    0x00807ed0   0x01014cbc   0x00000428   Code   RO         3362    RAM_CODE            ble_sdk.lib(rwip_sleep_patch.o)
+    0x008082f8   0x010150e4   0x00000084   Code   RO         3380    RAM_CODE            ble_sdk.lib(rf_gdx_patch.o)
+    0x0080837c   0x01015168   0x0000003c   Code   RO         3421    RAM_CODE            ble_sdk.lib(sdk_pwr_mgmt_patch.o)
+    0x008083b8   0x010151a4   0x00000098   Code   RO         3557    RAM_CODE            ble_sdk.lib(platform_sys_context.o)
+    0x00808450   0x0101523c   0x000002c4   Code   RO         3601    RAM_CODE            ble_sdk.lib(sch_arb_patch.o)
+    0x00808714   0x01015500   0x00000150   Code   RO         3611    RAM_CODE            ble_sdk.lib(rwble_patch.o)
+    0x00808864   0x01015650   0x00000150   Code   RO         3648    RAM_CODE            ble_sdk.lib(lld_init_patch.o)
+    0x008089b4   0x010157a0   0x000000e8   Code   RO         3702    RAM_CODE            ble_sdk.lib(gr55xx_hal_pwr_patch.o)
+    0x00808a9c   0x01015888   0x00000004   Ven    RO         4235    Veneer$$Code        anon$$obj.o
+    0x00808aa0   0x0101588c   0x00000004   Ven    RO         4236    Veneer$$Code        anon$$obj.o
+    0x00808aa4   0x01015890   0x00000004   Ven    RO         4237    Veneer$$Code        anon$$obj.o
+    0x00808aa8   0x01015894   0x00000004   Ven    RO         4238    Veneer$$Code        anon$$obj.o
+    0x00808aac   0x01015898   0x00000004   Ven    RO         4239    Veneer$$Code        anon$$obj.o
+    0x00808ab0   0x0101589c   0x00000004   Ven    RO         4240    Veneer$$Code        anon$$obj.o
+    0x00808ab4   0x010158a0   0x00000004   Ven    RO         4241    Veneer$$Code        anon$$obj.o
+    0x00808ab8   0x010158a4   0x00000004   Ven    RO         4242    Veneer$$Code        anon$$obj.o
+    0x00808abc   0x010158a8   0x00000004   Ven    RO         4243    Veneer$$Code        anon$$obj.o
+    0x00808ac0   0x010158ac   0x00000004   Ven    RO         4244    Veneer$$Code        anon$$obj.o
+    0x00808ac4   0x010158b0   0x00000004   Ven    RO         4245    Veneer$$Code        anon$$obj.o
+    0x00808ac8   0x010158b4   0x00000004   Ven    RO         4246    Veneer$$Code        anon$$obj.o
+    0x00808acc   0x010158b8   0x00000004   Ven    RO         4247    Veneer$$Code        anon$$obj.o
+    0x00808ad0   0x010158bc   0x00000004   Ven    RO         4248    Veneer$$Code        anon$$obj.o
+    0x00808ad4   0x010158c0   0x00000004   Ven    RO         4249    Veneer$$Code        anon$$obj.o
+    0x00808ad8   0x010158c4   0x00000004   Ven    RO         4250    Veneer$$Code        anon$$obj.o
+    0x00808adc   0x010158c8   0x00000004   Ven    RO         4251    Veneer$$Code        anon$$obj.o
+    0x00808ae0   0x010158cc   0x00000004   Ven    RO         4252    Veneer$$Code        anon$$obj.o
+    0x00808ae4   0x010158d0   0x00000004   Ven    RO         4253    Veneer$$Code        anon$$obj.o
+    0x00808ae8   0x010158d4   0x00000004   Ven    RO         4254    Veneer$$Code        anon$$obj.o
+    0x00808aec   0x010158d8   0x00000004   Ven    RO         4255    Veneer$$Code        anon$$obj.o
+    0x00808af0   0x010158dc   0x00000004   Ven    RO         4256    Veneer$$Code        anon$$obj.o
+    0x00808af4   0x010158e0   0x00000004   Ven    RO         4257    Veneer$$Code        anon$$obj.o
+    0x00808af8   0x010158e4   0x00000004   Ven    RO         4258    Veneer$$Code        anon$$obj.o
+    0x00808afc   0x010158e8   0x00000004   Ven    RO         4259    Veneer$$Code        anon$$obj.o
+    0x00808b00   0x010158ec   0x00000004   Ven    RO         4260    Veneer$$Code        anon$$obj.o
+    0x00808b04   0x010158f0   0x00000004   Ven    RO         4261    Veneer$$Code        anon$$obj.o
+    0x00808b08   0x010158f4   0x00000004   Ven    RO         4262    Veneer$$Code        anon$$obj.o
+    0x00808b0c   0x010158f8   0x00000004   Ven    RO         4263    Veneer$$Code        anon$$obj.o
+    0x00808b10   0x010158fc   0x00000004   Ven    RO         4264    Veneer$$Code        anon$$obj.o
+    0x00808b14   0x01015900   0x00000004   Ven    RO         4265    Veneer$$Code        anon$$obj.o
+    0x00808b18   0x01015904   0x00000004   Ven    RO         4266    Veneer$$Code        anon$$obj.o
+    0x00808b1c   0x01015908   0x0000000a   Ven    RO         4293    Veneer$$Code        anon$$obj.o
+    0x00808b26   0x01015912   0x0000000a   Ven    RO         4294    Veneer$$Code        anon$$obj.o
 
 
     Execution Region RAM_RESERVE (Exec base: 0x00808b40, Load base: 0x0101591c, Size: 0x00000000, Max: 0x00000064, ABSOLUTE, UNINIT)
@@ -5879,23 +5879,23 @@ Memory Map of the image
     0x0080c3c0        -       0x00002a70   Zero   RW         1029    .bss                main.o
     0x0080ee30   0x0101591c   0x00000010   PAD
     0x0080ee40        -       0x0000029c   Zero   RW         1030    .bss                main.o
-    0x0080f0dc        -       0x00000012   Zero   RW         1479    .bss                user_app.o
+    0x0080f0dc        -       0x00000012   Zero   RW         1206    .bss                user_app.o
     0x0080f0ee   0x0101591c   0x00000002   PAD
-    0x0080f0f0        -       0x00000070   Zero   RW         1554    .bss                jumperdata.o
-    0x0080f160        -       0x00000018   Zero   RW         1610    .bss                timer.o
-    0x0080f178        -       0x000000d0   Zero   RW         1725    .bss                uart0.o
-    0x0080f248        -       0x00000174   Zero   RW         1790    .bss                adc.o
-    0x0080f3bc        -       0x00000d84   Zero   RW         1911    .bss                ecgalg.o
-    0x00810140        -       0x00000030   Zero   RW         2124    .bss                gus.o
-    0x00810170        -       0x00000124   Zero   RW         2372    .bss                app_log.o
-    0x00810294        -       0x000001a4   Zero   RW         2629    .bss                ble_sdk.lib(llc_llcp_patch.o)
-    0x00810438        -       0x0000016a   Zero   RW         3019    .bss                ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x008105a2        -       0x0000000c   Zero   RW         3404    .bss                ble_sdk.lib(llc_encrypt_patch.o)
+    0x0080f0f0        -       0x00000070   Zero   RW         1272    .bss                jumperdata.o
+    0x0080f160        -       0x00000018   Zero   RW         1325    .bss                timer.o
+    0x0080f178        -       0x000000d0   Zero   RW         1437    .bss                uart0.o
+    0x0080f248        -       0x00000174   Zero   RW         1502    .bss                adc.o
+    0x0080f3bc        -       0x00000d84   Zero   RW         1613    .bss                ecgalg.o
+    0x00810140        -       0x00000030   Zero   RW         1820    .bss                gus.o
+    0x00810170        -       0x00000124   Zero   RW         2068    .bss                app_log.o
+    0x00810294        -       0x000001a4   Zero   RW         2325    .bss                ble_sdk.lib(llc_llcp_patch.o)
+    0x00810438        -       0x0000016a   Zero   RW         2715    .bss                ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x008105a2        -       0x0000000c   Zero   RW         3100    .bss                ble_sdk.lib(llc_encrypt_patch.o)
     0x008105ae   0x0101591c   0x00000002   PAD
-    0x008105b0        -       0x0000000c   Zero   RW         3422    .bss                ble_sdk.lib(sch_prog_patch.o)
-    0x008105bc        -       0x00000090   Zero   RW         3495    .bss                ble_sdk.lib(lld_con_patch.o)
-    0x0081064c        -       0x00000140   Zero   RW         3700    .bss                ble_sdk.lib(rf_gdx_patch.o)
-    0x0081078c        -       0x000000c8   Zero   RW         3862    .bss                ble_sdk.lib(platform_sys_context.o)
+    0x008105b0        -       0x0000000c   Zero   RW         3118    .bss                ble_sdk.lib(sch_prog_patch.o)
+    0x008105bc        -       0x00000090   Zero   RW         3191    .bss                ble_sdk.lib(lld_con_patch.o)
+    0x0081064c        -       0x00000140   Zero   RW         3396    .bss                ble_sdk.lib(rf_gdx_patch.o)
+    0x0081078c        -       0x000000c8   Zero   RW         3558    .bss                ble_sdk.lib(platform_sys_context.o)
 
 
     Execution Region ARM_LIB_STACKHEAP (Exec base: 0x0081c000, Load base: 0x0101591c, Size: 0x00004000, Max: 0x00004000, ABSOLUTE)
@@ -5910,102 +5910,102 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x01002000   0x01002000   0x000000c8   Data   RO            2    RESET               startup_gr55xx.o
-    0x010020c8   0x010020c8   0x00000000   Code   RO         4139  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x010020c8   0x010020c8   0x00000004   Code   RO         4487    .ARM.Collect$$$$00000002  mc_w.l(entry3.o)
-    0x010020cc   0x010020cc   0x00000004   Code   RO         4490    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x010020d0   0x010020d0   0x00000000   Code   RO         4492    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x010020d0   0x010020d0   0x00000000   Code   RO         4494    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x010020d0   0x010020d0   0x00000008   Code   RO         4495    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x010020d8   0x010020d8   0x00000000   Code   RO         4497    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x010020d8   0x010020d8   0x00000000   Code   RO         4499    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x010020d8   0x010020d8   0x00000004   Code   RO         4488    .ARM.Collect$$$$00002713  mc_w.l(entry3.o)
+    0x010020c8   0x010020c8   0x00000000   Code   RO         3835  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x010020c8   0x010020c8   0x00000004   Code   RO         4183    .ARM.Collect$$$$00000002  mc_w.l(entry3.o)
+    0x010020cc   0x010020cc   0x00000004   Code   RO         4186    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x010020d0   0x010020d0   0x00000000   Code   RO         4188    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x010020d0   0x010020d0   0x00000000   Code   RO         4190    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x010020d0   0x010020d0   0x00000008   Code   RO         4191    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x010020d8   0x010020d8   0x00000000   Code   RO         4193    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x010020d8   0x010020d8   0x00000000   Code   RO         4195    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x010020d8   0x010020d8   0x00000004   Code   RO         4184    .ARM.Collect$$$$00002713  mc_w.l(entry3.o)
     0x010020dc   0x010020dc   0x00000028   Code   RO            3    .text               startup_gr55xx.o
-    0x01002104   0x01002104   0x00000062   Code   RO         4142    .text               mc_w.l(uldiv.o)
+    0x01002104   0x01002104   0x00000062   Code   RO         3838    .text               mc_w.l(uldiv.o)
     0x01002166   0x01002166   0x00000002   PAD
-    0x01002168   0x01002168   0x00000024   Code   RO         4144    .text               mc_w.l(rand.o)
-    0x0100218c   0x0100218c   0x00000024   Code   RO         4147    .text               mc_w.l(memcpya.o)
-    0x010021b0   0x010021b0   0x00000024   Code   RO         4149    .text               mc_w.l(memseta.o)
-    0x010021d4   0x010021d4   0x0000001a   Code   RO         4151    .text               mc_w.l(memcmp.o)
-    0x010021ee   0x010021ee   0x0000000a   Code   RO         4432    .text               mf_w.l(ffltui.o)
-    0x010021f8   0x010021f8   0x00000000   Code   RO         4516    .text               mc_w.l(iusefp.o)
+    0x01002168   0x01002168   0x00000024   Code   RO         3840    .text               mc_w.l(rand.o)
+    0x0100218c   0x0100218c   0x00000024   Code   RO         3843    .text               mc_w.l(memcpya.o)
+    0x010021b0   0x010021b0   0x00000024   Code   RO         3845    .text               mc_w.l(memseta.o)
+    0x010021d4   0x010021d4   0x0000001a   Code   RO         3847    .text               mc_w.l(memcmp.o)
+    0x010021ee   0x010021ee   0x0000000a   Code   RO         4128    .text               mf_w.l(ffltui.o)
+    0x010021f8   0x010021f8   0x00000000   Code   RO         4212    .text               mc_w.l(iusefp.o)
     0x010021f8   0x010021f8   0x00000004   Code   RO          972    i.InitLED           led.o
-    0x010021fc   0x010021fc   0x00000004   Code   RO         1786    i.SetADCChannel     adc.o
+    0x010021fc   0x010021fc   0x00000004   Code   RO         1498    i.SetADCChannel     adc.o
     0x01002200   0x01002200   0x00000040   Data   RO          335    .ARM.__AT_0x01002200  platform_gr55xx.o
-    0x01002240   0x01002240   0x000000b0   Code   RO         4416    .text               mf_w.l(fadd.o)
-    0x010022f0   0x010022f0   0x0000007c   Code   RO         4420    .text               mf_w.l(fdiv.o)
-    0x0100236c   0x0100236c   0x0000014e   Code   RO         4422    .text               mf_w.l(dadd.o)
-    0x010024ba   0x010024ba   0x000000e4   Code   RO         4424    .text               mf_w.l(dmul.o)
-    0x0100259e   0x0100259e   0x000000de   Code   RO         4426    .text               mf_w.l(ddiv.o)
-    0x0100267c   0x0100267c   0x00000022   Code   RO         4434    .text               mf_w.l(dflti.o)
-    0x0100269e   0x0100269e   0x0000001a   Code   RO         4436    .text               mf_w.l(dfltui.o)
-    0x010026b8   0x010026b8   0x00000018   Code   RO         4438    .text               mf_w.l(dfltul.o)
-    0x010026d0   0x010026d0   0x00000028   Code   RO         4440    .text               mf_w.l(ffixui.o)
-    0x010026f8   0x010026f8   0x0000003e   Code   RO         4442    .text               mf_w.l(dfixi.o)
-    0x01002736   0x01002736   0x00000032   Code   RO         4444    .text               mf_w.l(dfixui.o)
-    0x01002768   0x01002768   0x00000030   Code   RO         4446    .text               mf_w.l(dfixul.o)
-    0x01002798   0x01002798   0x00000030   Code   RO         4450    .text               mf_w.l(cdcmple.o)
-    0x010027c8   0x010027c8   0x00000030   Code   RO         4452    .text               mf_w.l(cdrcmple.o)
-    0x010027f8   0x010027f8   0x0000002c   Code   RO         4501    .text               mc_w.l(uidiv.o)
-    0x01002824   0x01002824   0x0000001e   Code   RO         4503    .text               mc_w.l(llshl.o)
-    0x01002842   0x01002842   0x00000020   Code   RO         4505    .text               mc_w.l(llushr.o)
-    0x01002862   0x01002862   0x00000024   Code   RO         4507    .text               mc_w.l(llsshr.o)
-    0x01002886   0x01002886   0x0000006e   Code   RO         4517    .text               mf_w.l(fepilogue.o)
-    0x010028f4   0x010028f4   0x000000ba   Code   RO         4519    .text               mf_w.l(depilogue.o)
+    0x01002240   0x01002240   0x000000b0   Code   RO         4112    .text               mf_w.l(fadd.o)
+    0x010022f0   0x010022f0   0x0000007c   Code   RO         4116    .text               mf_w.l(fdiv.o)
+    0x0100236c   0x0100236c   0x0000014e   Code   RO         4118    .text               mf_w.l(dadd.o)
+    0x010024ba   0x010024ba   0x000000e4   Code   RO         4120    .text               mf_w.l(dmul.o)
+    0x0100259e   0x0100259e   0x000000de   Code   RO         4122    .text               mf_w.l(ddiv.o)
+    0x0100267c   0x0100267c   0x00000022   Code   RO         4130    .text               mf_w.l(dflti.o)
+    0x0100269e   0x0100269e   0x0000001a   Code   RO         4132    .text               mf_w.l(dfltui.o)
+    0x010026b8   0x010026b8   0x00000018   Code   RO         4134    .text               mf_w.l(dfltul.o)
+    0x010026d0   0x010026d0   0x00000028   Code   RO         4136    .text               mf_w.l(ffixui.o)
+    0x010026f8   0x010026f8   0x0000003e   Code   RO         4138    .text               mf_w.l(dfixi.o)
+    0x01002736   0x01002736   0x00000032   Code   RO         4140    .text               mf_w.l(dfixui.o)
+    0x01002768   0x01002768   0x00000030   Code   RO         4142    .text               mf_w.l(dfixul.o)
+    0x01002798   0x01002798   0x00000030   Code   RO         4146    .text               mf_w.l(cdcmple.o)
+    0x010027c8   0x010027c8   0x00000030   Code   RO         4148    .text               mf_w.l(cdrcmple.o)
+    0x010027f8   0x010027f8   0x0000002c   Code   RO         4197    .text               mc_w.l(uidiv.o)
+    0x01002824   0x01002824   0x0000001e   Code   RO         4199    .text               mc_w.l(llshl.o)
+    0x01002842   0x01002842   0x00000020   Code   RO         4201    .text               mc_w.l(llushr.o)
+    0x01002862   0x01002862   0x00000024   Code   RO         4203    .text               mc_w.l(llsshr.o)
+    0x01002886   0x01002886   0x0000006e   Code   RO         4213    .text               mf_w.l(fepilogue.o)
+    0x010028f4   0x010028f4   0x000000ba   Code   RO         4215    .text               mf_w.l(depilogue.o)
     0x010029ae   0x010029ae   0x00000002   PAD
-    0x010029b0   0x010029b0   0x00000088   Code   RO         4523    .text               mf_w.l(drnd.o)
-    0x01002a38   0x01002a38   0x00000024   Code   RO         4525    .text               mc_w.l(init.o)
-    0x01002a5c   0x01002a5c   0x00000056   Code   RO         4537    .text               mc_w.l(__dczerorl2.o)
+    0x010029b0   0x010029b0   0x00000088   Code   RO         4219    .text               mf_w.l(drnd.o)
+    0x01002a38   0x01002a38   0x00000024   Code   RO         4221    .text               mc_w.l(init.o)
+    0x01002a5c   0x01002a5c   0x00000056   Code   RO         4233    .text               mc_w.l(__dczerorl2.o)
     0x01002ab2   0x01002ab2   0x0000000e   Code   RO          324    i.$Sub$$main        platform_gr55xx.o
-    0x01002ac0   0x01002ac0   0x00000030   Code   RO         1782    i.ADCDataGet        adc.o
-    0x01002af0   0x01002af0   0x00000074   Code   RO         1977    i.Adapt60HZ_notchFilter  funtool.o
-    0x01002b64   0x01002b64   0x000000e8   Code   RO         3640    i.BLESLP_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x01002c4c   0x01002c4c   0x00000030   Code   RO         3641    i.BLE_IRQ_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x01002c7c   0x01002c7c   0x00000018   Code   RO         3642    i.BLE_SDK_IRQ_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x01002c94   0x01002c94   0x0000000c   Code   RO         1602    i.Clr1SecFlag       timer.o
-    0x01002ca0   0x01002ca0   0x0000000c   Code   RO         1603    i.Clr2msFlag        timer.o
-    0x01002cac   0x01002cac   0x00000054   Code   RO         1428    i.ConfigAD8233GPIO  ad8233.o
-    0x01002d00   0x01002d00   0x00000040   Code   RO         1783    i.ConfigADC         adc.o
+    0x01002ac0   0x01002ac0   0x00000030   Code   RO         1494    i.ADCDataGet        adc.o
+    0x01002af0   0x01002af0   0x00000074   Code   RO         1673    i.Adapt60HZ_notchFilter  funtool.o
+    0x01002b64   0x01002b64   0x000000e8   Code   RO         3336    i.BLESLP_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x01002c4c   0x01002c4c   0x00000030   Code   RO         3337    i.BLE_IRQ_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x01002c7c   0x01002c7c   0x00000018   Code   RO         3338    i.BLE_SDK_IRQ_Handler_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x01002c94   0x01002c94   0x0000000c   Code   RO         1317    i.Clr1SecFlag       timer.o
+    0x01002ca0   0x01002ca0   0x0000000c   Code   RO         1318    i.Clr2msFlag        timer.o
+    0x01002cac   0x01002cac   0x00000054   Code   RO         1158    i.ConfigAD8233GPIO  ad8233.o
+    0x01002d00   0x01002d00   0x00000040   Code   RO         1495    i.ConfigADC         adc.o
     0x01002d40   0x01002d40   0x00000034   Code   RO          971    i.ConfigLEDGPIO     led.o
-    0x01002d74   0x01002d74   0x00000030   Code   RO         1604    i.ConfigTimer0      timer.o
-    0x01002da4   0x01002da4   0x00000030   Code   RO         1605    i.ConfigTimer1      timer.o
-    0x01002dd4   0x01002dd4   0x00000070   Code   RO         1718    i.ConfigUART        uart0.o
+    0x01002d74   0x01002d74   0x00000030   Code   RO         1319    i.ConfigTimer0      timer.o
+    0x01002da4   0x01002da4   0x00000030   Code   RO         1320    i.ConfigTimer1      timer.o
+    0x01002dd4   0x01002dd4   0x00000070   Code   RO         1430    i.ConfigUART        uart0.o
     0x01002e44   0x01002e44   0x0000000c   Code   RO          924    i.DMA_IRQHandler    gr55xx_it.o
-    0x01002e50   0x01002e50   0x0000016c   Code   RO         1550    i.DataAccess        jumperdata.o
-    0x01002fbc   0x01002fbc   0x00000042   Code   RO         1859    i.DeU16Queue        u16queue.o
+    0x01002e50   0x01002e50   0x0000016c   Code   RO         1268    i.DataAccess        jumperdata.o
+    0x01002fbc   0x01002fbc   0x00000042   Code   RO         1564    i.DeU16Queue        u16queue.o
     0x01002ffe   0x01002ffe   0x00000002   PAD
-    0x01003000   0x01003000   0x0000002c   Code   RO         1551    i.ECGParaSend       jumperdata.o
-    0x0100302c   0x0100302c   0x00000040   Code   RO         1903    i.ECG_Init          ecgalg.o
-    0x0100306c   0x0100306c   0x00000048   Code   RO         1904    i.ECG_Test          ecgalg.o
-    0x010030b4   0x010030b4   0x00000042   Code   RO         1672    i.EnQueue           queue.o
-    0x010030f6   0x010030f6   0x00000046   Code   RO         1860    i.EnU16Queue        u16queue.o
-    0x0100313c   0x0100313c   0x00000028   Code   RO         1905    i.Filter_RT_Comb    ecgalg.o
-    0x01003164   0x01003164   0x00000028   Code   RO         1982    i.FunTool_FindMax   funtool.o
-    0x0100318c   0x0100318c   0x00000028   Code   RO         1984    i.FunTool_FindMin   funtool.o
-    0x010031b4   0x010031b4   0x0000000c   Code   RO         1606    i.Get1SecFlag       timer.o
-    0x010031c0   0x010031c0   0x0000000c   Code   RO         1607    i.Get2msFlag        timer.o
-    0x010031cc   0x010031cc   0x00000018   Code   RO         1429    i.InitAD8233        ad8233.o
-    0x010031e4   0x010031e4   0x0000001c   Code   RO         1784    i.InitADC           adc.o
+    0x01003000   0x01003000   0x0000002c   Code   RO         1269    i.ECGParaSend       jumperdata.o
+    0x0100302c   0x0100302c   0x00000040   Code   RO         1605    i.ECG_Init          ecgalg.o
+    0x0100306c   0x0100306c   0x00000048   Code   RO         1606    i.ECG_Test          ecgalg.o
+    0x010030b4   0x010030b4   0x00000042   Code   RO         1384    i.EnQueue           queue.o
+    0x010030f6   0x010030f6   0x00000046   Code   RO         1565    i.EnU16Queue        u16queue.o
+    0x0100313c   0x0100313c   0x00000028   Code   RO         1607    i.Filter_RT_Comb    ecgalg.o
+    0x01003164   0x01003164   0x00000028   Code   RO         1678    i.FunTool_FindMax   funtool.o
+    0x0100318c   0x0100318c   0x00000028   Code   RO         1680    i.FunTool_FindMin   funtool.o
+    0x010031b4   0x010031b4   0x0000000c   Code   RO         1321    i.Get1SecFlag       timer.o
+    0x010031c0   0x010031c0   0x0000000c   Code   RO         1322    i.Get2msFlag        timer.o
+    0x010031cc   0x010031cc   0x00000018   Code   RO         1159    i.InitAD8233        ad8233.o
+    0x010031e4   0x010031e4   0x0000001c   Code   RO         1496    i.InitADC           adc.o
     0x01003200   0x01003200   0x0000001a   Code   RO         1019    i.InitHardware      main.o
     0x0100321a   0x0100321a   0x00000002   PAD
-    0x0100321c   0x0100321c   0x00000070   Code   RO         1552    i.InitJumperData    jumperdata.o
-    0x0100328c   0x0100328c   0x00000020   Code   RO         1673    i.InitQueue         queue.o
+    0x0100321c   0x0100321c   0x00000070   Code   RO         1270    i.InitJumperData    jumperdata.o
+    0x0100328c   0x0100328c   0x00000020   Code   RO         1385    i.InitQueue         queue.o
     0x010032ac   0x010032ac   0x0000001c   Code   RO         1020    i.InitSoftware      main.o
-    0x010032c8   0x010032c8   0x00000016   Code   RO         1608    i.InitTimer         timer.o
-    0x010032de   0x010032de   0x00000022   Code   RO         1861    i.InitU16Queue      u16queue.o
-    0x01003300   0x01003300   0x00000020   Code   RO         1719    i.InitUART0         uart0.o
+    0x010032c8   0x010032c8   0x00000016   Code   RO         1323    i.InitTimer         timer.o
+    0x010032de   0x010032de   0x00000022   Code   RO         1566    i.InitU16Queue      u16queue.o
+    0x01003300   0x01003300   0x00000020   Code   RO         1431    i.InitUART0         uart0.o
     0x01003320   0x01003320   0x00000024   Code   RO          973    i.LEDFlicker        led.o
-    0x01003344   0x01003344   0x00000038   Code   RO         1430    i.LeadDetect        ad8233.o
+    0x01003344   0x01003344   0x00000038   Code   RO         1160    i.LeadDetect        ad8233.o
     0x0100337c   0x0100337c   0x00000088   Code   RO         1021    i.Proc1SecTask      main.o
     0x01003404   0x01003404   0x00000088   Code   RO         1022    i.Proc2msTask       main.o
-    0x0100348c   0x0100348c   0x000000c8   Code   RO         1906    i.QRS_CacuTHD       ecgalg.o
-    0x01003554   0x01003554   0x00000040   Code   RO         1907    i.QRS_DrawWaveProc  ecgalg.o
-    0x01003594   0x01003594   0x00000128   Code   RO         1908    i.QRS_PrepSig       ecgalg.o
-    0x010036bc   0x010036bc   0x00000740   Code   RO         1909    i.QRS_findPeaks     ecgalg.o
-    0x01003dfc   0x01003dfc   0x00000084   Code   RO         1910    i.QRS_findQS        ecgalg.o
-    0x01003e80   0x01003e80   0x00000014   Code   RO         1785    i.ReadADCBuf        adc.o
-    0x01003e94   0x01003e94   0x0000002c   Code   RO         1986    i.SmoothMean_Int    funtool.o
-    0x01003ec0   0x01003ec0   0x0000001e   Code   RO         1988    i.Smooth_Int        funtool.o
-    0x01003ede   0x01003ede   0x00000018   Code   RO         1989    i.Smooth_Int1       funtool.o
+    0x0100348c   0x0100348c   0x000000c8   Code   RO         1608    i.QRS_CacuTHD       ecgalg.o
+    0x01003554   0x01003554   0x00000040   Code   RO         1609    i.QRS_DrawWaveProc  ecgalg.o
+    0x01003594   0x01003594   0x00000128   Code   RO         1610    i.QRS_PrepSig       ecgalg.o
+    0x010036bc   0x010036bc   0x00000740   Code   RO         1611    i.QRS_findPeaks     ecgalg.o
+    0x01003dfc   0x01003dfc   0x00000084   Code   RO         1612    i.QRS_findQS        ecgalg.o
+    0x01003e80   0x01003e80   0x00000014   Code   RO         1497    i.ReadADCBuf        adc.o
+    0x01003e94   0x01003e94   0x0000002c   Code   RO         1682    i.SmoothMean_Int    funtool.o
+    0x01003ec0   0x01003ec0   0x0000001e   Code   RO         1684    i.Smooth_Int        funtool.o
+    0x01003ede   0x01003ede   0x00000018   Code   RO         1685    i.Smooth_Int1       funtool.o
     0x01003ef6   0x01003ef6   0x00000002   Code   RO          925    i.SysTick_Handler   gr55xx_it.o
     0x01003ef8   0x01003ef8   0x00000010   Code   RO          450    i.SystemCoreGetClock  system_gr55xx.o
     0x01003f08   0x01003f08   0x00000064   Code   RO          451    i.SystemCoreSetClock  system_gr55xx.o
@@ -6013,201 +6013,201 @@ Memory Map of the image
     0x01003f8c   0x01003f8c   0x00000024   Code   RO          453    i.SystemInit        system_gr55xx.o
     0x01003fb0   0x01003fb0   0x0000000c   Code   RO          926    i.TIMER0_IRQHandler  gr55xx_it.o
     0x01003fbc   0x01003fbc   0x0000000c   Code   RO          927    i.TIMER1_IRQHandler  gr55xx_it.o
-    0x01003fc8   0x01003fc8   0x0000000c   Code   RO         1721    i.UART0_IRQHandler  uart0.o
-    0x01003fd4   0x01003fd4   0x00000044   Code   RO         1553    i.WaveDataAdd       jumperdata.o
-    0x01004018   0x01004018   0x00000020   Code   RO         4388    i.__0printf         mc_w.l(printfa.o)
-    0x01004038   0x01004038   0x00000030   Code   RO         4389    i.__0snprintf       mc_w.l(printfa.o)
-    0x01004068   0x01004068   0x00000028   Code   RO         4390    i.__0sprintf        mc_w.l(printfa.o)
-    0x01004090   0x01004090   0x0000002c   Code   RO         4393    i.__0vsnprintf      mc_w.l(printfa.o)
+    0x01003fc8   0x01003fc8   0x0000000c   Code   RO         1433    i.UART0_IRQHandler  uart0.o
+    0x01003fd4   0x01003fd4   0x00000044   Code   RO         1271    i.WaveDataAdd       jumperdata.o
+    0x01004018   0x01004018   0x00000020   Code   RO         4084    i.__0printf         mc_w.l(printfa.o)
+    0x01004038   0x01004038   0x00000030   Code   RO         4085    i.__0snprintf       mc_w.l(printfa.o)
+    0x01004068   0x01004068   0x00000028   Code   RO         4086    i.__0sprintf        mc_w.l(printfa.o)
+    0x01004090   0x01004090   0x0000002c   Code   RO         4089    i.__0vsnprintf      mc_w.l(printfa.o)
     0x010040bc   0x010040bc   0x0000001a   Code   RO          875    i.__NVIC_ClearPendingIRQ  gr55xx_hal_msp.o
     0x010040d6   0x010040d6   0x00000022   Code   RO          876    i.__NVIC_DisableIRQ  gr55xx_hal_msp.o
     0x010040f8   0x010040f8   0x0000001a   Code   RO          877    i.__NVIC_EnableIRQ  gr55xx_hal_msp.o
-    0x01004112   0x01004112   0x0000001c   Code   RO         2363    i.__NVIC_GetPriority  app_log.o
-    0x0100412e   0x0100412e   0x0000000e   Code   RO         4531    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x0100413c   0x0100413c   0x00000002   Code   RO         4532    i.__scatterload_null  mc_w.l(handlers.o)
-    0x0100413e   0x0100413e   0x0000000e   Code   RO         4533    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x0100414c   0x0100414c   0x00000184   Code   RO         4395    i._fp_digits        mc_w.l(printfa.o)
-    0x010042d0   0x010042d0   0x000006dc   Code   RO         4396    i._printf_core      mc_w.l(printfa.o)
-    0x010049ac   0x010049ac   0x00000024   Code   RO         4397    i._printf_post_padding  mc_w.l(printfa.o)
-    0x010049d0   0x010049d0   0x0000002e   Code   RO         4398    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x010049fe   0x010049fe   0x00000016   Code   RO         4399    i._snputc           mc_w.l(printfa.o)
-    0x01004a14   0x01004a14   0x0000000a   Code   RO         4400    i._sputc            mc_w.l(printfa.o)
+    0x01004112   0x01004112   0x0000001c   Code   RO         2059    i.__NVIC_GetPriority  app_log.o
+    0x0100412e   0x0100412e   0x0000000e   Code   RO         4227    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0100413c   0x0100413c   0x00000002   Code   RO         4228    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0100413e   0x0100413e   0x0000000e   Code   RO         4229    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0100414c   0x0100414c   0x00000184   Code   RO         4091    i._fp_digits        mc_w.l(printfa.o)
+    0x010042d0   0x010042d0   0x000006dc   Code   RO         4092    i._printf_core      mc_w.l(printfa.o)
+    0x010049ac   0x010049ac   0x00000024   Code   RO         4093    i._printf_post_padding  mc_w.l(printfa.o)
+    0x010049d0   0x010049d0   0x0000002e   Code   RO         4094    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x010049fe   0x010049fe   0x00000016   Code   RO         4095    i._snputc           mc_w.l(printfa.o)
+    0x01004a14   0x01004a14   0x0000000a   Code   RO         4096    i._sputc            mc_w.l(printfa.o)
     0x01004a1e   0x01004a1e   0x00000002   PAD
-    0x01004a20   0x01004a20   0x000001a0   Code   RO         3890    i.adc_conversion    ble_sdk.lib(platform_adc.o)
-    0x01004bc0   0x01004bc0   0x00000058   Code   RO         2822    i.adc_dma_cplt      ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x01004c18   0x01004c18   0x000000cc   Code   RO         3830    i.add_ltk_item      ble_sdk.lib(ble_bondmgr_patch.o)
-    0x01004ce4   0x01004ce4   0x0000006c   Code   RO         3210    i.aon_voltage_set   ble_sdk.lib(platform_sdk.o)
-    0x01004d50   0x01004d50   0x00000002   Code   RO         1473    i.app_connected_handler  user_app.o
+    0x01004a20   0x01004a20   0x000001a0   Code   RO         3586    i.adc_conversion    ble_sdk.lib(platform_adc.o)
+    0x01004bc0   0x01004bc0   0x00000058   Code   RO         2518    i.adc_dma_cplt      ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x01004c18   0x01004c18   0x000000cc   Code   RO         3526    i.add_ltk_item      ble_sdk.lib(ble_bondmgr_patch.o)
+    0x01004ce4   0x01004ce4   0x0000006c   Code   RO         2906    i.aon_voltage_set   ble_sdk.lib(platform_sdk.o)
+    0x01004d50   0x01004d50   0x00000002   Code   RO         1200    i.app_connected_handler  user_app.o
     0x01004d52   0x01004d52   0x00000002   PAD
-    0x01004d54   0x01004d54   0x00000034   Code   RO         1474    i.app_disconnected_handler  user_app.o
-    0x01004d88   0x01004d88   0x000000f0   Code   RO         2327    i.app_error_fault_handler  app_error.o
-    0x01004e78   0x01004e78   0x00000030   Code   RO         2260    i.app_gap_adv_start_cb  user_gap_callback.o
-    0x01004ea8   0x01004ea8   0x00000064   Code   RO         2261    i.app_gap_connect_cb  user_gap_callback.o
-    0x01004f0c   0x01004f0c   0x00000006   Code   RO         2262    i.app_gap_connection_update_req_cb  user_gap_callback.o
+    0x01004d54   0x01004d54   0x00000034   Code   RO         1201    i.app_disconnected_handler  user_app.o
+    0x01004d88   0x01004d88   0x000000f0   Code   RO         2023    i.app_error_fault_handler  app_error.o
+    0x01004e78   0x01004e78   0x00000030   Code   RO         1956    i.app_gap_adv_start_cb  user_gap_callback.o
+    0x01004ea8   0x01004ea8   0x00000064   Code   RO         1957    i.app_gap_connect_cb  user_gap_callback.o
+    0x01004f0c   0x01004f0c   0x00000006   Code   RO         1958    i.app_gap_connection_update_req_cb  user_gap_callback.o
     0x01004f12   0x01004f12   0x00000002   PAD
-    0x01004f14   0x01004f14   0x00000034   Code   RO         2263    i.app_gap_disconnect_cb  user_gap_callback.o
-    0x01004f48   0x01004f48   0x00000002   Code   RO         2301    i.app_gatt_mtu_exchange_cb  user_gatt_common_callback.o
+    0x01004f14   0x01004f14   0x00000034   Code   RO         1959    i.app_gap_disconnect_cb  user_gap_callback.o
+    0x01004f48   0x01004f48   0x00000002   Code   RO         1997    i.app_gatt_mtu_exchange_cb  user_gatt_common_callback.o
     0x01004f4a   0x01004f4a   0x00000002   PAD
-    0x01004f4c   0x01004f4c   0x00000018   Code   RO         2364    i.app_log_data_trans  app_log.o
-    0x01004f64   0x01004f64   0x00000010   Code   RO         2365    i.app_log_flush     app_log.o
-    0x01004f74   0x01004f74   0x00000018   Code   RO         2368    i.app_log_is_fmt_set  app_log.o
-    0x01004f8c   0x01004f8c   0x000001b0   Code   RO         2369    i.app_log_output    app_log.o
-    0x0100513c   0x0100513c   0x00000026   Code   RO         2371    i.app_log_strcpy    app_log.o
+    0x01004f4c   0x01004f4c   0x00000018   Code   RO         2060    i.app_log_data_trans  app_log.o
+    0x01004f64   0x01004f64   0x00000010   Code   RO         2061    i.app_log_flush     app_log.o
+    0x01004f74   0x01004f74   0x00000018   Code   RO         2064    i.app_log_is_fmt_set  app_log.o
+    0x01004f8c   0x01004f8c   0x000001b0   Code   RO         2065    i.app_log_output    app_log.o
+    0x0100513c   0x0100513c   0x00000026   Code   RO         2067    i.app_log_strcpy    app_log.o
     0x01005162   0x01005162   0x00000002   PAD
-    0x01005164   0x01005164   0x000000f8   Code   RO         3741    i.append_item       ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100525c   0x0100525c   0x00000066   Code   RO         3002    i.attm_update_max_len  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01005164   0x01005164   0x000000f8   Code   RO         3437    i.append_item       ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100525c   0x0100525c   0x00000066   Code   RO         2698    i.attm_update_max_len  ble_sdk.lib(ble_sdk_gapm_patch.o)
     0x010052c2   0x010052c2   0x00000002   PAD
-    0x010052c4   0x010052c4   0x000000e4   Code   RO         3459    i.atts_l2cc_pdu_recv_handler_patch  ble_sdk.lib(atts_patch.o)
-    0x010053a8   0x010053a8   0x00000014   Code   RO         3460    i.atts_pdu_handler_table_replace  ble_sdk.lib(atts_patch.o)
-    0x010053bc   0x010053bc   0x000001cc   Code   RO         3461    i.atts_read_mult_req_patch  ble_sdk.lib(atts_patch.o)
-    0x01005588   0x01005588   0x0000004c   Code   RO         3416    i.bb_watch_timer_cbk_patch  ble_sdk.lib(sch_prog_patch.o)
-    0x010055d4   0x010055d4   0x0000000e   Code   RO         3382    i.ble_adv_env_init  ble_sdk.lib(cold_patch.o)
+    0x010052c4   0x010052c4   0x000000e4   Code   RO         3155    i.atts_l2cc_pdu_recv_handler_patch  ble_sdk.lib(atts_patch.o)
+    0x010053a8   0x010053a8   0x00000014   Code   RO         3156    i.atts_pdu_handler_table_replace  ble_sdk.lib(atts_patch.o)
+    0x010053bc   0x010053bc   0x000001cc   Code   RO         3157    i.atts_read_mult_req_patch  ble_sdk.lib(atts_patch.o)
+    0x01005588   0x01005588   0x0000004c   Code   RO         3112    i.bb_watch_timer_cbk_patch  ble_sdk.lib(sch_prog_patch.o)
+    0x010055d4   0x010055d4   0x0000000e   Code   RO         3078    i.ble_adv_env_init  ble_sdk.lib(cold_patch.o)
     0x010055e2   0x010055e2   0x00000002   PAD
-    0x010055e4   0x010055e4   0x000000ac   Code   RO         3831    i.ble_bm_set_sec_info_patch  ble_sdk.lib(ble_bondmgr_patch.o)
-    0x01005690   0x01005690   0x0000002a   Code   RO         3383    i.ble_common_env_init  ble_sdk.lib(cold_patch.o)
-    0x010056ba   0x010056ba   0x00000004   Code   RO         3685    i.ble_communication_core_init  ble_sdk.lib(rf_gdx_patch.o)
-    0x010056be   0x010056be   0x0000002a   Code   RO         3384    i.ble_con_env_init  ble_sdk.lib(cold_patch.o)
-    0x010056e8   0x010056e8   0x00000024   Code   RO         3643    i.ble_core_init_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x0100570c   0x0100570c   0x00000018   Code   RO         3103    i.ble_gatt_mtu_exch_allow  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
-    0x01005724   0x01005724   0x0000001e   Code   RO         3121    i.ble_gattc_indicate_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
-    0x01005742   0x01005742   0x0000001c   Code   RO         3147    i.ble_gatts_noti_ind  ble_sdk.lib(ble_sdk_gattc_patch.o)
-    0x0100575e   0x0100575e   0x0000001e   Code   RO         3149    i.ble_gatts_read_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
-    0x0100577c   0x0100577c   0x0000001c   Code   RO         3150    i.ble_gatts_write_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
-    0x01005798   0x01005798   0x00000074   Code   RO         1475    i.ble_init_cmp_callback  user_app.o
-    0x0100580c   0x0100580c   0x00000020   Code   RO         3644    i.ble_is_prevent_sleep_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x0100582c   0x0100582c   0x0000000c   Code   RO         3742    i.ble_nvds_del      ble_sdk.lib(sdk_nvds_patch.o)
-    0x01005838   0x01005838   0x0000000c   Code   RO         3745    i.ble_nvds_put      ble_sdk.lib(sdk_nvds_patch.o)
-    0x01005844   0x01005844   0x00000024   Code   RO         3746    i.ble_nvds_set_entry  ble_sdk.lib(sdk_nvds_patch.o)
-    0x01005868   0x01005868   0x00000016   Code   RO         3385    i.ble_scan_env_init  ble_sdk.lib(cold_patch.o)
+    0x010055e4   0x010055e4   0x000000ac   Code   RO         3527    i.ble_bm_set_sec_info_patch  ble_sdk.lib(ble_bondmgr_patch.o)
+    0x01005690   0x01005690   0x0000002a   Code   RO         3079    i.ble_common_env_init  ble_sdk.lib(cold_patch.o)
+    0x010056ba   0x010056ba   0x00000004   Code   RO         3381    i.ble_communication_core_init  ble_sdk.lib(rf_gdx_patch.o)
+    0x010056be   0x010056be   0x0000002a   Code   RO         3080    i.ble_con_env_init  ble_sdk.lib(cold_patch.o)
+    0x010056e8   0x010056e8   0x00000024   Code   RO         3339    i.ble_core_init_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x0100570c   0x0100570c   0x00000018   Code   RO         2799    i.ble_gatt_mtu_exch_allow  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
+    0x01005724   0x01005724   0x0000001e   Code   RO         2817    i.ble_gattc_indicate_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
+    0x01005742   0x01005742   0x0000001c   Code   RO         2843    i.ble_gatts_noti_ind  ble_sdk.lib(ble_sdk_gattc_patch.o)
+    0x0100575e   0x0100575e   0x0000001e   Code   RO         2845    i.ble_gatts_read_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
+    0x0100577c   0x0100577c   0x0000001c   Code   RO         2846    i.ble_gatts_write_cfm  ble_sdk.lib(ble_sdk_gattc_patch.o)
+    0x01005798   0x01005798   0x00000074   Code   RO         1202    i.ble_init_cmp_callback  user_app.o
+    0x0100580c   0x0100580c   0x00000020   Code   RO         3340    i.ble_is_prevent_sleep_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x0100582c   0x0100582c   0x0000000c   Code   RO         3438    i.ble_nvds_del      ble_sdk.lib(sdk_nvds_patch.o)
+    0x01005838   0x01005838   0x0000000c   Code   RO         3441    i.ble_nvds_put      ble_sdk.lib(sdk_nvds_patch.o)
+    0x01005844   0x01005844   0x00000024   Code   RO         3442    i.ble_nvds_set_entry  ble_sdk.lib(sdk_nvds_patch.o)
+    0x01005868   0x01005868   0x00000016   Code   RO         3081    i.ble_scan_env_init  ble_sdk.lib(cold_patch.o)
     0x0100587e   0x0100587e   0x00000002   PAD
     0x01005880   0x01005880   0x00000034   Code   RO          329    i.ble_sdk_env_init  platform_gr55xx.o
-    0x010058b4   0x010058b4   0x00000020   Code   RO         3011    i.ble_sdk_gapm_replace  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x010058d4   0x010058d4   0x00000048   Code   RO         3104    i.ble_sdk_gatt_mtu_changed_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
-    0x0100591c   0x0100591c   0x00000068   Code   RO         3105    i.ble_sdk_gattc_event_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
-    0x01005984   0x01005984   0x00000070   Code   RO         3106    i.ble_sdk_gatts_svc_changed_cfg_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
-    0x010059f4   0x010059f4   0x00000016   Code   RO         4051    i.ble_sdk_init_patch  ble_sdk.lib(ble_sdk_patch.o)
+    0x010058b4   0x010058b4   0x00000020   Code   RO         2707    i.ble_sdk_gapm_replace  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x010058d4   0x010058d4   0x00000048   Code   RO         2800    i.ble_sdk_gatt_mtu_changed_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
+    0x0100591c   0x0100591c   0x00000068   Code   RO         2801    i.ble_sdk_gattc_event_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
+    0x01005984   0x01005984   0x00000070   Code   RO         2802    i.ble_sdk_gatts_svc_changed_cfg_ind_handler_patch  ble_sdk.lib(ble_sdk_gatt_task_patch.o)
+    0x010059f4   0x010059f4   0x00000016   Code   RO         3747    i.ble_sdk_init_patch  ble_sdk.lib(ble_sdk_patch.o)
     0x01005a0a   0x01005a0a   0x00000002   PAD
-    0x01005a0c   0x01005a0c   0x00000010   Code   RO         4052    i.ble_sdk_replace   ble_sdk.lib(ble_sdk_patch.o)
-    0x01005a1c   0x01005a1c   0x00000060   Code   RO         2912    i.ble_sdk_rwip_init  ble_sdk.lib(system_sdk_patch.o)
-    0x01005a7c   0x01005a7c   0x00000078   Code   RO         3645    i.ble_sleep_successfully_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x01005af4   0x01005af4   0x00000058   Code   RO         3646    i.ble_sleep_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
-    0x01005b4c   0x01005b4c   0x00000104   Code   RO         2913    i.ble_stack_init    ble_sdk.lib(system_sdk_patch.o)
-    0x01005c50   0x01005c50   0x00000014   Code   RO         3216    i.ble_wakeup_osc_time_get  ble_sdk.lib(platform_sdk.o)
-    0x01005c64   0x01005c64   0x00000014   Code   RO         3217    i.ble_wakeup_osc_time_set  ble_sdk.lib(platform_sdk.o)
-    0x01005c78   0x01005c78   0x0000007c   Code   RO         3218    i.clk_period_1V_set  ble_sdk.lib(platform_sdk.o)
-    0x01005cf4   0x01005cf4   0x0000001a   Code   RO         3386    i.cold_patch_apply  ble_sdk.lib(cold_patch.o)
+    0x01005a0c   0x01005a0c   0x00000010   Code   RO         3748    i.ble_sdk_replace   ble_sdk.lib(ble_sdk_patch.o)
+    0x01005a1c   0x01005a1c   0x00000060   Code   RO         2608    i.ble_sdk_rwip_init  ble_sdk.lib(system_sdk_patch.o)
+    0x01005a7c   0x01005a7c   0x00000078   Code   RO         3341    i.ble_sleep_successfully_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x01005af4   0x01005af4   0x00000058   Code   RO         3342    i.ble_sleep_without_stack_init  ble_sdk.lib(rwip_sleep_common.o)
+    0x01005b4c   0x01005b4c   0x00000104   Code   RO         2609    i.ble_stack_init    ble_sdk.lib(system_sdk_patch.o)
+    0x01005c50   0x01005c50   0x00000014   Code   RO         2912    i.ble_wakeup_osc_time_get  ble_sdk.lib(platform_sdk.o)
+    0x01005c64   0x01005c64   0x00000014   Code   RO         2913    i.ble_wakeup_osc_time_set  ble_sdk.lib(platform_sdk.o)
+    0x01005c78   0x01005c78   0x0000007c   Code   RO         2914    i.clk_period_1V_set  ble_sdk.lib(platform_sdk.o)
+    0x01005cf4   0x01005cf4   0x0000001a   Code   RO         3082    i.cold_patch_apply  ble_sdk.lib(cold_patch.o)
     0x01005d0e   0x01005d0e   0x00000002   PAD
-    0x01005d10   0x01005d10   0x0000023c   Code   RO         3747    i.compact_nvds      ble_sdk.lib(sdk_nvds_patch.o)
-    0x01005f4c   0x01005f4c   0x00000028   Code   RO         2652    i.compute_pref_period  ble_sdk.lib(llc_con_upd_patch.o)
-    0x01005f74   0x01005f74   0x0000001e   Code   RO         3748    i.cp_hdr_incr       ble_sdk.lib(sdk_nvds_patch.o)
+    0x01005d10   0x01005d10   0x0000023c   Code   RO         3443    i.compact_nvds      ble_sdk.lib(sdk_nvds_patch.o)
+    0x01005f4c   0x01005f4c   0x00000028   Code   RO         2348    i.compute_pref_period  ble_sdk.lib(llc_con_upd_patch.o)
+    0x01005f74   0x01005f74   0x0000001e   Code   RO         3444    i.cp_hdr_incr       ble_sdk.lib(sdk_nvds_patch.o)
     0x01005f92   0x01005f92   0x00000002   PAD
-    0x01005f94   0x01005f94   0x0000001c   Code   RO         3219    i.cpll_calibration  ble_sdk.lib(platform_sdk.o)
-    0x01005fb0   0x01005fb0   0x0000009c   Code   RO         3220    i.cpll_calibration_init  ble_sdk.lib(platform_sdk.o)
-    0x0100604c   0x0100604c   0x000000d0   Code   RO         3221    i.cpll_lock_check_recover  ble_sdk.lib(platform_sdk.o)
-    0x0100611c   0x0100611c   0x000001bc   Code   RO         3222    i.cpll_renew_vco_base  ble_sdk.lib(platform_sdk.o)
-    0x010062d8   0x010062d8   0x00000050   Code   RO         3223    i.current_shape_set  ble_sdk.lib(platform_sdk.o)
-    0x01006328   0x01006328   0x00000034   Code   RO         3749    i.dec_flash_read    ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100635c   0x0100635c   0x00000034   Code   RO         3750    i.dec_flash_write   ble_sdk.lib(sdk_nvds_patch.o)
-    0x01006390   0x01006390   0x00000010   Code   RO         4014    i.dfu_cmd_handler_replace  ble_sdk.lib(dfu_cmd_handler_patch.o)
-    0x010063a0   0x010063a0   0x00000062   Code   RO         1379    i.diff_calculate_offset  gr551x_adc_voltage_api.o
+    0x01005f94   0x01005f94   0x0000001c   Code   RO         2915    i.cpll_calibration  ble_sdk.lib(platform_sdk.o)
+    0x01005fb0   0x01005fb0   0x0000009c   Code   RO         2916    i.cpll_calibration_init  ble_sdk.lib(platform_sdk.o)
+    0x0100604c   0x0100604c   0x000000d0   Code   RO         2917    i.cpll_lock_check_recover  ble_sdk.lib(platform_sdk.o)
+    0x0100611c   0x0100611c   0x000001bc   Code   RO         2918    i.cpll_renew_vco_base  ble_sdk.lib(platform_sdk.o)
+    0x010062d8   0x010062d8   0x00000050   Code   RO         2919    i.current_shape_set  ble_sdk.lib(platform_sdk.o)
+    0x01006328   0x01006328   0x00000034   Code   RO         3445    i.dec_flash_read    ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100635c   0x0100635c   0x00000034   Code   RO         3446    i.dec_flash_write   ble_sdk.lib(sdk_nvds_patch.o)
+    0x01006390   0x01006390   0x00000010   Code   RO         3710    i.dfu_cmd_handler_replace  ble_sdk.lib(dfu_cmd_handler_patch.o)
+    0x010063a0   0x010063a0   0x00000062   Code   RO         1109    i.diff_calculate_offset  gr551x_adc_voltage_api.o
     0x01006402   0x01006402   0x00000002   PAD
     0x01006404   0x01006404   0x00000048   Code   RO          331    i.exflash_io_pull_config  platform_gr55xx.o
-    0x0100644c   0x0100644c   0x000000fc   Code   RO         3686    i.ext_hp_gain_calibration  ble_sdk.lib(rf_gdx_patch.o)
-    0x01006548   0x01006548   0x00000094   Code   RO         3751    i.find_item         ble_sdk.lib(sdk_nvds_patch.o)
-    0x010065dc   0x010065dc   0x00000030   Code   RO         2983    i.find_ltk_again    ble_sdk.lib(ble_sdk_sec_patch.o)
-    0x0100660c   0x0100660c   0x0000002c   Code   RO         2772    i.find_new_gapm_hci_evt_handler  ble_sdk.lib(gapm_task_patch.o)
-    0x01006638   0x01006638   0x0000002c   Code   RO         2576    i.find_new_hci_cmd_handler  ble_sdk.lib(llm_hci_patch.o)
-    0x01006664   0x01006664   0x0000002c   Code   RO         2785    i.find_new_msg_handler  ble_sdk.lib(ke_task_patch.o)
-    0x01006690   0x01006690   0x00000014   Code   RO         3400    i.finish_encryt_check_by_llcp  ble_sdk.lib(llc_encrypt_patch.o)
-    0x010066a4   0x010066a4   0x00000034   Code   RO         3872    i.fpb_enable        ble_sdk.lib(platform_patch.o)
-    0x010066d8   0x010066d8   0x00000068   Code   RO         2563    i.fpb_patch_enable  ble_sdk.lib(fpb_patch_init.o)
-    0x01006740   0x01006740   0x00000018   Code   RO         1723    i.fputc             uart0.o
-    0x01006758   0x01006758   0x00000058   Code   RO         3873    i.fun_replace_by_svc  ble_sdk.lib(platform_patch.o)
-    0x010067b0   0x010067b0   0x00000168   Code   RO         3012    i.gap_activity_stopped_ind_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x01006918   0x01006918   0x000001c4   Code   RO         3087    i.gap_cmp_evt_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
-    0x01006adc   0x01006adc   0x00000184   Code   RO         3088    i.gap_connection_req_ind_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
-    0x01006c60   0x01006c60   0x00000080   Code   RO         3013    i.gap_dev_bdaddr_ind_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x01006ce0   0x01006ce0   0x0000015c   Code   RO         3014    i.gap_device_config_params_init_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x01006e3c   0x01006e3c   0x000000ac   Code   RO         3089    i.gap_disconnect_ind_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
-    0x01006ee8   0x01006ee8   0x0000024c   Code   RO         3015    i.gap_init_fsm_next_func_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x01007134   0x01007134   0x00000110   Code   RO         1476    i.gap_params_init   user_app.o
-    0x01007244   0x01007244   0x00000080   Code   RO         2901    i.gapc_hci_handler_patch  ble_sdk.lib(gapc_hci_patch.o)
-    0x010072c4   0x010072c4   0x000000bc   Code   RO         2764    i.gapm_activity_create_cmd_handler_patch  ble_sdk.lib(gapm_actv_patch.o)
-    0x01007380   0x01007380   0x0000025c   Code   RO         3981    i.gapm_adv_check_param_func_patch  ble_sdk.lib(gapm_adv_patch.o)
-    0x010075dc   0x010075dc   0x00000010   Code   RO         3982    i.gapm_adv_replace  ble_sdk.lib(gapm_adv_patch.o)
-    0x010075ec   0x010075ec   0x00000114   Code   RO         3016    i.gapm_cmp_evt_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x01007700   0x01007700   0x00000074   Code   RO         2773    i.gapm_hci_handler_patch  ble_sdk.lib(gapm_task_patch.o)
-    0x01007774   0x01007774   0x0000012c   Code   RO         2744    i.gapm_init_connection_ind_func_patch  ble_sdk.lib(gapm_init_patch.o)
-    0x010078a0   0x010078a0   0x00000080   Code   RO         2745    i.gapm_init_create_patch  ble_sdk.lib(gapm_init_patch.o)
-    0x01007920   0x01007920   0x00000010   Code   RO         2746    i.gapm_init_replace  ble_sdk.lib(gapm_init_patch.o)
-    0x01007930   0x01007930   0x00000088   Code   RO         2747    i.gapm_init_start_patch  ble_sdk.lib(gapm_init_patch.o)
-    0x010079b8   0x010079b8   0x0000002c   Code   RO         2748    i.gapm_init_stop_patch  ble_sdk.lib(gapm_init_patch.o)
-    0x010079e4   0x010079e4   0x00000064   Code   RO         3813    i.gatt_find_item_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x01007a48   0x01007a48   0x00000100   Code   RO         3814    i.gatt_on_connection_func_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x01007b48   0x01007b48   0x000000ac   Code   RO         3815    i.gatt_on_disconnection_func_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x01007bf4   0x01007bf4   0x00000010   Code   RO         3816    i.gatt_on_disconnection_replace  ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x01007c04   0x01007c04   0x00000058   Code   RO         3817    i.gatt_remove_item_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x01007c5c   0x01007c5c   0x000000ec   Code   RO         4068    i.gattc_write_req_ind_handler_patch  ble_sdk.lib(ble_sdk_prf_patch.o)
-    0x01007d48   0x01007d48   0x0000000e   Code   RO         3752    i.gen_hdr_checksum  ble_sdk.lib(sdk_nvds_patch.o)
-    0x01007d56   0x01007d56   0x0000001e   Code   RO         3753    i.gen_value_checksum  ble_sdk.lib(sdk_nvds_patch.o)
-    0x01007d74   0x01007d74   0x00000028   Code   RO         3687    i.get_F_value_patch  ble_sdk.lib(rf_gdx_patch.o)
-    0x01007d9c   0x01007d9c   0x00000030   Code   RO         3526    i.get_conn_idx_by_id  ble_sdk.lib(l2cm_patch.o)
-    0x01007dcc   0x01007dcc   0x000000e0   Code   RO         3891    i.get_data_from_adc  ble_sdk.lib(platform_adc.o)
-    0x01007eac   0x01007eac   0x00000028   Code   RO         2734    i.get_id_by_conn_idx  ble_sdk.lib(l2cc_task_patch.o)
-    0x01007ed4   0x01007ed4   0x00000050   Code   RO         4018    i.get_info          ble_sdk.lib(dfu_cmd_handler_patch.o)
-    0x01007f24   0x01007f24   0x00000004   Code   RO         3874    i.get_ori_cmd       ble_sdk.lib(platform_patch.o)
-    0x01007f28   0x01007f28   0x00000006   Code   RO         3876    i.get_svc_cmd       ble_sdk.lib(platform_patch.o)
+    0x0100644c   0x0100644c   0x000000fc   Code   RO         3382    i.ext_hp_gain_calibration  ble_sdk.lib(rf_gdx_patch.o)
+    0x01006548   0x01006548   0x00000094   Code   RO         3447    i.find_item         ble_sdk.lib(sdk_nvds_patch.o)
+    0x010065dc   0x010065dc   0x00000030   Code   RO         2679    i.find_ltk_again    ble_sdk.lib(ble_sdk_sec_patch.o)
+    0x0100660c   0x0100660c   0x0000002c   Code   RO         2468    i.find_new_gapm_hci_evt_handler  ble_sdk.lib(gapm_task_patch.o)
+    0x01006638   0x01006638   0x0000002c   Code   RO         2272    i.find_new_hci_cmd_handler  ble_sdk.lib(llm_hci_patch.o)
+    0x01006664   0x01006664   0x0000002c   Code   RO         2481    i.find_new_msg_handler  ble_sdk.lib(ke_task_patch.o)
+    0x01006690   0x01006690   0x00000014   Code   RO         3096    i.finish_encryt_check_by_llcp  ble_sdk.lib(llc_encrypt_patch.o)
+    0x010066a4   0x010066a4   0x00000034   Code   RO         3568    i.fpb_enable        ble_sdk.lib(platform_patch.o)
+    0x010066d8   0x010066d8   0x00000068   Code   RO         2259    i.fpb_patch_enable  ble_sdk.lib(fpb_patch_init.o)
+    0x01006740   0x01006740   0x00000018   Code   RO         1435    i.fputc             uart0.o
+    0x01006758   0x01006758   0x00000058   Code   RO         3569    i.fun_replace_by_svc  ble_sdk.lib(platform_patch.o)
+    0x010067b0   0x010067b0   0x00000168   Code   RO         2708    i.gap_activity_stopped_ind_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01006918   0x01006918   0x000001c4   Code   RO         2783    i.gap_cmp_evt_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
+    0x01006adc   0x01006adc   0x00000184   Code   RO         2784    i.gap_connection_req_ind_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
+    0x01006c60   0x01006c60   0x00000080   Code   RO         2709    i.gap_dev_bdaddr_ind_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01006ce0   0x01006ce0   0x0000015c   Code   RO         2710    i.gap_device_config_params_init_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01006e3c   0x01006e3c   0x000000ac   Code   RO         2785    i.gap_disconnect_ind_handler_patch  ble_sdk.lib(ble_sdk_gapc_patch.o)
+    0x01006ee8   0x01006ee8   0x0000024c   Code   RO         2711    i.gap_init_fsm_next_func_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01007134   0x01007134   0x00000110   Code   RO         1203    i.gap_params_init   user_app.o
+    0x01007244   0x01007244   0x00000080   Code   RO         2597    i.gapc_hci_handler_patch  ble_sdk.lib(gapc_hci_patch.o)
+    0x010072c4   0x010072c4   0x000000bc   Code   RO         2460    i.gapm_activity_create_cmd_handler_patch  ble_sdk.lib(gapm_actv_patch.o)
+    0x01007380   0x01007380   0x0000025c   Code   RO         3677    i.gapm_adv_check_param_func_patch  ble_sdk.lib(gapm_adv_patch.o)
+    0x010075dc   0x010075dc   0x00000010   Code   RO         3678    i.gapm_adv_replace  ble_sdk.lib(gapm_adv_patch.o)
+    0x010075ec   0x010075ec   0x00000114   Code   RO         2712    i.gapm_cmp_evt_handler_patch  ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x01007700   0x01007700   0x00000074   Code   RO         2469    i.gapm_hci_handler_patch  ble_sdk.lib(gapm_task_patch.o)
+    0x01007774   0x01007774   0x0000012c   Code   RO         2440    i.gapm_init_connection_ind_func_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x010078a0   0x010078a0   0x00000080   Code   RO         2441    i.gapm_init_create_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x01007920   0x01007920   0x00000010   Code   RO         2442    i.gapm_init_replace  ble_sdk.lib(gapm_init_patch.o)
+    0x01007930   0x01007930   0x00000088   Code   RO         2443    i.gapm_init_start_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x010079b8   0x010079b8   0x0000002c   Code   RO         2444    i.gapm_init_stop_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x010079e4   0x010079e4   0x00000064   Code   RO         3509    i.gatt_find_item_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x01007a48   0x01007a48   0x00000100   Code   RO         3510    i.gatt_on_connection_func_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x01007b48   0x01007b48   0x000000ac   Code   RO         3511    i.gatt_on_disconnection_func_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x01007bf4   0x01007bf4   0x00000010   Code   RO         3512    i.gatt_on_disconnection_replace  ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x01007c04   0x01007c04   0x00000058   Code   RO         3513    i.gatt_remove_item_patch  ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x01007c5c   0x01007c5c   0x000000ec   Code   RO         3764    i.gattc_write_req_ind_handler_patch  ble_sdk.lib(ble_sdk_prf_patch.o)
+    0x01007d48   0x01007d48   0x0000000e   Code   RO         3448    i.gen_hdr_checksum  ble_sdk.lib(sdk_nvds_patch.o)
+    0x01007d56   0x01007d56   0x0000001e   Code   RO         3449    i.gen_value_checksum  ble_sdk.lib(sdk_nvds_patch.o)
+    0x01007d74   0x01007d74   0x00000028   Code   RO         3383    i.get_F_value_patch  ble_sdk.lib(rf_gdx_patch.o)
+    0x01007d9c   0x01007d9c   0x00000030   Code   RO         3222    i.get_conn_idx_by_id  ble_sdk.lib(l2cm_patch.o)
+    0x01007dcc   0x01007dcc   0x000000e0   Code   RO         3587    i.get_data_from_adc  ble_sdk.lib(platform_adc.o)
+    0x01007eac   0x01007eac   0x00000028   Code   RO         2430    i.get_id_by_conn_idx  ble_sdk.lib(l2cc_task_patch.o)
+    0x01007ed4   0x01007ed4   0x00000050   Code   RO         3714    i.get_info          ble_sdk.lib(dfu_cmd_handler_patch.o)
+    0x01007f24   0x01007f24   0x00000004   Code   RO         3570    i.get_ori_cmd       ble_sdk.lib(platform_patch.o)
+    0x01007f28   0x01007f28   0x00000006   Code   RO         3572    i.get_svc_cmd       ble_sdk.lib(platform_patch.o)
     0x01007f2e   0x01007f2e   0x00000002   PAD
-    0x01007f30   0x01007f30   0x00000108   Code   RO         3225    i.get_ton_value_for_1p5uH  ble_sdk.lib(platform_sdk.o)
-    0x01008038   0x01008038   0x00000158   Code   RO         3226    i.get_ton_value_for_2p2uH  ble_sdk.lib(platform_sdk.o)
-    0x01008190   0x01008190   0x0000007c   Code   RO         2116    i.gus_cccd_set_cb   gus.o
-    0x0100820c   0x0100820c   0x00000074   Code   RO         2117    i.gus_init          gus.o
-    0x01008280   0x01008280   0x00000028   Code   RO         2118    i.gus_ntf_ind_cb    gus.o
-    0x010082a8   0x010082a8   0x00000068   Code   RO         2119    i.gus_read_att_cb   gus.o
-    0x01008310   0x01008310   0x0000001c   Code   RO         2121    i.gus_service_init  gus.o
-    0x0100832c   0x0100832c   0x00000018   Code   RO         1477    i.gus_service_process_event  user_app.o
-    0x01008344   0x01008344   0x00000044   Code   RO         2122    i.gus_tx_data_send  gus.o
-    0x01008388   0x01008388   0x000000c4   Code   RO         2123    i.gus_write_att_cb  gus.o
-    0x0100844c   0x0100844c   0x00000002   Code   RO         1787    i.hal_adc_conv_cplt_callback  adc.o
+    0x01007f30   0x01007f30   0x00000108   Code   RO         2921    i.get_ton_value_for_1p5uH  ble_sdk.lib(platform_sdk.o)
+    0x01008038   0x01008038   0x00000158   Code   RO         2922    i.get_ton_value_for_2p2uH  ble_sdk.lib(platform_sdk.o)
+    0x01008190   0x01008190   0x0000007c   Code   RO         1812    i.gus_cccd_set_cb   gus.o
+    0x0100820c   0x0100820c   0x00000074   Code   RO         1813    i.gus_init          gus.o
+    0x01008280   0x01008280   0x00000028   Code   RO         1814    i.gus_ntf_ind_cb    gus.o
+    0x010082a8   0x010082a8   0x00000068   Code   RO         1815    i.gus_read_att_cb   gus.o
+    0x01008310   0x01008310   0x0000001c   Code   RO         1817    i.gus_service_init  gus.o
+    0x0100832c   0x0100832c   0x00000018   Code   RO         1204    i.gus_service_process_event  user_app.o
+    0x01008344   0x01008344   0x00000044   Code   RO         1818    i.gus_tx_data_send  gus.o
+    0x01008388   0x01008388   0x000000c4   Code   RO         1819    i.gus_write_att_cb  gus.o
+    0x0100844c   0x0100844c   0x00000002   Code   RO         1499    i.hal_adc_conv_cplt_callback  adc.o
     0x0100844e   0x0100844e   0x00000002   PAD
     0x01008450   0x01008450   0x00000024   Code   RO          826    i.hal_adc_deinit    gr55xx_hal_adc.o
-    0x01008474   0x01008474   0x0000005c   Code   RO         2823    i.hal_adc_deinit_ext  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x01008474   0x01008474   0x0000005c   Code   RO         2519    i.hal_adc_deinit_ext  ble_sdk.lib(gr55xx_hal_adc_patch.o)
     0x010084d0   0x010084d0   0x00000024   Code   RO          827    i.hal_adc_init      gr55xx_hal_adc.o
-    0x010084f4   0x010084f4   0x00000110   Code   RO         2824    i.hal_adc_init_ext  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x01008604   0x01008604   0x00000020   Code   RO         3227    i.hal_adc_is_using  ble_sdk.lib(platform_sdk.o)
-    0x01008624   0x01008624   0x00000014   Code   RO         1788    i.hal_adc_msp_deinit  adc.o
-    0x01008638   0x01008638   0x00000078   Code   RO         1789    i.hal_adc_msp_init  adc.o
-    0x010086b0   0x010086b0   0x0000007c   Code   RO         2825    i.hal_adc_mst_reset  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x0100872c   0x0100872c   0x0000010c   Code   RO         2826    i.hal_adc_poll_for_conversion  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x01008838   0x01008838   0x00000114   Code   RO         2828    i.hal_adc_start_dma  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x010084f4   0x010084f4   0x00000110   Code   RO         2520    i.hal_adc_init_ext  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x01008604   0x01008604   0x00000020   Code   RO         2923    i.hal_adc_is_using  ble_sdk.lib(platform_sdk.o)
+    0x01008624   0x01008624   0x00000014   Code   RO         1500    i.hal_adc_msp_deinit  adc.o
+    0x01008638   0x01008638   0x00000078   Code   RO         1501    i.hal_adc_msp_init  adc.o
+    0x010086b0   0x010086b0   0x0000007c   Code   RO         2521    i.hal_adc_mst_reset  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x0100872c   0x0100872c   0x0000010c   Code   RO         2522    i.hal_adc_poll_for_conversion  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x01008838   0x01008838   0x00000114   Code   RO         2524    i.hal_adc_start_dma  ble_sdk.lib(gr55xx_hal_adc_patch.o)
     0x0100894c   0x0100894c   0x00000002   Code   RO          707    i.hal_aon_gpio_callback  gr55xx_hal_aon_gpio.o
     0x0100894e   0x0100894e   0x00000002   PAD
     0x01008950   0x01008950   0x00000024   Code   RO          709    i.hal_aon_gpio_init  gr55xx_hal_aon_gpio.o
-    0x01008974   0x01008974   0x00000028   Code   RO         2854    i.hal_aon_gpio_init_ext  ble_sdk.lib(gr55xx_hal_aon_gpio_patch.o)
-    0x0100899c   0x0100899c   0x00000060   Code   RO         2873    i.hal_dma_deinit    ble_sdk.lib(gr55xx_hal_dma_patch.o)
-    0x010089fc   0x010089fc   0x0000008c   Code   RO         2874    i.hal_dma_init      ble_sdk.lib(gr55xx_hal_dma_patch.o)
-    0x01008a88   0x01008a88   0x00000040   Code   RO         2809    i.hal_dwt_disable   ble_sdk.lib(gr55xx_hal_patch.o)
-    0x01008ac8   0x01008ac8   0x00000038   Code   RO         2810    i.hal_dwt_enable    ble_sdk.lib(gr55xx_hal_patch.o)
-    0x01008b00   0x01008b00   0x0000008c   Code   RO         3567    i.hal_efuse_deinit_ext  ble_sdk.lib(gr55xx_hal_efuse_patch.o)
-    0x01008b8c   0x01008b8c   0x000000ac   Code   RO         3568    i.hal_efuse_init_ext  ble_sdk.lib(gr55xx_hal_efuse_patch.o)
-    0x01008c38   0x01008c38   0x0000001c   Code   RO         3060    i.hal_flash_erase   ble_sdk.lib(hal_flash_patch.o)
-    0x01008c54   0x01008c54   0x00000064   Code   RO         3062    i.hal_flash_init    ble_sdk.lib(hal_flash_patch.o)
-    0x01008cb8   0x01008cb8   0x00000020   Code   RO         3063    i.hal_flash_read    ble_sdk.lib(hal_flash_patch.o)
-    0x01008cd8   0x01008cd8   0x00000074   Code   RO         3068    i.hal_flash_write_r  ble_sdk.lib(hal_flash_patch.o)
+    0x01008974   0x01008974   0x00000028   Code   RO         2550    i.hal_aon_gpio_init_ext  ble_sdk.lib(gr55xx_hal_aon_gpio_patch.o)
+    0x0100899c   0x0100899c   0x00000060   Code   RO         2569    i.hal_dma_deinit    ble_sdk.lib(gr55xx_hal_dma_patch.o)
+    0x010089fc   0x010089fc   0x0000008c   Code   RO         2570    i.hal_dma_init      ble_sdk.lib(gr55xx_hal_dma_patch.o)
+    0x01008a88   0x01008a88   0x00000040   Code   RO         2505    i.hal_dwt_disable   ble_sdk.lib(gr55xx_hal_patch.o)
+    0x01008ac8   0x01008ac8   0x00000038   Code   RO         2506    i.hal_dwt_enable    ble_sdk.lib(gr55xx_hal_patch.o)
+    0x01008b00   0x01008b00   0x0000008c   Code   RO         3263    i.hal_efuse_deinit_ext  ble_sdk.lib(gr55xx_hal_efuse_patch.o)
+    0x01008b8c   0x01008b8c   0x000000ac   Code   RO         3264    i.hal_efuse_init_ext  ble_sdk.lib(gr55xx_hal_efuse_patch.o)
+    0x01008c38   0x01008c38   0x0000001c   Code   RO         2756    i.hal_flash_erase   ble_sdk.lib(hal_flash_patch.o)
+    0x01008c54   0x01008c54   0x00000064   Code   RO         2758    i.hal_flash_init    ble_sdk.lib(hal_flash_patch.o)
+    0x01008cb8   0x01008cb8   0x00000020   Code   RO         2759    i.hal_flash_read    ble_sdk.lib(hal_flash_patch.o)
+    0x01008cd8   0x01008cd8   0x00000074   Code   RO         2764    i.hal_flash_write_r  ble_sdk.lib(hal_flash_patch.o)
     0x01008d4c   0x01008d4c   0x00000002   Code   RO          670    i.hal_gpio_exti_callback  gr55xx_hal_gpio.o
     0x01008d4e   0x01008d4e   0x00000002   PAD
     0x01008d50   0x01008d50   0x00000028   Code   RO          671    i.hal_gpio_init     gr55xx_hal_gpio.o
-    0x01008d78   0x01008d78   0x00000138   Code   RO         1381    i.hal_gr551x_adc_voltage_intern  gr551x_adc_voltage_api.o
-    0x01008eb0   0x01008eb0   0x00000090   Code   RO         2891    i.hal_msio_deinit   ble_sdk.lib(gr55xx_hal_msio_patch.o)
-    0x01008f40   0x01008f40   0x00000004   Code   RO         2892    i.hal_msio_init     ble_sdk.lib(gr55xx_hal_msio_patch.o)
-    0x01008f44   0x01008f44   0x00000098   Code   RO         4103    i.hal_rng_deinit_ext  ble_sdk.lib(gr55xx_hal_rng_patch.o)
-    0x01008fdc   0x01008fdc   0x00000138   Code   RO         4104    i.hal_rng_generate_random_number  ble_sdk.lib(gr55xx_hal_rng_patch.o)
-    0x01009114   0x01009114   0x00000090   Code   RO         4106    i.hal_rng_init_ext  ble_sdk.lib(gr55xx_hal_rng_patch.o)
+    0x01008d78   0x01008d78   0x00000138   Code   RO         1111    i.hal_gr551x_adc_voltage_intern  gr551x_adc_voltage_api.o
+    0x01008eb0   0x01008eb0   0x00000090   Code   RO         2587    i.hal_msio_deinit   ble_sdk.lib(gr55xx_hal_msio_patch.o)
+    0x01008f40   0x01008f40   0x00000004   Code   RO         2588    i.hal_msio_init     ble_sdk.lib(gr55xx_hal_msio_patch.o)
+    0x01008f44   0x01008f44   0x00000098   Code   RO         3799    i.hal_rng_deinit_ext  ble_sdk.lib(gr55xx_hal_rng_patch.o)
+    0x01008fdc   0x01008fdc   0x00000138   Code   RO         3800    i.hal_rng_generate_random_number  ble_sdk.lib(gr55xx_hal_rng_patch.o)
+    0x01009114   0x01009114   0x00000090   Code   RO         3802    i.hal_rng_init_ext  ble_sdk.lib(gr55xx_hal_rng_patch.o)
     0x010091a4   0x010091a4   0x00000024   Code   RO          620    i.hal_timer_base_init  gr55xx_hal_tim.o
     0x010091c8   0x010091c8   0x00000014   Code   RO          878    i.hal_timer_base_msp_deinit  gr55xx_hal_msp.o
     0x010091dc   0x010091dc   0x0000002a   Code   RO          879    i.hal_timer_base_msp_init  gr55xx_hal_msp.o
     0x01009206   0x01009206   0x00000002   PAD
-    0x01009208   0x01009208   0x0000005c   Code   RO         1609    i.hal_timer_period_elapsed_callback  timer.o
+    0x01009208   0x01009208   0x0000005c   Code   RO         1324    i.hal_timer_period_elapsed_callback  timer.o
     0x01009264   0x01009264   0x00000002   Code   RO          745    i.hal_uart_abort_cplt_callback  gr55xx_hal_uart.o
     0x01009266   0x01009266   0x00000002   Code   RO          746    i.hal_uart_abort_rx_cplt_callback  gr55xx_hal_uart.o
     0x01009268   0x01009268   0x00000002   Code   RO          747    i.hal_uart_abort_tx_cplt_callback  gr55xx_hal_uart.o
@@ -6218,303 +6218,303 @@ Memory Map of the image
     0x01009294   0x01009294   0x00000024   Code   RO          750    i.hal_uart_init     gr55xx_hal_uart.o
     0x010092b8   0x010092b8   0x00000002   Code   RO          751    i.hal_uart_msp_deinit  gr55xx_hal_uart.o
     0x010092ba   0x010092ba   0x00000002   Code   RO          752    i.hal_uart_msp_init  gr55xx_hal_uart.o
-    0x010092bc   0x010092bc   0x00000024   Code   RO         1724    i.hal_uart_rx_cplt_callback  uart0.o
+    0x010092bc   0x010092bc   0x00000024   Code   RO         1436    i.hal_uart_rx_cplt_callback  uart0.o
     0x010092e0   0x010092e0   0x00000002   Code   RO          754    i.hal_uart_tx_cplt_callback  gr55xx_hal_uart.o
     0x010092e2   0x010092e2   0x00000002   PAD
-    0x010092e4   0x010092e4   0x000000a4   Code   RO         2579    i.hci_le_add_dev_to_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x01009388   0x01009388   0x0000005c   Code   RO         2580    i.hci_le_clear_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x010093e4   0x010093e4   0x00000042   Code   RO         2749    i.hci_le_cmd_cmp_evt_init_handler_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x010092e4   0x010092e4   0x000000a4   Code   RO         2275    i.hci_le_add_dev_to_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x01009388   0x01009388   0x0000005c   Code   RO         2276    i.hci_le_clear_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x010093e4   0x010093e4   0x00000042   Code   RO         2445    i.hci_le_cmd_cmp_evt_init_handler_patch  ble_sdk.lib(gapm_init_patch.o)
     0x01009426   0x01009426   0x00000002   PAD
-    0x01009428   0x01009428   0x00000148   Code   RO         2653    i.hci_le_con_upd_cmd_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x01009570   0x01009570   0x00000384   Code   RO         2581    i.hci_le_ext_create_con_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x010098f4   0x010098f4   0x000000b8   Code   RO         2902    i.hci_le_ltk_request_evt_handler_patch  ble_sdk.lib(gapc_hci_patch.o)
-    0x010099ac   0x010099ac   0x0000006c   Code   RO         2582    i.hci_le_rmv_dev_from_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x01009a18   0x01009a18   0x00000224   Code   RO         2614    i.hci_le_set_ext_scan_en_cmd_handler_patch  ble_sdk.lib(llm_scan_patch.o)
-    0x01009c3c   0x01009c3c   0x000000ec   Code   RO         2615    i.hci_le_set_ext_scan_param_cmd_handler_patch  ble_sdk.lib(llm_scan_patch.o)
-    0x01009d28   0x01009d28   0x000000b4   Code   RO         2735    i.hci_nb_cmp_pkts_evt_handler_patch  ble_sdk.lib(l2cc_task_patch.o)
-    0x01009ddc   0x01009ddc   0x0000012c   Code   RO         3472    i.hci_send_2_controller_patch  ble_sdk.lib(hci_patch.o)
-    0x01009f08   0x01009f08   0x00000080   Code   RO         3201    i.host_to_sdk_msg_handler_patch  ble_sdk.lib(ble_sdk_task_patch.o)
-    0x01009f88   0x01009f88   0x00000054   Code   RO         3228    i.i0nd_ioldo_3v_get  ble_sdk.lib(platform_sdk.o)
-    0x01009fdc   0x01009fdc   0x00000038   Code   RO         2750    i.init_hci_le_cmd_cmp_evt_starting_handler_patch  ble_sdk.lib(gapm_init_patch.o)
-    0x0100a014   0x0100a014   0x00000138   Code   RO         3017    i.init_ltk_list     ble_sdk.lib(ble_sdk_gapm_patch.o)
-    0x0100a14c   0x0100a14c   0x00000080   Code   RO         3229    i.internal_3p3_ioldo_update  ble_sdk.lib(platform_sdk.o)
-    0x0100a1cc   0x0100a1cc   0x00000030   Code   RO         3756    i.is_item_same      ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100a1fc   0x0100a1fc   0x0000013c   Code   RO         2786    i.ke_task_schedule_patch  ble_sdk.lib(ke_task_patch.o)
-    0x0100a338   0x0100a338   0x000000c8   Code   RO         2679    i.l2cc_pdu_recv_ind_handler_patch  ble_sdk.lib(gattc_task_patch.o)
-    0x0100a400   0x0100a400   0x000000a4   Code   RO         3527    i.l2cm_l2cap_tx_handler_patch  ble_sdk.lib(l2cm_patch.o)
-    0x0100a4a4   0x0100a4a4   0x0000000c   Code   RO         3528    i.l2cm_l2cap_tx_handler_replace  ble_sdk.lib(l2cm_patch.o)
-    0x0100a4b0   0x0100a4b0   0x00000134   Code   RO         3230    i.ldo_voltage_set   ble_sdk.lib(platform_sdk.o)
-    0x0100a5e4   0x0100a5e4   0x0000000a   Code   RO         2458    i.le16toh           utility.o
+    0x01009428   0x01009428   0x00000148   Code   RO         2349    i.hci_le_con_upd_cmd_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x01009570   0x01009570   0x00000384   Code   RO         2277    i.hci_le_ext_create_con_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x010098f4   0x010098f4   0x000000b8   Code   RO         2598    i.hci_le_ltk_request_evt_handler_patch  ble_sdk.lib(gapc_hci_patch.o)
+    0x010099ac   0x010099ac   0x0000006c   Code   RO         2278    i.hci_le_rmv_dev_from_wlst_cmd_handler_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x01009a18   0x01009a18   0x00000224   Code   RO         2310    i.hci_le_set_ext_scan_en_cmd_handler_patch  ble_sdk.lib(llm_scan_patch.o)
+    0x01009c3c   0x01009c3c   0x000000ec   Code   RO         2311    i.hci_le_set_ext_scan_param_cmd_handler_patch  ble_sdk.lib(llm_scan_patch.o)
+    0x01009d28   0x01009d28   0x000000b4   Code   RO         2431    i.hci_nb_cmp_pkts_evt_handler_patch  ble_sdk.lib(l2cc_task_patch.o)
+    0x01009ddc   0x01009ddc   0x0000012c   Code   RO         3168    i.hci_send_2_controller_patch  ble_sdk.lib(hci_patch.o)
+    0x01009f08   0x01009f08   0x00000080   Code   RO         2897    i.host_to_sdk_msg_handler_patch  ble_sdk.lib(ble_sdk_task_patch.o)
+    0x01009f88   0x01009f88   0x00000054   Code   RO         2924    i.i0nd_ioldo_3v_get  ble_sdk.lib(platform_sdk.o)
+    0x01009fdc   0x01009fdc   0x00000038   Code   RO         2446    i.init_hci_le_cmd_cmp_evt_starting_handler_patch  ble_sdk.lib(gapm_init_patch.o)
+    0x0100a014   0x0100a014   0x00000138   Code   RO         2713    i.init_ltk_list     ble_sdk.lib(ble_sdk_gapm_patch.o)
+    0x0100a14c   0x0100a14c   0x00000080   Code   RO         2925    i.internal_3p3_ioldo_update  ble_sdk.lib(platform_sdk.o)
+    0x0100a1cc   0x0100a1cc   0x00000030   Code   RO         3452    i.is_item_same      ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100a1fc   0x0100a1fc   0x0000013c   Code   RO         2482    i.ke_task_schedule_patch  ble_sdk.lib(ke_task_patch.o)
+    0x0100a338   0x0100a338   0x000000c8   Code   RO         2375    i.l2cc_pdu_recv_ind_handler_patch  ble_sdk.lib(gattc_task_patch.o)
+    0x0100a400   0x0100a400   0x000000a4   Code   RO         3223    i.l2cm_l2cap_tx_handler_patch  ble_sdk.lib(l2cm_patch.o)
+    0x0100a4a4   0x0100a4a4   0x0000000c   Code   RO         3224    i.l2cm_l2cap_tx_handler_replace  ble_sdk.lib(l2cm_patch.o)
+    0x0100a4b0   0x0100a4b0   0x00000134   Code   RO         2926    i.ldo_voltage_set   ble_sdk.lib(platform_sdk.o)
+    0x0100a5e4   0x0100a5e4   0x0000000a   Code   RO         2154    i.le16toh           utility.o
     0x0100a5ee   0x0100a5ee   0x00000002   PAD
-    0x0100a5f0   0x0100a5f0   0x00000034   Code   RO         3615    i.ll_adc_deinit     ble_sdk.lib(gr55xx_ll_adc_patch.o)
-    0x0100a624   0x0100a624   0x00000020   Code   RO         2831    i.ll_adc_disable_clock  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x0100a644   0x0100a644   0x00000020   Code   RO         3892    i.ll_adc_disable_clock  ble_sdk.lib(platform_adc.o)
-    0x0100a664   0x0100a664   0x00000020   Code   RO         2832    i.ll_adc_enable_clock  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x0100a684   0x0100a684   0x00000090   Code   RO         3616    i.ll_adc_init       ble_sdk.lib(gr55xx_ll_adc_patch.o)
-    0x0100a714   0x0100a714   0x00000020   Code   RO         3617    i.ll_adc_set_clock  ble_sdk.lib(gr55xx_ll_adc_patch.o)
-    0x0100a734   0x0100a734   0x00000104   Code   RO         3578    i.ll_aon_gpio_init  ble_sdk.lib(gr55xx_ll_aon_gpio_patch.o)
-    0x0100a838   0x0100a838   0x00000014   Code   RO         3231    i.ll_aon_gpio_is_enabled_it  ble_sdk.lib(platform_sdk.o)
-    0x0100a84c   0x0100a84c   0x00000028   Code   RO         3579    i.ll_aon_gpio_set_pin_mode  ble_sdk.lib(gr55xx_ll_aon_gpio_patch.o)
-    0x0100a874   0x0100a874   0x0000001c   Code   RO         2914    i.ll_aon_wdt_get_counter  ble_sdk.lib(system_sdk_patch.o)
-    0x0100a890   0x0100a890   0x0000001c   Code   RO         2915    i.ll_calendar_clear_flag_alarm  ble_sdk.lib(system_sdk_patch.o)
-    0x0100a8ac   0x0100a8ac   0x00000024   Code   RO         2916    i.ll_calendar_get_counter  ble_sdk.lib(system_sdk_patch.o)
-    0x0100a8d0   0x0100a8d0   0x00000018   Code   RO         2917    i.ll_calendar_reload_counter  ble_sdk.lib(system_sdk_patch.o)
-    0x0100a8e8   0x0100a8e8   0x00000014   Code   RO         2918    i.ll_calendar_set_clock_div  ble_sdk.lib(system_sdk_patch.o)
-    0x0100a8fc   0x0100a8fc   0x0000009c   Code   RO         2714    i.ll_channel_map_ind_handler_patch  ble_sdk.lib(llc_chmap_upd_patch.o)
-    0x0100a998   0x0100a998   0x000000e4   Code   RO         2654    i.ll_connection_param_req_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100aa7c   0x0100aa7c   0x00000154   Code   RO         2655    i.ll_connection_update_ind_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100abd0   0x0100abd0   0x00000116   Code   RO         3589    i.ll_dma_deinit     ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100a5f0   0x0100a5f0   0x00000034   Code   RO         3311    i.ll_adc_deinit     ble_sdk.lib(gr55xx_ll_adc_patch.o)
+    0x0100a624   0x0100a624   0x00000020   Code   RO         2527    i.ll_adc_disable_clock  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x0100a644   0x0100a644   0x00000020   Code   RO         3588    i.ll_adc_disable_clock  ble_sdk.lib(platform_adc.o)
+    0x0100a664   0x0100a664   0x00000020   Code   RO         2528    i.ll_adc_enable_clock  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x0100a684   0x0100a684   0x00000090   Code   RO         3312    i.ll_adc_init       ble_sdk.lib(gr55xx_ll_adc_patch.o)
+    0x0100a714   0x0100a714   0x00000020   Code   RO         3313    i.ll_adc_set_clock  ble_sdk.lib(gr55xx_ll_adc_patch.o)
+    0x0100a734   0x0100a734   0x00000104   Code   RO         3274    i.ll_aon_gpio_init  ble_sdk.lib(gr55xx_ll_aon_gpio_patch.o)
+    0x0100a838   0x0100a838   0x00000014   Code   RO         2927    i.ll_aon_gpio_is_enabled_it  ble_sdk.lib(platform_sdk.o)
+    0x0100a84c   0x0100a84c   0x00000028   Code   RO         3275    i.ll_aon_gpio_set_pin_mode  ble_sdk.lib(gr55xx_ll_aon_gpio_patch.o)
+    0x0100a874   0x0100a874   0x0000001c   Code   RO         2610    i.ll_aon_wdt_get_counter  ble_sdk.lib(system_sdk_patch.o)
+    0x0100a890   0x0100a890   0x0000001c   Code   RO         2611    i.ll_calendar_clear_flag_alarm  ble_sdk.lib(system_sdk_patch.o)
+    0x0100a8ac   0x0100a8ac   0x00000024   Code   RO         2612    i.ll_calendar_get_counter  ble_sdk.lib(system_sdk_patch.o)
+    0x0100a8d0   0x0100a8d0   0x00000018   Code   RO         2613    i.ll_calendar_reload_counter  ble_sdk.lib(system_sdk_patch.o)
+    0x0100a8e8   0x0100a8e8   0x00000014   Code   RO         2614    i.ll_calendar_set_clock_div  ble_sdk.lib(system_sdk_patch.o)
+    0x0100a8fc   0x0100a8fc   0x0000009c   Code   RO         2410    i.ll_channel_map_ind_handler_patch  ble_sdk.lib(llc_chmap_upd_patch.o)
+    0x0100a998   0x0100a998   0x000000e4   Code   RO         2350    i.ll_connection_param_req_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100aa7c   0x0100aa7c   0x00000154   Code   RO         2351    i.ll_connection_update_ind_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100abd0   0x0100abd0   0x00000116   Code   RO         3285    i.ll_dma_deinit     ble_sdk.lib(gr55xx_ll_dma_patch.o)
     0x0100ace6   0x0100ace6   0x00000002   PAD
-    0x0100ace8   0x0100ace8   0x000000f4   Code   RO         3590    i.ll_dma_init       ble_sdk.lib(gr55xx_ll_dma_patch.o)
-    0x0100addc   0x0100addc   0x00000014   Code   RO         3591    i.ll_dma_is_empty_fifo  ble_sdk.lib(gr55xx_ll_dma_patch.o)
-    0x0100adf0   0x0100adf0   0x00000014   Code   RO         3592    i.ll_dma_is_enabled_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
-    0x0100ae04   0x0100ae04   0x00000016   Code   RO         3593    i.ll_dma_resume_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
-    0x0100ae1a   0x0100ae1a   0x00000018   Code   RO         2833    i.ll_dma_set_source_burst_length  ble_sdk.lib(gr55xx_hal_adc_patch.o)
-    0x0100ae32   0x0100ae32   0x00000016   Code   RO         3594    i.ll_dma_suspend_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100ace8   0x0100ace8   0x000000f4   Code   RO         3286    i.ll_dma_init       ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100addc   0x0100addc   0x00000014   Code   RO         3287    i.ll_dma_is_empty_fifo  ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100adf0   0x0100adf0   0x00000014   Code   RO         3288    i.ll_dma_is_enabled_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100ae04   0x0100ae04   0x00000016   Code   RO         3289    i.ll_dma_resume_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
+    0x0100ae1a   0x0100ae1a   0x00000018   Code   RO         2529    i.ll_dma_set_source_burst_length  ble_sdk.lib(gr55xx_hal_adc_patch.o)
+    0x0100ae32   0x0100ae32   0x00000016   Code   RO         3290    i.ll_dma_suspend_channel  ble_sdk.lib(gr55xx_ll_dma_patch.o)
     0x0100ae48   0x0100ae48   0x00000044   Code   RO          332    i.ll_gpio_set_pin_pull  platform_gr55xx.o
-    0x0100ae8c   0x0100ae8c   0x00000114   Code   RO         3628    i.ll_msio_init      ble_sdk.lib(gr55xx_ll_msio_patch.o)
-    0x0100afa0   0x0100afa0   0x00000030   Code   RO         3629    i.ll_msio_set_pin_mode  ble_sdk.lib(gr55xx_ll_msio_patch.o)
-    0x0100afd0   0x0100afd0   0x000000bc   Code   RO         2702    i.ll_phy_req_handler_patch  ble_sdk.lib(llc_phy_upd_patch.o)
-    0x0100b08c   0x0100b08c   0x0000003c   Code   RO         2724    i.llc_auth_payl_nearly_to_handler_patch  ble_sdk.lib(llc_le_ping_patch.o)
-    0x0100b0c8   0x0100b0c8   0x0000003c   Code   RO         2725    i.llc_auth_payl_real_to_handler_patch  ble_sdk.lib(llc_le_ping_patch.o)
-    0x0100b104   0x0100b104   0x00000020   Code   RO         2656    i.llc_con_upd_replace  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100b124   0x0100b124   0x00000010   Code   RO         3401    i.llc_encrypt_replace  ble_sdk.lib(llc_encrypt_patch.o)
-    0x0100b134   0x0100b134   0x0000004c   Code   RO         2642    i.llc_hci_command_handler_patch  ble_sdk.lib(llc_hci_patch.o)
-    0x0100b180   0x0100b180   0x00000014   Code   RO         2643    i.llc_hci_new_handler_find  ble_sdk.lib(llc_hci_patch.o)
-    0x0100b194   0x0100b194   0x00000048   Code   RO         2688    i.llc_llcp_rsp_to   ble_sdk.lib(llc_task_patch.o)
-    0x0100b1dc   0x0100b1dc   0x00000010   Code   RO         2657    i.llc_loc_con_upd_proc_stop  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100b1ec   0x0100b1ec   0x0000000c   Code   RO         2689    i.llc_loc_llcp_rsp_to_handler_patch  ble_sdk.lib(llc_task_patch.o)
-    0x0100b1f8   0x0100b1f8   0x00000010   Code   RO         2703    i.llc_loc_phy_upd_proc_stop  ble_sdk.lib(llc_phy_upd_patch.o)
-    0x0100b208   0x0100b208   0x00000018   Code   RO         2799    i.llc_op_dl_upd_ind_handler_patch  ble_sdk.lib(llc_dl_upd_patch.o)
-    0x0100b220   0x0100b220   0x00000130   Code   RO         2658    i.llc_pref_param_compute_func_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100b350   0x0100b350   0x00000046   Code   RO         3518    i.llc_proc_collision_check_slave  ble_sdk.lib(llc_patch.o)
+    0x0100ae8c   0x0100ae8c   0x00000114   Code   RO         3324    i.ll_msio_init      ble_sdk.lib(gr55xx_ll_msio_patch.o)
+    0x0100afa0   0x0100afa0   0x00000030   Code   RO         3325    i.ll_msio_set_pin_mode  ble_sdk.lib(gr55xx_ll_msio_patch.o)
+    0x0100afd0   0x0100afd0   0x000000bc   Code   RO         2398    i.ll_phy_req_handler_patch  ble_sdk.lib(llc_phy_upd_patch.o)
+    0x0100b08c   0x0100b08c   0x0000003c   Code   RO         2420    i.llc_auth_payl_nearly_to_handler_patch  ble_sdk.lib(llc_le_ping_patch.o)
+    0x0100b0c8   0x0100b0c8   0x0000003c   Code   RO         2421    i.llc_auth_payl_real_to_handler_patch  ble_sdk.lib(llc_le_ping_patch.o)
+    0x0100b104   0x0100b104   0x00000020   Code   RO         2352    i.llc_con_upd_replace  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100b124   0x0100b124   0x00000010   Code   RO         3097    i.llc_encrypt_replace  ble_sdk.lib(llc_encrypt_patch.o)
+    0x0100b134   0x0100b134   0x0000004c   Code   RO         2338    i.llc_hci_command_handler_patch  ble_sdk.lib(llc_hci_patch.o)
+    0x0100b180   0x0100b180   0x00000014   Code   RO         2339    i.llc_hci_new_handler_find  ble_sdk.lib(llc_hci_patch.o)
+    0x0100b194   0x0100b194   0x00000048   Code   RO         2384    i.llc_llcp_rsp_to   ble_sdk.lib(llc_task_patch.o)
+    0x0100b1dc   0x0100b1dc   0x00000010   Code   RO         2353    i.llc_loc_con_upd_proc_stop  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100b1ec   0x0100b1ec   0x0000000c   Code   RO         2385    i.llc_loc_llcp_rsp_to_handler_patch  ble_sdk.lib(llc_task_patch.o)
+    0x0100b1f8   0x0100b1f8   0x00000010   Code   RO         2399    i.llc_loc_phy_upd_proc_stop  ble_sdk.lib(llc_phy_upd_patch.o)
+    0x0100b208   0x0100b208   0x00000018   Code   RO         2495    i.llc_op_dl_upd_ind_handler_patch  ble_sdk.lib(llc_dl_upd_patch.o)
+    0x0100b220   0x0100b220   0x00000130   Code   RO         2354    i.llc_pref_param_compute_func_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100b350   0x0100b350   0x00000046   Code   RO         3214    i.llc_proc_collision_check_slave  ble_sdk.lib(llc_patch.o)
     0x0100b396   0x0100b396   0x00000002   PAD
-    0x0100b398   0x0100b398   0x000001f4   Code   RO         2659    i.llc_rem_con_upd_proc_continue_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100b58c   0x0100b58c   0x000002c8   Code   RO         3402    i.llc_rem_encrypt_proc_continue_patch  ble_sdk.lib(llc_encrypt_patch.o)
-    0x0100b854   0x0100b854   0x000000b0   Code   RO         3403    i.llc_rem_encrypt_proc_finish  ble_sdk.lib(llc_encrypt_patch.o)
-    0x0100b904   0x0100b904   0x0000000c   Code   RO         2690    i.llc_rem_llcp_rsp_to_handler_patch  ble_sdk.lib(llc_task_patch.o)
-    0x0100b910   0x0100b910   0x00000044   Code   RO         2626    i.llcp_pdu_handler_tab_replace  ble_sdk.lib(llc_llcp_patch.o)
-    0x0100b954   0x0100b954   0x00000032   Code   RO         2691    i.lld_acl_rx_ind_handler_patch  ble_sdk.lib(llc_task_patch.o)
+    0x0100b398   0x0100b398   0x000001f4   Code   RO         2355    i.llc_rem_con_upd_proc_continue_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100b58c   0x0100b58c   0x000002c8   Code   RO         3098    i.llc_rem_encrypt_proc_continue_patch  ble_sdk.lib(llc_encrypt_patch.o)
+    0x0100b854   0x0100b854   0x000000b0   Code   RO         3099    i.llc_rem_encrypt_proc_finish  ble_sdk.lib(llc_encrypt_patch.o)
+    0x0100b904   0x0100b904   0x0000000c   Code   RO         2386    i.llc_rem_llcp_rsp_to_handler_patch  ble_sdk.lib(llc_task_patch.o)
+    0x0100b910   0x0100b910   0x00000044   Code   RO         2322    i.llcp_pdu_handler_tab_replace  ble_sdk.lib(llc_llcp_patch.o)
+    0x0100b954   0x0100b954   0x00000032   Code   RO         2387    i.lld_acl_rx_ind_handler_patch  ble_sdk.lib(llc_task_patch.o)
     0x0100b986   0x0100b986   0x00000002   PAD
-    0x0100b988   0x0100b988   0x0000004c   Code   RO         3965    i.lld_adv_frm_cbk_func_patch  ble_sdk.lib(lld_adv_patch.o)
-    0x0100b9d4   0x0100b9d4   0x00000394   Code   RO         3966    i.lld_adv_frm_isr_patch  ble_sdk.lib(lld_adv_patch.o)
-    0x0100bd68   0x0100bd68   0x00000010   Code   RO         3967    i.lld_adv_replace   ble_sdk.lib(lld_adv_patch.o)
-    0x0100bd78   0x0100bd78   0x00000048   Code   RO         3441    i.lld_adv_start_func_patch  ble_sdk.lib(lld_scan_patch.o)
-    0x0100bdc0   0x0100bdc0   0x00000050   Code   RO         2715    i.lld_ch_map_upd_cfm_handler_patch  ble_sdk.lib(llc_chmap_upd_patch.o)
-    0x0100be10   0x0100be10   0x00000018   Code   RO         3483    i.lld_con_env_is_free  ble_sdk.lib(lld_con_patch.o)
-    0x0100be28   0x0100be28   0x00000014   Code   RO         3484    i.lld_con_instant_proc_type_reset  ble_sdk.lib(lld_con_patch.o)
-    0x0100be3c   0x0100be3c   0x00000050   Code   RO         2660    i.lld_con_offset_upd_ind_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
-    0x0100be8c   0x0100be8c   0x0000002a   Code   RO         2661    i.lld_con_param_upd_cfm_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100b988   0x0100b988   0x0000004c   Code   RO         3661    i.lld_adv_frm_cbk_func_patch  ble_sdk.lib(lld_adv_patch.o)
+    0x0100b9d4   0x0100b9d4   0x00000394   Code   RO         3662    i.lld_adv_frm_isr_patch  ble_sdk.lib(lld_adv_patch.o)
+    0x0100bd68   0x0100bd68   0x00000010   Code   RO         3663    i.lld_adv_replace   ble_sdk.lib(lld_adv_patch.o)
+    0x0100bd78   0x0100bd78   0x00000048   Code   RO         3137    i.lld_adv_start_func_patch  ble_sdk.lib(lld_scan_patch.o)
+    0x0100bdc0   0x0100bdc0   0x00000050   Code   RO         2411    i.lld_ch_map_upd_cfm_handler_patch  ble_sdk.lib(llc_chmap_upd_patch.o)
+    0x0100be10   0x0100be10   0x00000018   Code   RO         3179    i.lld_con_env_is_free  ble_sdk.lib(lld_con_patch.o)
+    0x0100be28   0x0100be28   0x00000014   Code   RO         3180    i.lld_con_instant_proc_type_reset  ble_sdk.lib(lld_con_patch.o)
+    0x0100be3c   0x0100be3c   0x00000050   Code   RO         2356    i.lld_con_offset_upd_ind_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
+    0x0100be8c   0x0100be8c   0x0000002a   Code   RO         2357    i.lld_con_param_upd_cfm_handler_patch  ble_sdk.lib(llc_con_upd_patch.o)
     0x0100beb6   0x0100beb6   0x00000002   PAD
-    0x0100beb8   0x0100beb8   0x00000044   Code   RO         3486    i.lld_con_replace   ble_sdk.lib(lld_con_patch.o)
-    0x0100befc   0x0100befc   0x0000003c   Code   RO         3487    i.lld_con_start_patch  ble_sdk.lib(lld_con_patch.o)
-    0x0100bf38   0x0100bf38   0x00000298   Code   RO         3488    i.lld_con_tx_prog_patch  ble_sdk.lib(lld_con_patch.o)
-    0x0100c1d0   0x0100c1d0   0x00000028   Code   RO         3490    i.lld_con_ultra_link_update  ble_sdk.lib(lld_con_patch.o)
-    0x0100c1f8   0x0100c1f8   0x00000012   Code   RO         3932    i.lld_init_patch    ble_sdk.lib(lld_patch.o)
+    0x0100beb8   0x0100beb8   0x00000044   Code   RO         3182    i.lld_con_replace   ble_sdk.lib(lld_con_patch.o)
+    0x0100befc   0x0100befc   0x0000003c   Code   RO         3183    i.lld_con_start_patch  ble_sdk.lib(lld_con_patch.o)
+    0x0100bf38   0x0100bf38   0x00000298   Code   RO         3184    i.lld_con_tx_prog_patch  ble_sdk.lib(lld_con_patch.o)
+    0x0100c1d0   0x0100c1d0   0x00000028   Code   RO         3186    i.lld_con_ultra_link_update  ble_sdk.lib(lld_con_patch.o)
+    0x0100c1f8   0x0100c1f8   0x00000012   Code   RO         3628    i.lld_init_patch    ble_sdk.lib(lld_patch.o)
     0x0100c20a   0x0100c20a   0x00000002   PAD
-    0x0100c20c   0x0100c20c   0x00000010   Code   RO         3933    i.lld_init_replace  ble_sdk.lib(lld_patch.o)
-    0x0100c21c   0x0100c21c   0x0000081c   Code   RO         3953    i.lld_init_start_patch  ble_sdk.lib(lld_init_patch.o)
-    0x0100ca38   0x0100ca38   0x00000010   Code   RO         3954    i.lld_init_start_replace  ble_sdk.lib(lld_init_patch.o)
-    0x0100ca48   0x0100ca48   0x000000e4   Code   RO         2627    i.lld_llcp_rx_ind_handler_patch  ble_sdk.lib(llc_llcp_patch.o)
-    0x0100cb2c   0x0100cb2c   0x0000002a   Code   RO         2628    i.lld_llcp_tx_cfm_handler_patch  ble_sdk.lib(llc_llcp_patch.o)
+    0x0100c20c   0x0100c20c   0x00000010   Code   RO         3629    i.lld_init_replace  ble_sdk.lib(lld_patch.o)
+    0x0100c21c   0x0100c21c   0x0000081c   Code   RO         3649    i.lld_init_start_patch  ble_sdk.lib(lld_init_patch.o)
+    0x0100ca38   0x0100ca38   0x00000010   Code   RO         3650    i.lld_init_start_replace  ble_sdk.lib(lld_init_patch.o)
+    0x0100ca48   0x0100ca48   0x000000e4   Code   RO         2323    i.lld_llcp_rx_ind_handler_patch  ble_sdk.lib(llc_llcp_patch.o)
+    0x0100cb2c   0x0100cb2c   0x0000002a   Code   RO         2324    i.lld_llcp_tx_cfm_handler_patch  ble_sdk.lib(llc_llcp_patch.o)
     0x0100cb56   0x0100cb56   0x00000002   PAD
-    0x0100cb58   0x0100cb58   0x00000050   Code   RO         2704    i.lld_phy_upd_cfm_handler_patch  ble_sdk.lib(llc_phy_upd_patch.o)
-    0x0100cba8   0x0100cba8   0x0000004c   Code   RO         3442    i.lld_scan_discard_last_rx_buff  ble_sdk.lib(lld_scan_patch.o)
-    0x0100cbf4   0x0100cbf4   0x0000002c   Code   RO         3443    i.lld_scan_frm_cbk_replace  ble_sdk.lib(lld_scan_patch.o)
-    0x0100cc20   0x0100cc20   0x0000005c   Code   RO         3444    i.lld_scan_start_func_patch  ble_sdk.lib(lld_scan_patch.o)
-    0x0100cc7c   0x0100cc7c   0x00000040   Code   RO         3968    i.lld_try_to_free_old_buffer  ble_sdk.lib(lld_adv_patch.o)
-    0x0100ccbc   0x0100ccbc   0x00000040   Code   RO         2584    i.llm_hci_command_handler_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x0100ccfc   0x0100ccfc   0x00000054   Code   RO         2585    i.llm_is_wl_accessible_patch  ble_sdk.lib(llm_hci_patch.o)
-    0x0100cd50   0x0100cd50   0x00000058   Code   RO         1382    i.load_trim_for_sdk  gr551x_adc_voltage_api.o
+    0x0100cb58   0x0100cb58   0x00000050   Code   RO         2400    i.lld_phy_upd_cfm_handler_patch  ble_sdk.lib(llc_phy_upd_patch.o)
+    0x0100cba8   0x0100cba8   0x0000004c   Code   RO         3138    i.lld_scan_discard_last_rx_buff  ble_sdk.lib(lld_scan_patch.o)
+    0x0100cbf4   0x0100cbf4   0x0000002c   Code   RO         3139    i.lld_scan_frm_cbk_replace  ble_sdk.lib(lld_scan_patch.o)
+    0x0100cc20   0x0100cc20   0x0000005c   Code   RO         3140    i.lld_scan_start_func_patch  ble_sdk.lib(lld_scan_patch.o)
+    0x0100cc7c   0x0100cc7c   0x00000040   Code   RO         3664    i.lld_try_to_free_old_buffer  ble_sdk.lib(lld_adv_patch.o)
+    0x0100ccbc   0x0100ccbc   0x00000040   Code   RO         2280    i.llm_hci_command_handler_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x0100ccfc   0x0100ccfc   0x00000054   Code   RO         2281    i.llm_is_wl_accessible_patch  ble_sdk.lib(llm_hci_patch.o)
+    0x0100cd50   0x0100cd50   0x00000058   Code   RO         1112    i.load_trim_for_sdk  gr551x_adc_voltage_api.o
     0x0100cda8   0x0100cda8   0x0000003c   Code   RO         1023    i.main              main.o
     0x0100cde4   0x0100cde4   0x00000020   Code   RO          454    i.main_init         system_gr55xx.o
-    0x0100ce04   0x0100ce04   0x00000016   Code   RO         3365    i.mem_pwr_mgmt_init  ble_sdk.lib(platform_sram.o)
+    0x0100ce04   0x0100ce04   0x00000016   Code   RO         3061    i.mem_pwr_mgmt_init  ble_sdk.lib(platform_sram.o)
     0x0100ce1a   0x0100ce1a   0x00000002   PAD
-    0x0100ce1c   0x0100ce1c   0x00000138   Code   RO         3760    i.nvds_put          ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100ce1c   0x0100ce1c   0x00000138   Code   RO         3456    i.nvds_put          ble_sdk.lib(sdk_nvds_patch.o)
     0x0100cf54   0x0100cf54   0x00000040   Code   RO          333    i.nvds_setup        platform_gr55xx.o
-    0x0100cf94   0x0100cf94   0x00000050   Code   RO         3310    i.platform_clock_init  ble_sdk.lib(platform_clock.o)
-    0x0100cfe4   0x0100cfe4   0x00000014   Code   RO         3312    i.platform_disable_sleep_timer  ble_sdk.lib(platform_clock.o)
-    0x0100cff8   0x0100cff8   0x00000020   Code   RO         3351    i.platform_flash_enable_quad  ble_sdk.lib(platform_exflash.o)
-    0x0100d018   0x0100d018   0x0000000c   Code   RO         3352    i.platform_flash_protection  ble_sdk.lib(platform_exflash.o)
+    0x0100cf94   0x0100cf94   0x00000050   Code   RO         3006    i.platform_clock_init  ble_sdk.lib(platform_clock.o)
+    0x0100cfe4   0x0100cfe4   0x00000014   Code   RO         3008    i.platform_disable_sleep_timer  ble_sdk.lib(platform_clock.o)
+    0x0100cff8   0x0100cff8   0x00000020   Code   RO         3047    i.platform_flash_enable_quad  ble_sdk.lib(platform_exflash.o)
+    0x0100d018   0x0100d018   0x0000000c   Code   RO         3048    i.platform_flash_protection  ble_sdk.lib(platform_exflash.o)
     0x0100d024   0x0100d024   0x0000014c   Code   RO          334    i.platform_init     platform_gr55xx.o
-    0x0100d170   0x0100d170   0x0000001c   Code   RO         3232    i.platform_init_pop  ble_sdk.lib(platform_sdk.o)
-    0x0100d18c   0x0100d18c   0x00000048   Code   RO         3233    i.platform_init_push  ble_sdk.lib(platform_sdk.o)
-    0x0100d1d4   0x0100d1d4   0x000000b4   Code   RO         3234    i.platform_param_adjust  ble_sdk.lib(platform_sdk.o)
-    0x0100d288   0x0100d288   0x00000090   Code   RO         3235    i.platform_sdk_init  ble_sdk.lib(platform_sdk.o)
-    0x0100d318   0x0100d318   0x000000bc   Code   RO         3317    i.platform_set_ble_rtc_clk  ble_sdk.lib(platform_clock.o)
-    0x0100d3d4   0x0100d3d4   0x00000050   Code   RO         3318    i.platform_set_psc_clk  ble_sdk.lib(platform_clock.o)
-    0x0100d424   0x0100d424   0x00000010   Code   RO         3319    i.platform_set_rtc_crystal_delay  ble_sdk.lib(platform_clock.o)
-    0x0100d434   0x0100d434   0x000000e8   Code   RO         3236    i.pmu_calibration_handler  ble_sdk.lib(platform_sdk.o)
-    0x0100d51c   0x0100d51c   0x00000036   Code   RO         2188    i.prf_find_handle_by_idx  ble_prf_utils.o
-    0x0100d552   0x0100d552   0x00000034   Code   RO         2189    i.prf_find_idx_by_handle  ble_prf_utils.o
-    0x0100d586   0x0100d586   0x00000014   Code   RO         2190    i.prf_is_cccd_value_valid  ble_prf_utils.o
+    0x0100d170   0x0100d170   0x0000001c   Code   RO         2928    i.platform_init_pop  ble_sdk.lib(platform_sdk.o)
+    0x0100d18c   0x0100d18c   0x00000048   Code   RO         2929    i.platform_init_push  ble_sdk.lib(platform_sdk.o)
+    0x0100d1d4   0x0100d1d4   0x000000b4   Code   RO         2930    i.platform_param_adjust  ble_sdk.lib(platform_sdk.o)
+    0x0100d288   0x0100d288   0x00000090   Code   RO         2931    i.platform_sdk_init  ble_sdk.lib(platform_sdk.o)
+    0x0100d318   0x0100d318   0x000000bc   Code   RO         3013    i.platform_set_ble_rtc_clk  ble_sdk.lib(platform_clock.o)
+    0x0100d3d4   0x0100d3d4   0x00000050   Code   RO         3014    i.platform_set_psc_clk  ble_sdk.lib(platform_clock.o)
+    0x0100d424   0x0100d424   0x00000010   Code   RO         3015    i.platform_set_rtc_crystal_delay  ble_sdk.lib(platform_clock.o)
+    0x0100d434   0x0100d434   0x000000e8   Code   RO         2932    i.pmu_calibration_handler  ble_sdk.lib(platform_sdk.o)
+    0x0100d51c   0x0100d51c   0x00000036   Code   RO         1884    i.prf_find_handle_by_idx  ble_prf_utils.o
+    0x0100d552   0x0100d552   0x00000034   Code   RO         1885    i.prf_find_idx_by_handle  ble_prf_utils.o
+    0x0100d586   0x0100d586   0x00000014   Code   RO         1886    i.prf_is_cccd_value_valid  ble_prf_utils.o
     0x0100d59a   0x0100d59a   0x00000002   PAD
-    0x0100d59c   0x0100d59c   0x00000010   Code   RO         3728    i.pwr_mgmt_shutdown_replace  ble_sdk.lib(sdk_pwr_mgmt_patch.o)
-    0x0100d5ac   0x0100d5ac   0x0000001c   Code   RO         3237    i.pwr_mgmt_warm_boot  ble_sdk.lib(platform_sdk.o)
-    0x0100d5c8   0x0100d5c8   0x0000002c   Code   RO         4053    i.rand_seed_gen     ble_sdk.lib(ble_sdk_patch.o)
-    0x0100d5f4   0x0100d5f4   0x00000080   Code   RO         3893    i.read_adc_value    ble_sdk.lib(platform_adc.o)
-    0x0100d674   0x0100d674   0x0000002c   Code   RO         3762    i.read_incr         ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100d6a0   0x0100d6a0   0x0000000c   Code   RO         2774    i.reg_gapm_hci_evt_patch_tab  ble_sdk.lib(gapm_task_patch.o)
-    0x0100d6ac   0x0100d6ac   0x0000000c   Code   RO         2586    i.reg_hci_cmd_patch_tab  ble_sdk.lib(llm_hci_patch.o)
-    0x0100d6b8   0x0100d6b8   0x0000000c   Code   RO         2787    i.reg_msg_patch_tab  ble_sdk.lib(ke_task_patch.o)
-    0x0100d6c4   0x0100d6c4   0x000000dc   Code   RO         3763    i.replace_item      ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100d7a0   0x0100d7a0   0x0000006c   Code   RO         3238    i.retention_mem_set  ble_sdk.lib(platform_sdk.o)
-    0x0100d80c   0x0100d80c   0x00000048   Code   RO         3688    i.rf_SX_disable     ble_sdk.lib(rf_gdx_patch.o)
-    0x0100d854   0x0100d854   0x0000000e   Code   RO         3689    i.rf_SX_enable_and_reset  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100d862   0x0100d862   0x00000016   Code   RO         3239    i.rf_calibration_set  ble_sdk.lib(platform_sdk.o)
-    0x0100d878   0x0100d878   0x000000f8   Code   RO         3690    i.rf_communication_core_init_patch  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100d970   0x0100d970   0x00000020   Code   RO         3691    i.rf_gdx_replace    ble_sdk.lib(rf_gdx_patch.o)
-    0x0100d990   0x0100d990   0x00000060   Code   RO         3692    i.rf_hp_gain_offset_cfg  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100d9f0   0x0100d9f0   0x00000064   Code   RO         3693    i.rf_init_patch     ble_sdk.lib(rf_gdx_patch.o)
-    0x0100da54   0x0100da54   0x0000010c   Code   RO         3694    i.rf_modulation_accuracy_calibration_patch  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100db60   0x0100db60   0x0000007c   Code   RO         3695    i.rf_rx_vcobias_reset  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100dbdc   0x0100dbdc   0x0000005c   Code   RO         3696    i.rf_tx_pw_conv_tbl_get  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100dc38   0x0100dc38   0x00000070   Code   RO         3697    i.rf_txpwr_cs_get_patch  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100dca8   0x0100dca8   0x0000006c   Code   RO         3698    i.rf_txpwr_dbm_get_patch  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100dd14   0x0100dd14   0x00000070   Code   RO         3320    i.rf_xo_offset_init  ble_sdk.lib(platform_clock.o)
-    0x0100dd84   0x0100dd84   0x000000f4   Code   RO         2919    i.rng_calibration   ble_sdk.lib(system_sdk_patch.o)
-    0x0100de78   0x0100de78   0x00000048   Code   RO         4054    i.rng_clk_enable_ex  ble_sdk.lib(ble_sdk_patch.o)
-    0x0100dec0   0x0100dec0   0x00000060   Code   RO         4055    i.rng_rand_get      ble_sdk.lib(ble_sdk_patch.o)
-    0x0100df20   0x0100df20   0x00000010   Code   RO         3647    i.rom_callback_replace  ble_sdk.lib(rwip_sleep_common.o)
-    0x0100df30   0x0100df30   0x000000d8   Code   RO         4136    i.round             m_wm.l(round.o)
-    0x0100e008   0x0100e008   0x00000220   Code   RO         2920    i.rtc_calibration   ble_sdk.lib(system_sdk_patch.o)
-    0x0100e228   0x0100e228   0x00000028   Code   RO         3418    i.rwble_abort_recovery  ble_sdk.lib(sch_prog_patch.o)
-    0x0100e250   0x0100e250   0x00000010   Code   RO         3917    i.rwble_replace     ble_sdk.lib(rwble_patch.o)
-    0x0100e260   0x0100e260   0x000000b4   Code   RO         3419    i.rwble_reset_recovery  ble_sdk.lib(sch_prog_patch.o)
-    0x0100e314   0x0100e314   0x00000020   Code   RO         3669    i.rwip_sleep_func_replace  ble_sdk.lib(rwip_sleep_patch.o)
-    0x0100e334   0x0100e334   0x0000003c   Code   RO         3648    i.rwip_sleep_without_stack_init_replace  ble_sdk.lib(rwip_sleep_common.o)
-    0x0100e370   0x0100e370   0x00000028   Code   RO         3906    i.sch_arb_replace   ble_sdk.lib(sch_arb_patch.o)
-    0x0100e398   0x0100e398   0x0000002c   Code   RO         3420    i.sch_prog_frm_cbk_replace  ble_sdk.lib(sch_prog_patch.o)
-    0x0100e3c4   0x0100e3c4   0x00000068   Code   RO         3421    i.sch_prog_recovery_patch  ble_sdk.lib(sch_prog_patch.o)
-    0x0100e42c   0x0100e42c   0x00000020   Code   RO         3151    i.sdk_gatt_check_conidx  ble_sdk.lib(ble_sdk_gattc_patch.o)
-    0x0100e44c   0x0100e44c   0x00000058   Code   RO         3041    i.sdk_init          ble_sdk.lib(sdk_ram_init_patch.o)
-    0x0100e4a4   0x0100e4a4   0x0000002c   Code   RO         4069    i.sdk_prf_msg_handler_tab_replace  ble_sdk.lib(ble_sdk_prf_patch.o)
-    0x0100e4d0   0x0100e4d0   0x0000004c   Code   RO         2984    i.sec_bond_info_miss_check  ble_sdk.lib(ble_sdk_sec_patch.o)
-    0x0100e51c   0x0100e51c   0x00000088   Code   RO         2985    i.sec_check_conn_bond_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
-    0x0100e5a4   0x0100e5a4   0x000001f8   Code   RO         2987    i.sec_rcv_encrypt_req_ind_handler_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
-    0x0100e79c   0x0100e79c   0x000000ec   Code   RO         2988    i.sec_rcv_sec_req_ind_handler_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
-    0x0100e888   0x0100e888   0x00000034   Code   RO         1478    i.services_init     user_app.o
+    0x0100d59c   0x0100d59c   0x00000010   Code   RO         3424    i.pwr_mgmt_shutdown_replace  ble_sdk.lib(sdk_pwr_mgmt_patch.o)
+    0x0100d5ac   0x0100d5ac   0x0000001c   Code   RO         2933    i.pwr_mgmt_warm_boot  ble_sdk.lib(platform_sdk.o)
+    0x0100d5c8   0x0100d5c8   0x0000002c   Code   RO         3749    i.rand_seed_gen     ble_sdk.lib(ble_sdk_patch.o)
+    0x0100d5f4   0x0100d5f4   0x00000080   Code   RO         3589    i.read_adc_value    ble_sdk.lib(platform_adc.o)
+    0x0100d674   0x0100d674   0x0000002c   Code   RO         3458    i.read_incr         ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100d6a0   0x0100d6a0   0x0000000c   Code   RO         2470    i.reg_gapm_hci_evt_patch_tab  ble_sdk.lib(gapm_task_patch.o)
+    0x0100d6ac   0x0100d6ac   0x0000000c   Code   RO         2282    i.reg_hci_cmd_patch_tab  ble_sdk.lib(llm_hci_patch.o)
+    0x0100d6b8   0x0100d6b8   0x0000000c   Code   RO         2483    i.reg_msg_patch_tab  ble_sdk.lib(ke_task_patch.o)
+    0x0100d6c4   0x0100d6c4   0x000000dc   Code   RO         3459    i.replace_item      ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100d7a0   0x0100d7a0   0x0000006c   Code   RO         2934    i.retention_mem_set  ble_sdk.lib(platform_sdk.o)
+    0x0100d80c   0x0100d80c   0x00000048   Code   RO         3384    i.rf_SX_disable     ble_sdk.lib(rf_gdx_patch.o)
+    0x0100d854   0x0100d854   0x0000000e   Code   RO         3385    i.rf_SX_enable_and_reset  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100d862   0x0100d862   0x00000016   Code   RO         2935    i.rf_calibration_set  ble_sdk.lib(platform_sdk.o)
+    0x0100d878   0x0100d878   0x000000f8   Code   RO         3386    i.rf_communication_core_init_patch  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100d970   0x0100d970   0x00000020   Code   RO         3387    i.rf_gdx_replace    ble_sdk.lib(rf_gdx_patch.o)
+    0x0100d990   0x0100d990   0x00000060   Code   RO         3388    i.rf_hp_gain_offset_cfg  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100d9f0   0x0100d9f0   0x00000064   Code   RO         3389    i.rf_init_patch     ble_sdk.lib(rf_gdx_patch.o)
+    0x0100da54   0x0100da54   0x0000010c   Code   RO         3390    i.rf_modulation_accuracy_calibration_patch  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100db60   0x0100db60   0x0000007c   Code   RO         3391    i.rf_rx_vcobias_reset  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100dbdc   0x0100dbdc   0x0000005c   Code   RO         3392    i.rf_tx_pw_conv_tbl_get  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100dc38   0x0100dc38   0x00000070   Code   RO         3393    i.rf_txpwr_cs_get_patch  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100dca8   0x0100dca8   0x0000006c   Code   RO         3394    i.rf_txpwr_dbm_get_patch  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100dd14   0x0100dd14   0x00000070   Code   RO         3016    i.rf_xo_offset_init  ble_sdk.lib(platform_clock.o)
+    0x0100dd84   0x0100dd84   0x000000f4   Code   RO         2615    i.rng_calibration   ble_sdk.lib(system_sdk_patch.o)
+    0x0100de78   0x0100de78   0x00000048   Code   RO         3750    i.rng_clk_enable_ex  ble_sdk.lib(ble_sdk_patch.o)
+    0x0100dec0   0x0100dec0   0x00000060   Code   RO         3751    i.rng_rand_get      ble_sdk.lib(ble_sdk_patch.o)
+    0x0100df20   0x0100df20   0x00000010   Code   RO         3343    i.rom_callback_replace  ble_sdk.lib(rwip_sleep_common.o)
+    0x0100df30   0x0100df30   0x000000d8   Code   RO         3832    i.round             m_wm.l(round.o)
+    0x0100e008   0x0100e008   0x00000220   Code   RO         2616    i.rtc_calibration   ble_sdk.lib(system_sdk_patch.o)
+    0x0100e228   0x0100e228   0x00000028   Code   RO         3114    i.rwble_abort_recovery  ble_sdk.lib(sch_prog_patch.o)
+    0x0100e250   0x0100e250   0x00000010   Code   RO         3613    i.rwble_replace     ble_sdk.lib(rwble_patch.o)
+    0x0100e260   0x0100e260   0x000000b4   Code   RO         3115    i.rwble_reset_recovery  ble_sdk.lib(sch_prog_patch.o)
+    0x0100e314   0x0100e314   0x00000020   Code   RO         3365    i.rwip_sleep_func_replace  ble_sdk.lib(rwip_sleep_patch.o)
+    0x0100e334   0x0100e334   0x0000003c   Code   RO         3344    i.rwip_sleep_without_stack_init_replace  ble_sdk.lib(rwip_sleep_common.o)
+    0x0100e370   0x0100e370   0x00000028   Code   RO         3602    i.sch_arb_replace   ble_sdk.lib(sch_arb_patch.o)
+    0x0100e398   0x0100e398   0x0000002c   Code   RO         3116    i.sch_prog_frm_cbk_replace  ble_sdk.lib(sch_prog_patch.o)
+    0x0100e3c4   0x0100e3c4   0x00000068   Code   RO         3117    i.sch_prog_recovery_patch  ble_sdk.lib(sch_prog_patch.o)
+    0x0100e42c   0x0100e42c   0x00000020   Code   RO         2847    i.sdk_gatt_check_conidx  ble_sdk.lib(ble_sdk_gattc_patch.o)
+    0x0100e44c   0x0100e44c   0x00000058   Code   RO         2737    i.sdk_init          ble_sdk.lib(sdk_ram_init_patch.o)
+    0x0100e4a4   0x0100e4a4   0x0000002c   Code   RO         3765    i.sdk_prf_msg_handler_tab_replace  ble_sdk.lib(ble_sdk_prf_patch.o)
+    0x0100e4d0   0x0100e4d0   0x0000004c   Code   RO         2680    i.sec_bond_info_miss_check  ble_sdk.lib(ble_sdk_sec_patch.o)
+    0x0100e51c   0x0100e51c   0x00000088   Code   RO         2681    i.sec_check_conn_bond_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
+    0x0100e5a4   0x0100e5a4   0x000001f8   Code   RO         2683    i.sec_rcv_encrypt_req_ind_handler_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
+    0x0100e79c   0x0100e79c   0x000000ec   Code   RO         2684    i.sec_rcv_sec_req_ind_handler_patch  ble_sdk.lib(ble_sdk_sec_patch.o)
+    0x0100e888   0x0100e888   0x00000034   Code   RO         1205    i.services_init     user_app.o
     0x0100e8bc   0x0100e8bc   0x00000002   Code   RO          455    i.set_msp           system_gr55xx.o
     0x0100e8be   0x0100e8be   0x00000002   PAD
-    0x0100e8c0   0x0100e8c0   0x00000074   Code   RO         3699    i.set_sx_frequence  ble_sdk.lib(rf_gdx_patch.o)
-    0x0100e934   0x0100e934   0x00000284   Code   RO         3942    i.smpc_handle_enc_change_evt_func_patch  ble_sdk.lib(smpc_patch.o)
-    0x0100ebb8   0x0100ebb8   0x00000010   Code   RO         3943    i.smpc_handle_enc_change_evt_func_replace  ble_sdk.lib(smpc_patch.o)
-    0x0100ebc8   0x0100ebc8   0x000000d0   Code   RO         2921    i.sys_adc_trim_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ec98   0x0100ec98   0x00000020   Code   RO         2925    i.sys_device_lp_gain_offset_2m_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ecb8   0x0100ecb8   0x00000024   Code   RO         2926    i.sys_device_package_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ecdc   0x0100ecdc   0x00000024   Code   RO         2927    i.sys_device_sram_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ed00   0x0100ed00   0x00000028   Code   RO         2928    i.sys_device_uid_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ed28   0x0100ed28   0x000000dc   Code   RO         2929    i.sys_efuse_info_sync  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ee04   0x0100ee04   0x00000074   Code   RO         2932    i.sys_get_efuse_io_ldo  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ee78   0x0100ee78   0x00000040   Code   RO         3240    i.sys_is_use_ext_flash  ble_sdk.lib(platform_sdk.o)
-    0x0100eeb8   0x0100eeb8   0x00000028   Code   RO         3241    i.sys_is_use_internal_3p3_ioldo  ble_sdk.lib(platform_sdk.o)
-    0x0100eee0   0x0100eee0   0x00000084   Code   RO         2936    i.sys_pmu_trim_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ef64   0x0100ef64   0x00000020   Code   RO         2941    i.sys_trim_sum_get  ble_sdk.lib(system_sdk_patch.o)
-    0x0100ef84   0x0100ef84   0x00000038   Code   RO         3322    i.system_clk_mgmt_init  ble_sdk.lib(platform_clock.o)
-    0x0100efbc   0x0100efbc   0x00000004   Code   RO         3387    i.system_conf_correction  ble_sdk.lib(cold_patch.o)
-    0x0100efc0   0x0100efc0   0x000000f0   Code   RO         3244    i.system_low_power_set  ble_sdk.lib(platform_sdk.o)
+    0x0100e8c0   0x0100e8c0   0x00000074   Code   RO         3395    i.set_sx_frequence  ble_sdk.lib(rf_gdx_patch.o)
+    0x0100e934   0x0100e934   0x00000284   Code   RO         3638    i.smpc_handle_enc_change_evt_func_patch  ble_sdk.lib(smpc_patch.o)
+    0x0100ebb8   0x0100ebb8   0x00000010   Code   RO         3639    i.smpc_handle_enc_change_evt_func_replace  ble_sdk.lib(smpc_patch.o)
+    0x0100ebc8   0x0100ebc8   0x000000d0   Code   RO         2617    i.sys_adc_trim_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ec98   0x0100ec98   0x00000020   Code   RO         2621    i.sys_device_lp_gain_offset_2m_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ecb8   0x0100ecb8   0x00000024   Code   RO         2622    i.sys_device_package_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ecdc   0x0100ecdc   0x00000024   Code   RO         2623    i.sys_device_sram_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ed00   0x0100ed00   0x00000028   Code   RO         2624    i.sys_device_uid_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ed28   0x0100ed28   0x000000dc   Code   RO         2625    i.sys_efuse_info_sync  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ee04   0x0100ee04   0x00000074   Code   RO         2628    i.sys_get_efuse_io_ldo  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ee78   0x0100ee78   0x00000040   Code   RO         2936    i.sys_is_use_ext_flash  ble_sdk.lib(platform_sdk.o)
+    0x0100eeb8   0x0100eeb8   0x00000028   Code   RO         2937    i.sys_is_use_internal_3p3_ioldo  ble_sdk.lib(platform_sdk.o)
+    0x0100eee0   0x0100eee0   0x00000084   Code   RO         2632    i.sys_pmu_trim_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ef64   0x0100ef64   0x00000020   Code   RO         2637    i.sys_trim_sum_get  ble_sdk.lib(system_sdk_patch.o)
+    0x0100ef84   0x0100ef84   0x00000038   Code   RO         3018    i.system_clk_mgmt_init  ble_sdk.lib(platform_clock.o)
+    0x0100efbc   0x0100efbc   0x00000004   Code   RO         3083    i.system_conf_correction  ble_sdk.lib(cold_patch.o)
+    0x0100efc0   0x0100efc0   0x000000f0   Code   RO         2940    i.system_low_power_set  ble_sdk.lib(platform_sdk.o)
     0x0100f0b0   0x0100f0b0   0x0000002c   Code   RO          456    i.system_platform_init  system_gr55xx.o
-    0x0100f0dc   0x0100f0dc   0x0000000a   Code   RO         3246    i.system_pmu_deinit  ble_sdk.lib(platform_sdk.o)
+    0x0100f0dc   0x0100f0dc   0x0000000a   Code   RO         2942    i.system_pmu_deinit  ble_sdk.lib(platform_sdk.o)
     0x0100f0e6   0x0100f0e6   0x00000002   PAD
-    0x0100f0e8   0x0100f0e8   0x000000e0   Code   RO         3247    i.system_pmu_init   ble_sdk.lib(platform_sdk.o)
-    0x0100f1c8   0x0100f1c8   0x000000b0   Code   RO         3248    i.system_priority_init  ble_sdk.lib(platform_sdk.o)
-    0x0100f278   0x0100f278   0x00000010   Code   RO         2942    i.system_sdk_replace  ble_sdk.lib(system_sdk_patch.o)
-    0x0100f288   0x0100f288   0x0000001c   Code   RO         3764    i.tags_cache_clean  ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f2a4   0x0100f2a4   0x00000038   Code   RO         3765    i.tags_cache_rec_add  ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f2dc   0x0100f2dc   0x00000140   Code   RO         3766    i.tags_cache_rec_del  ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f41c   0x0100f41c   0x00000088   Code   RO         3767    i.tags_cache_rec_find  ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f4a4   0x0100f4a4   0x00000040   Code   RO         3249    i.temperature_calibrations  ble_sdk.lib(platform_sdk.o)
-    0x0100f4e4   0x0100f4e4   0x0000003c   Code   RO         3250    i.ton_value_set     ble_sdk.lib(platform_sdk.o)
-    0x0100f520   0x0100f520   0x00000038   Code   RO         3251    i.update_io_ldo_to_prevent_leakage  ble_sdk.lib(platform_sdk.o)
-    0x0100f558   0x0100f558   0x00000010   Code   RO         3323    i.update_lp_clk     ble_sdk.lib(platform_clock.o)
-    0x0100f568   0x0100f568   0x00000028   Code   RO         3252    i.vbatt_calibrations  ble_sdk.lib(platform_sdk.o)
-    0x0100f590   0x0100f590   0x00000016   Code   RO         3768    i.verify_hdr_checksum  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f0e8   0x0100f0e8   0x000000e0   Code   RO         2943    i.system_pmu_init   ble_sdk.lib(platform_sdk.o)
+    0x0100f1c8   0x0100f1c8   0x000000b0   Code   RO         2944    i.system_priority_init  ble_sdk.lib(platform_sdk.o)
+    0x0100f278   0x0100f278   0x00000010   Code   RO         2638    i.system_sdk_replace  ble_sdk.lib(system_sdk_patch.o)
+    0x0100f288   0x0100f288   0x0000001c   Code   RO         3460    i.tags_cache_clean  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f2a4   0x0100f2a4   0x00000038   Code   RO         3461    i.tags_cache_rec_add  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f2dc   0x0100f2dc   0x00000140   Code   RO         3462    i.tags_cache_rec_del  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f41c   0x0100f41c   0x00000088   Code   RO         3463    i.tags_cache_rec_find  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f4a4   0x0100f4a4   0x00000040   Code   RO         2945    i.temperature_calibrations  ble_sdk.lib(platform_sdk.o)
+    0x0100f4e4   0x0100f4e4   0x0000003c   Code   RO         2946    i.ton_value_set     ble_sdk.lib(platform_sdk.o)
+    0x0100f520   0x0100f520   0x00000038   Code   RO         2947    i.update_io_ldo_to_prevent_leakage  ble_sdk.lib(platform_sdk.o)
+    0x0100f558   0x0100f558   0x00000010   Code   RO         3019    i.update_lp_clk     ble_sdk.lib(platform_clock.o)
+    0x0100f568   0x0100f568   0x00000028   Code   RO         2948    i.vbatt_calibrations  ble_sdk.lib(platform_sdk.o)
+    0x0100f590   0x0100f590   0x00000016   Code   RO         3464    i.verify_hdr_checksum  ble_sdk.lib(sdk_nvds_patch.o)
     0x0100f5a6   0x0100f5a6   0x00000002   PAD
-    0x0100f5a8   0x0100f5a8   0x00000020   Code   RO         4078    i.warm_boot_cfg_patch  ble_sdk.lib(boot_patch.o)
-    0x0100f5c8   0x0100f5c8   0x0000000c   Code   RO         3048    i.warm_boot_set_exflash_readid_delay  ble_sdk.lib(warm_boot_patch.o)
-    0x0100f5d4   0x0100f5d4   0x00000190   Code   RO         3770    i.write_compacted_items  ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f764   0x0100f764   0x00000044   Code   RO         3771    i.write_incr        ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100f7a8   0x0100f7a8   0x00000170   Code   RO         3772    i.write_item        ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f5a8   0x0100f5a8   0x00000020   Code   RO         3774    i.warm_boot_cfg_patch  ble_sdk.lib(boot_patch.o)
+    0x0100f5c8   0x0100f5c8   0x0000000c   Code   RO         2744    i.warm_boot_set_exflash_readid_delay  ble_sdk.lib(warm_boot_patch.o)
+    0x0100f5d4   0x0100f5d4   0x00000190   Code   RO         3466    i.write_compacted_items  ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f764   0x0100f764   0x00000044   Code   RO         3467    i.write_incr        ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100f7a8   0x0100f7a8   0x00000170   Code   RO         3468    i.write_item        ble_sdk.lib(sdk_nvds_patch.o)
     0x0100f918   0x0100f918   0x00000030   Data   RO          457    .constdata          system_gr55xx.o
     0x0100f948   0x0100f948   0x00000010   Data   RO          974    .constdata          led.o
-    0x0100f958   0x0100f958   0x00000020   Data   RO         1431    .constdata          ad8233.o
-    0x0100f978   0x0100f978   0x000000b4   Data   RO         1480    .constdata          user_app.o
-    0x0100fa2c   0x0100fa2c   0x00000010   Data   RO         1481    .constdata          user_app.o
-    0x0100fa3c   0x0100fa3c   0x0000000e   Data   RO         1482    .constdata          user_app.o
-    0x0100fa4a   0x0100fa4a   0x00000019   Data   RO         1483    .constdata          user_app.o
+    0x0100f958   0x0100f958   0x00000020   Data   RO         1161    .constdata          ad8233.o
+    0x0100f978   0x0100f978   0x000000b4   Data   RO         1207    .constdata          user_app.o
+    0x0100fa2c   0x0100fa2c   0x00000010   Data   RO         1208    .constdata          user_app.o
+    0x0100fa3c   0x0100fa3c   0x0000000e   Data   RO         1209    .constdata          user_app.o
+    0x0100fa4a   0x0100fa4a   0x00000019   Data   RO         1210    .constdata          user_app.o
     0x0100fa63   0x0100fa63   0x00000001   PAD
-    0x0100fa64   0x0100fa64   0x00000010   Data   RO         1726    .constdata          uart0.o
-    0x0100fa74   0x0100fa74   0x00000014   Data   RO         1791    .constdata          adc.o
-    0x0100fa88   0x0100fa88   0x000000d4   Data   RO         2125    .constdata          gus.o
-    0x0100fb5c   0x0100fb5c   0x00000064   Data   RO         2264    .constdata          user_gap_callback.o
-    0x0100fbc0   0x0100fbc0   0x00000008   Data   RO         2302    .constdata          user_gatt_common_callback.o
-    0x0100fbc8   0x0100fbc8   0x0000003c   Data   RO         2564    .constdata          ble_sdk.lib(fpb_patch_init.o)
-    0x0100fc04   0x0100fc04   0x00000020   Data   RO         2680    .constdata          ble_sdk.lib(gattc_task_patch.o)
-    0x0100fc24   0x0100fc24   0x0000001a   Data   RO         3091    .constdata          ble_sdk.lib(ble_sdk_gapc_patch.o)
+    0x0100fa64   0x0100fa64   0x00000010   Data   RO         1438    .constdata          uart0.o
+    0x0100fa74   0x0100fa74   0x00000014   Data   RO         1503    .constdata          adc.o
+    0x0100fa88   0x0100fa88   0x000000d4   Data   RO         1821    .constdata          gus.o
+    0x0100fb5c   0x0100fb5c   0x00000064   Data   RO         1960    .constdata          user_gap_callback.o
+    0x0100fbc0   0x0100fbc0   0x00000008   Data   RO         1998    .constdata          user_gatt_common_callback.o
+    0x0100fbc8   0x0100fbc8   0x0000003c   Data   RO         2260    .constdata          ble_sdk.lib(fpb_patch_init.o)
+    0x0100fc04   0x0100fc04   0x00000020   Data   RO         2376    .constdata          ble_sdk.lib(gattc_task_patch.o)
+    0x0100fc24   0x0100fc24   0x0000001a   Data   RO         2787    .constdata          ble_sdk.lib(ble_sdk_gapc_patch.o)
     0x0100fc3e   0x0100fc3e   0x00000002   PAD
-    0x0100fc40   0x0100fc40   0x00000081   Data   RO         3462    .constdata          ble_sdk.lib(atts_patch.o)
+    0x0100fc40   0x0100fc40   0x00000081   Data   RO         3158    .constdata          ble_sdk.lib(atts_patch.o)
     0x0100fcc1   0x0100fcc1   0x00000001   PAD
-    0x0100fcc2   0x0100fcc2   0x00000074   Data   RO         3701    .constdata          ble_sdk.lib(rf_gdx_patch.o)
-    0x0100fd36   0x0100fd36   0x0000005f   Data   RO         3773    .constdata          ble_sdk.lib(sdk_nvds_patch.o)
-    0x0100fd95   0x0100fd95   0x0000003f   Data   RO         3818    .constdata          ble_sdk.lib(ble_sdk_gatts_patch.o)
-    0x0100fdd4   0x0100fdd4   0x00000008   Data   RO         4029    .constdata          ble_sdk.lib(dfu_cmd_handler_patch.o)
-    0x0100fddc   0x0100fddc   0x00000010   Data   RO         4056    .constdata          ble_sdk.lib(ble_sdk_patch.o)
-    0x0100fdec   0x0100fdec   0x00000016   Data   RO         1484    .conststring        user_app.o
+    0x0100fcc2   0x0100fcc2   0x00000074   Data   RO         3397    .constdata          ble_sdk.lib(rf_gdx_patch.o)
+    0x0100fd36   0x0100fd36   0x0000005f   Data   RO         3469    .constdata          ble_sdk.lib(sdk_nvds_patch.o)
+    0x0100fd95   0x0100fd95   0x0000003f   Data   RO         3514    .constdata          ble_sdk.lib(ble_sdk_gatts_patch.o)
+    0x0100fdd4   0x0100fdd4   0x00000008   Data   RO         3725    .constdata          ble_sdk.lib(dfu_cmd_handler_patch.o)
+    0x0100fddc   0x0100fddc   0x00000010   Data   RO         3752    .constdata          ble_sdk.lib(ble_sdk_patch.o)
+    0x0100fdec   0x0100fdec   0x00000016   Data   RO         1211    .conststring        user_app.o
     0x0100fe02   0x0100fe02   0x00000002   PAD
-    0x0100fe04   0x0100fe04   0x00000584   Data   RO         2328    .conststring        app_error.o
-    0x01010388   0x01010388   0x00000020   Data   RO         2373    .conststring        app_log.o
-    0x010103a8   0x010103a8   0x00000010   Data   RO         2662    .conststring        ble_sdk.lib(llc_con_upd_patch.o)
-    0x010103b8   0x010103b8   0x00000051   Data   RO         3423    .conststring        ble_sdk.lib(sch_prog_patch.o)
+    0x0100fe04   0x0100fe04   0x00000584   Data   RO         2024    .conststring        app_error.o
+    0x01010388   0x01010388   0x00000020   Data   RO         2069    .conststring        app_log.o
+    0x010103a8   0x010103a8   0x00000010   Data   RO         2358    .conststring        ble_sdk.lib(llc_con_upd_patch.o)
+    0x010103b8   0x010103b8   0x00000051   Data   RO         3119    .conststring        ble_sdk.lib(sch_prog_patch.o)
     0x01010409   0x01010409   0x00000003   PAD
-    0x0101040c   0x0101040c   0x00000074   Data   RO         3445    .conststring        ble_sdk.lib(lld_scan_patch.o)
-    0x01010480   0x01010480   0x00000179   Data   RO         3496    .conststring        ble_sdk.lib(lld_con_patch.o)
+    0x0101040c   0x0101040c   0x00000074   Data   RO         3141    .conststring        ble_sdk.lib(lld_scan_patch.o)
+    0x01010480   0x01010480   0x00000179   Data   RO         3192    .conststring        ble_sdk.lib(lld_con_patch.o)
     0x010105f9   0x010105f9   0x00000003   PAD
-    0x010105fc   0x010105fc   0x0000022d   Data   RO         3955    .conststring        ble_sdk.lib(lld_init_patch.o)
+    0x010105fc   0x010105fc   0x0000022d   Data   RO         3651    .conststring        ble_sdk.lib(lld_init_patch.o)
     0x01010829   0x01010829   0x00000003   PAD
-    0x0101082c   0x0101082c   0x00000396   Data   RO         3989    .conststring        ble_sdk.lib(gapm_adv_patch.o)
+    0x0101082c   0x0101082c   0x00000396   Data   RO         3685    .conststring        ble_sdk.lib(gapm_adv_patch.o)
     0x01010bc2   0x01010bc2   0x00000002   PAD
-    0x01010bc4   0x01010bc4   0x00000050   Data   RO         4529    Region$$Table       anon$$obj.o
+    0x01010bc4   0x01010bc4   0x00000050   Data   RO         4225    Region$$Table       anon$$obj.o
 
 
     Execution Region RAM_TINY_RW (Exec base: 0x300035cc, Load base: 0x01010c14, Size: 0x000005a4, Max: 0x00000750, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x300035cc   0x01010c14   0x00000050   Code   RO         2911    TINY_RAM_SPACE      ble_sdk.lib(system_sdk_patch.o)
-    0x3000361c   0x01010c64   0x00000450   Code   RO         3726    TINY_RAM_SPACE      ble_sdk.lib(sdk_pwr_mgmt_patch.o)
-    0x30003a6c   0x010110b4   0x0000000a   Ven    RO         4571    Veneer$$Code        anon$$obj.o
-    0x30003a76   0x010110be   0x0000000a   Ven    RO         4572    Veneer$$Code        anon$$obj.o
-    0x30003a80   0x010110c8   0x0000000a   Ven    RO         4573    Veneer$$Code        anon$$obj.o
-    0x30003a8a   0x010110d2   0x0000000a   Ven    RO         4574    Veneer$$Code        anon$$obj.o
-    0x30003a94   0x010110dc   0x0000000a   Ven    RO         4575    Veneer$$Code        anon$$obj.o
-    0x30003a9e   0x010110e6   0x0000000a   Ven    RO         4576    Veneer$$Code        anon$$obj.o
-    0x30003aa8   0x010110f0   0x0000000a   Ven    RO         4577    Veneer$$Code        anon$$obj.o
-    0x30003ab2   0x010110fa   0x0000000a   Ven    RO         4578    Veneer$$Code        anon$$obj.o
-    0x30003abc   0x01011104   0x0000000a   Ven    RO         4579    Veneer$$Code        anon$$obj.o
-    0x30003ac6   0x0101110e   0x0000000a   Ven    RO         4580    Veneer$$Code        anon$$obj.o
-    0x30003ad0   0x01011118   0x0000000a   Ven    RO         4581    Veneer$$Code        anon$$obj.o
-    0x30003ada   0x01011122   0x0000000a   Ven    RO         4582    Veneer$$Code        anon$$obj.o
-    0x30003ae4   0x0101112c   0x0000000a   Ven    RO         4583    Veneer$$Code        anon$$obj.o
-    0x30003aee   0x01011136   0x0000000a   Ven    RO         4584    Veneer$$Code        anon$$obj.o
-    0x30003af8   0x01011140   0x0000000a   Ven    RO         4585    Veneer$$Code        anon$$obj.o
-    0x30003b02   0x0101114a   0x0000000a   Ven    RO         4586    Veneer$$Code        anon$$obj.o
-    0x30003b0c   0x01011154   0x0000000a   Ven    RO         4587    Veneer$$Code        anon$$obj.o
-    0x30003b16   0x0101115e   0x0000000a   Ven    RO         4588    Veneer$$Code        anon$$obj.o
-    0x30003b20   0x01011168   0x0000000a   Ven    RO         4589    Veneer$$Code        anon$$obj.o
-    0x30003b2a   0x01011172   0x0000000a   Ven    RO         4590    Veneer$$Code        anon$$obj.o
-    0x30003b34   0x0101117c   0x0000000a   Ven    RO         4591    Veneer$$Code        anon$$obj.o
-    0x30003b3e   0x01011186   0x0000000a   Ven    RO         4592    Veneer$$Code        anon$$obj.o
-    0x30003b48   0x01011190   0x0000000a   Ven    RO         4593    Veneer$$Code        anon$$obj.o
-    0x30003b52   0x0101119a   0x0000000a   Ven    RO         4594    Veneer$$Code        anon$$obj.o
-    0x30003b5c   0x010111a4   0x0000000a   Ven    RO         4595    Veneer$$Code        anon$$obj.o
-    0x30003b66   0x010111ae   0x0000000a   Ven    RO         4596    Veneer$$Code        anon$$obj.o
+    0x300035cc   0x01010c14   0x00000050   Code   RO         2607    TINY_RAM_SPACE      ble_sdk.lib(system_sdk_patch.o)
+    0x3000361c   0x01010c64   0x00000450   Code   RO         3422    TINY_RAM_SPACE      ble_sdk.lib(sdk_pwr_mgmt_patch.o)
+    0x30003a6c   0x010110b4   0x0000000a   Ven    RO         4267    Veneer$$Code        anon$$obj.o
+    0x30003a76   0x010110be   0x0000000a   Ven    RO         4268    Veneer$$Code        anon$$obj.o
+    0x30003a80   0x010110c8   0x0000000a   Ven    RO         4269    Veneer$$Code        anon$$obj.o
+    0x30003a8a   0x010110d2   0x0000000a   Ven    RO         4270    Veneer$$Code        anon$$obj.o
+    0x30003a94   0x010110dc   0x0000000a   Ven    RO         4271    Veneer$$Code        anon$$obj.o
+    0x30003a9e   0x010110e6   0x0000000a   Ven    RO         4272    Veneer$$Code        anon$$obj.o
+    0x30003aa8   0x010110f0   0x0000000a   Ven    RO         4273    Veneer$$Code        anon$$obj.o
+    0x30003ab2   0x010110fa   0x0000000a   Ven    RO         4274    Veneer$$Code        anon$$obj.o
+    0x30003abc   0x01011104   0x0000000a   Ven    RO         4275    Veneer$$Code        anon$$obj.o
+    0x30003ac6   0x0101110e   0x0000000a   Ven    RO         4276    Veneer$$Code        anon$$obj.o
+    0x30003ad0   0x01011118   0x0000000a   Ven    RO         4277    Veneer$$Code        anon$$obj.o
+    0x30003ada   0x01011122   0x0000000a   Ven    RO         4278    Veneer$$Code        anon$$obj.o
+    0x30003ae4   0x0101112c   0x0000000a   Ven    RO         4279    Veneer$$Code        anon$$obj.o
+    0x30003aee   0x01011136   0x0000000a   Ven    RO         4280    Veneer$$Code        anon$$obj.o
+    0x30003af8   0x01011140   0x0000000a   Ven    RO         4281    Veneer$$Code        anon$$obj.o
+    0x30003b02   0x0101114a   0x0000000a   Ven    RO         4282    Veneer$$Code        anon$$obj.o
+    0x30003b0c   0x01011154   0x0000000a   Ven    RO         4283    Veneer$$Code        anon$$obj.o
+    0x30003b16   0x0101115e   0x0000000a   Ven    RO         4284    Veneer$$Code        anon$$obj.o
+    0x30003b20   0x01011168   0x0000000a   Ven    RO         4285    Veneer$$Code        anon$$obj.o
+    0x30003b2a   0x01011172   0x0000000a   Ven    RO         4286    Veneer$$Code        anon$$obj.o
+    0x30003b34   0x0101117c   0x0000000a   Ven    RO         4287    Veneer$$Code        anon$$obj.o
+    0x30003b3e   0x01011186   0x0000000a   Ven    RO         4288    Veneer$$Code        anon$$obj.o
+    0x30003b48   0x01011190   0x0000000a   Ven    RO         4289    Veneer$$Code        anon$$obj.o
+    0x30003b52   0x0101119a   0x0000000a   Ven    RO         4290    Veneer$$Code        anon$$obj.o
+    0x30003b5c   0x010111a4   0x0000000a   Ven    RO         4291    Veneer$$Code        anon$$obj.o
+    0x30003b66   0x010111ae   0x0000000a   Ven    RO         4292    Veneer$$Code        anon$$obj.o
 
 
     Execution Region FPB_TABLE (Exec base: 0x30004000, Load base: 0x010111b8, Size: 0x00000020, Max: 0x00000020, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x30004000   0x010111b8   0x00000020   Data   RW         3877    FPB                 ble_sdk.lib(platform_patch.o)
+    0x30004000   0x010111b8   0x00000020   Data   RW         3573    FPB                 ble_sdk.lib(platform_patch.o)
 
 
 ==============================================================================
@@ -6524,42 +6524,42 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       164         16         32         12          0       1979   ad8233.o
-       306         36         20          0        372      35335   adc.o
-       240        118       1412        344          0       3002   app_error.o
-       562         64         32         20        292      41806   app_log.o
-       126          0          0          0          0       3244   ble_prf_utils.o
+       164         16         32         12          0       1851   ad8233.o
+       306         36         20          0        372       5520   adc.o
+       240        118       1412        344          0       2878   app_error.o
+       562         64         32         20        292      41502   app_log.o
+       126          0          0          0          0       3124   ble_prf_utils.o
       2724        186          0        156       3460       9791   ecgalg.o
        294         14          0         32          0       4795   funtool.o
-       498         22          0         16          0       3880   gr551x_adc_voltage_api.o
-         0          0          0          0          0       6376   gr55xx_hal.o
-        72          8          0         12          0       2072   gr55xx_hal_adc.o
-        38          4          0          4          0       2068   gr55xx_hal_aon_gpio.o
-         8          0          0          0          0       1198   gr55xx_hal_exflash.o
-        42          4          0          4          0       2113   gr55xx_hal_gpio.o
-       148          0          0          0          0      32565   gr55xx_hal_msp.o
-        36          4          0         12          0       1162   gr55xx_hal_tim.o
-        86          8          0         32          0       6061   gr55xx_hal_uart.o
-        38         16          0          0          0       1923   gr55xx_it.o
-       676         76        212         32         48       8326   gus.o
-        64          2          0          0          0     281095   interrupt_gr55xx.o
-       588         80          0          8        112       4554   jumperdata.o
-        92         18         16          4          0       3086   led.o
-       386         86          0         92      25896     237263   main.o
-       602         62         64        328          0      51068   platform_gr55xx.o
-        98          0          0          0          0       2074   queue.o
-        40         12        200          0          0        840   startup_gr55xx.o
-       262         60         48          8          0       6387   system_gr55xx.o
-       258         52          0          8         24       4676   timer.o
-       170          0          0          0          0       2797   u16queue.o
-       216         44         16          1        208       3555   uart0.o
-       518        102        257          4         18       9651   user_app.o
-       206        118        100          0          0       3272   user_gap_callback.o
-         2          0          8          0          0       1283   user_gatt_common_callback.o
-        10          0          0          0          0       1070   utility.o
+       498         22          0         16          0       3728   gr551x_adc_voltage_api.o
+         0          0          0          0          0       6344   gr55xx_hal.o
+        72          8          0         12          0       1976   gr55xx_hal_adc.o
+        38          4          0          4          0       1940   gr55xx_hal_aon_gpio.o
+         8          0          0          0          0       1134   gr55xx_hal_exflash.o
+        42          4          0          4          0       1985   gr55xx_hal_gpio.o
+       148          0          0          0          0      32373   gr55xx_hal_msp.o
+        36          4          0         12          0       1102   gr55xx_hal_tim.o
+        86          8          0         32          0       5753   gr55xx_hal_uart.o
+        38         16          0          0          0       1799   gr55xx_it.o
+       676         76        212         32         48       8022   gus.o
+        64          2          0          0          0     286411   interrupt_gr55xx.o
+       588         80          0          8        112       4338   jumperdata.o
+        92         18         16          4          0       2934   led.o
+       386         86          0         92      25896       5227   main.o
+       602         62         64        328          0      50628   platform_gr55xx.o
+        98          0          0          0          0       1946   queue.o
+        40         12        200          0          0        820   startup_gr55xx.o
+       262         60         48          8          0       6075   system_gr55xx.o
+       258         52          0          8         24       4400   timer.o
+       170          0          0          0          0       2245   u16queue.o
+       216         44         16          1        208       3339   uart0.o
+       518        102        257          4         18       8259   user_app.o
+       206        118        100          0          0       3084   user_gap_callback.o
+         2          0          8          0          0       1195   user_gatt_common_callback.o
+        10          0          0          0          0       1014   utility.o
 
     ----------------------------------------------------------------------
-     10012       1212       2500       1140      46932     780367   Object Totals
+     10012       1212       2500       1140      46932     517532   Object Totals
        408          0         80          0      16384          0   (incl. Generated)
         34          0          3         11        118          0   (incl. Padding)
 
@@ -6711,8 +6711,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     74080       8066       5124       1924      48404     782523   Grand Totals
-     74080       8066       5124        952      48404     782523   ELF Image Totals (compressed)
+     74080       8066       5124       1924      48404     519688   Grand Totals
+     74080       8066       5124        952      48404     519688   ELF Image Totals (compressed)
      74080       8066       5124        952          0          0   ROM Totals
 
 ==============================================================================

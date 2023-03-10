@@ -84,7 +84,7 @@ static int threshold_i1 = 0;
 static int threshold_i2 = 0;
 static int threshold_f1 = 0;
 static int threshold_f2 = 0;
-static int spk_i = 0;
+static int spk_i = 0;//这几个值都意义不明
 static int spk_f = 0;
 static int npk_i = 0;
 static int npk_f = 0;
@@ -308,15 +308,15 @@ static void QRS_DrawWaveProc(void)
 	int wave = 0;
 	static int i = 0;
 	
-	wave = s_arrHighPassResult[0] + BASE_LINE;
-	Smooth_Int1(s_arrWaveBuff,wave,BUFFSIZE);
+	wave = s_arrHighPassResult[0] + BASE_LINE;//取低通->高通后结果加上基准线（总体抬高）但是为什么不是微分平方积分的结果？？？
+	Smooth_Int1(s_arrWaveBuff,wave,BUFFSIZE);//插入一个新的数组
 	//temp_output(wave);
 	
 	s_iWaveBuffNum++;
 	
 	if(s_iWaveBuffNum >= FFT_SAMPLE_LEN && i == 0)
 	{
-		i = 1;
+		i = 1;//这个没看懂捏
 		s_iWaveBuffNum = 0;
 		//arm_fft_fast_f32(s_arrWaveBuff);
 	}
@@ -382,31 +382,31 @@ static bool QRS_findQS(int rloc)
 * 创建日期: 2022年01月01日
 * 注 	 意:
 *********************************************************************************************************/
-static void QRS_CacuTHD(void)
+static void QRS_CacuTHD(void)//攒够750个V_num数据之后，确定下来了这些数据里面积分和高通结果的最大值，以及一堆阈值数据，猜测是在别处动态修改和调用。总之750个数据点过后这个函数就不再起作用
 {
 	int i = 0;
 	
-	i = DataNum;
+	i = DataNum;//数据个数，全局变量，对应ECG_Test中传入V_num的个数
 	
-	if(false == firstCalcuTHDFlag) 
+	if(false == firstCalcuTHDFlag) //初次计算标志，如果是第一次计算。对应的不是第一次计算不执行任何操作
 	{		
-		if(i < FS*3)
+		if(i < FS*3)//FS=250意义不明
 		{
-			if(s_arrIntegralResult[0] > s_iIntegralMax)
+			if(s_arrIntegralResult[0] > s_iIntegralMax)//积分结果，来自QRS_PrepSig心电信号预处理函数中，该结果经过低通-高通-求导-平方-积分
 			{
-				s_iIntegralMax = s_arrIntegralResult[0];	
+				s_iIntegralMax = s_arrIntegralResult[0];	//取积分的最大值
 			} 
 			
-			if(s_arrHighPassResult[0] > s_iHighResultMax)
+			if(s_arrHighPassResult[0] > s_iHighResultMax)//高通结果，同样取自心电信号预处理函数，该结果经过低通-高通
 			{
-				s_iHighResultMax = s_arrHighPassResult[0];	
+				s_iHighResultMax = s_arrHighPassResult[0];	//取高通的最大值
 			} 
 		}
-		else
+		else//如果有了3*250=750个V_num数据
 		{
 			npk_i = 0;
 			spk_i = s_iIntegralMax;
-			threshold_i1 = RATE2F*spk_i + RATE2B*npk_i;		
+			threshold_i1 = RATE2F*spk_i + RATE2B*npk_i;		//比例系数意义不明，2F=0.25，2B=0.75，F=0.125但是B=0.875，我好像知道是什么了。。是不是那个心动周期，好像不是我再看看
 			threshold_i2 = 0.5*threshold_i1;
 			
 			npk_f = 0;
@@ -414,7 +414,7 @@ static void QRS_CacuTHD(void)
 			threshold_f1 = RATE2F*spk_f + RATE2B*npk_f;			
 			threshold_f2 = 0.5*threshold_f1;
 			
-			firstCalcuTHDFlag = true;
+			firstCalcuTHDFlag = true;//计算一次阈值之后就不再在这里计算了，确定下来就不在此处更改
 			
 			//printf("maxi= %d; maxf = %d\r\n",s_iIntegralMax,s_iHighResultMax);
 		}		   
@@ -440,56 +440,58 @@ static int QRS_findPeaks(void)
   static unsigned int  LastSquareMax = 0;
 	//RwaveFlag = false;
 
-	// If the current signal is above one of the thresholds (integral or filtered signal), it's a peak candidate.
+	// If the current signal is above one of the thresholds (integral or filtered signal), it's a peak candidate.如果电流信号高于阈值之一（积分或滤波信号），则为峰值候选。
   //if (s_arrIntegralResult[0] >= threshold_i1 || s_arrHighPassResult[0] >= threshold_f1)
-  //if (s_arrIntegralResult[0] >= threshold_i1)
+  //if (s_arrIntegralResult[0] >= threshold_i1)这个咋不要了啊
   {
-    peak_i = s_arrIntegralResult[0];
+    peak_i = s_arrIntegralResult[0];//全局变量，每次运行都会算一次，最新的数据从队头插入，因此[0]处的数据为最新的
     peak_f = s_arrHighPassResult[0];
   }
     
   #if 1
-	// If both the integral and the signal are above their thresholds, they're probably signal peaks.
+	// If both the integral and the signal are above their thresholds, they're probably signal peaks.如果积分和信号都高于它们的阈值，它们可能是信号峰值。
 	//if ((s_arrIntegralResult[0] >= threshold_i1) && (s_arrHighPassResult[0] >= threshold_f1))
-	if(s_arrIntegralResult[0] >= threshold_i1)
+	if(s_arrIntegralResult[0] >= threshold_i1)//最新的积分信号高于第一波计算的，1/4倍的积分信号最大值
 	{
-		// There's a 200ms latency. If the new peak respects this condition, we can keep testing.
-		if (DataNum > LastRwaveNum + FS/5)
+		// There's a 200ms latency. If the new peak respects this condition, we can keep testing.有200毫秒的延迟。如果新的峰值符合这个条件，继续检测
+		if (DataNum > LastRwaveNum + FS/5)//如果数据个数大于上一个R波出现时，对应数据点的持续时间再加上1/5的FS（时间过长）
 		{				
-		  // If it respects the 200ms latency, but it doesn't respect the 360ms latency, we check the slope.
-			if (DataNum <= LastRwaveNum + (long unsigned int)(0.36*FS))
+		  // If it respects the 200ms latency, but it doesn't respect the 360ms latency, we check the slope.超过200ms但不超过360ms，检查斜率
+			if (DataNum <= LastRwaveNum + (long unsigned int)(0.36*FS))//目前还不知道360ms是如何计算出来的（？？？）
 			{
 			  // The squared slope is "M" shaped. So we have to check nearby samples to make sure we're really looking
 			  // at its peak value, rather than a low one.
+				//平方斜率为“M”形。所以我们必须检查附近的样本，以确保我们真正看到的是峰值，而不是低值。（极大和极小值）
 			  SquareMax = 0;
-			  for (j = 0; j <= 10; j++)
+			  for (j = 0; j <= 10; j++)//先遍历一遍，找到最大值（好像不是遍历，只看了十个数）
         {
           if (s_arrSquaredResult[j] > SquareMax)
           {
             SquareMax = s_arrSquaredResult[j];
           }
         }
-
-			  if (SquareMax <= (int)(LastSquareMax/2))	//保留意见，没看到证据支撑 
+				
+			  if (SquareMax <= (int)(LastSquareMax/2))	//保留意见，没看到证据支撑 。静态变量，初始为0
         {
-          rWaveFlag = false;            
+          rWaveFlag = false;//全局变量，R波标志，代表这个峰值不是R波（太小了）
         }
-        else
+        else//如果是R波，则根据这个R波数据开始动态调节阈值
         {
-          spk_i = RATE1F*peak_i + RATE1B*spk_i;
-          threshold_i1 = npk_i + 0.25*(spk_i - npk_i);
-          threshold_i2 = 0.5*threshold_i1;
+          spk_i = RATE1F*peak_i + RATE1B*spk_i;//0.125倍的积分结果和0.875倍的本身。最开始为积分最大值
+          threshold_i1 = npk_i + 0.25*(spk_i - npk_i);//最开始为1/4的spk_i
+          threshold_i2 = 0.5*threshold_i1;//最开始也是上一个值的一半
 
-          spk_f = RATE1F*peak_f + RATE1B*spk_f;
-          threshold_f1 = npk_f + 0.25*(spk_f - npk_f);
+          spk_f = RATE1F*peak_f + RATE1B*spk_f;//0.125倍的积分结果和0.875倍的本身，最开始为高通结果的最大值
+          threshold_f1 = npk_f + 0.25*(spk_f - npk_f);//最开始为1/4的spk_f
           threshold_f2 = 0.5*threshold_f1;
 
-          LastSquareMax = SquareMax;
-          rWaveFlag = true;
+          LastSquareMax = SquareMax;//将最新的R波信号，平方的最大值更新到LastSSquareMax中
+          rWaveFlag = true;//代表这个峰值是R波
           //printf("2.%d\r\n",DataNum);
         }
 			}
 			// If it was above both thresholds and respects both latency periods, it certainly is a R peak.
+			//如果啥？？？？？？？？
 			else
 			{
 			  SquareMax = 0;
@@ -850,7 +852,13 @@ void ECG_Init(void)
 * 输出参数: void
 * 返 回 值: draw_wave：滤波信号数据
 * 创建日期: 2022年01月01日
-* 注 	 意:
+* 注 	 意:心电信号QRS波检测的一般步骤为：
+	预处理：通过数字信号处理技术，对心电信号进行滤波和去噪处理，以减少干扰和提高QRS波的信噪比。
+	峰值检测：采用峰值检测算法，找到QRS波的R峰（即QRS波群的最高点）。常用的峰值检测算法包括峰值检测器和斜率变化检测器。
+	R峰对齐：通过对R峰进行对齐，使得QRS波在不同的心电信号中具有相同的起始点和结束点。常用的对齐方法包括基线对齐和斜率对齐。
+	Q和S点检测：根据R峰的位置，找到QRS波群的起始点Q点和结束点S点。常用的Q和S点检测算法包括固定阈值法、动态阈值法和基于小波变换的方法。
+	QRS波群宽度计算：通过计算QRS波群的宽度，可以评估心室除极的速度和心肌的健康状况。QRS波群的宽度可以通过计算Q点到S点的时间间隔来确定。
+	QRS波检测可以使用多种方法实现，如基于阈值的方法、基于模板匹配的方法、基于小波变换的方法、基于人工神经网络的方法等。在实际应用中，应根据具体情况选择合适的方法。
 *********************************************************************************************************/
 int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
 {
@@ -875,7 +883,7 @@ int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
 
 		//printf("%d\r\n",num); 		
 	
-		QRS_PrepSig(num); //这是什么！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+		QRS_PrepSig(num); //心电信号预处理，包含滤除50Hz工频信号，低通高通求导平方积分（？？？原理），每个过程都有对应一个数组存储，类似历史编辑记录
     #if 0 //丢掉前面的数 
 		if(abandon_cnt < 100)
 		{
@@ -885,15 +893,15 @@ int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
     #endif
 	
 		//处理波形数据 
-		QRS_DrawWaveProc();
+		QRS_DrawWaveProc();//给所有高通结果加上一个基准线BASE_LINE=2048，处理后的数据放入s_arrWaveBuff
 		
 		//计算初始阈值 
-		QRS_CacuTHD(); 
+		QRS_CacuTHD(); //处理后的阈值是全局变量，积分结果和高通结果的最大值存在静态变量中，经过750个数据点确定下以上参数后，该函数不再起作用
 	
 		//开始寻波
-		if(true == firstCalcuTHDFlag)	
+		if(true == firstCalcuTHDFlag)	//在上面的QRS_CacuTHD中如果已经把各阈值参数确定下来了，就开始寻波，即在至少2ms*750=1.5s后才会开始寻波
 		{
-			res = QRS_findPeaks();		 
+			res = QRS_findPeaks();		//找R峰波 
 			if(res > 0) 	//如果找到R波 
 			{
 				r_loc = res;			

@@ -31,8 +31,8 @@
     Program header entries: 1
     Section header entries: 20
 
-    Program header offset: 1615856 (0x0018a7f0)
-    Section header offset: 1615888 (0x0018a810)
+    Program header offset: 1353020 (0x0014a53c)
+    Section header offset: 1353052 (0x0014a55c)
 
     Section header string table index: 19
 
@@ -31301,11 +31301,11 @@
 
 
 ** Section #10 '.debug_info' (SHT_PROGBITS)
-    Size   : 163216 bytes
+    Size   : 127328 bytes
 
 
 ** Section #11 '.debug_line' (SHT_PROGBITS)
-    Size   : 30732 bytes
+    Size   : 29176 bytes
 
 
 ** Section #12 '.debug_loc' (SHT_PROGBITS)
@@ -31313,11 +31313,11 @@
 
 
 ** Section #13 '.debug_macinfo' (SHT_PROGBITS)
-    Size   : 552840 bytes
+    Size   : 327484 bytes
 
 
 ** Section #14 '.debug_pubnames' (SHT_PROGBITS)
-    Size   : 4871 bytes
+    Size   : 4836 bytes
 
 
 ** Section #15 '.symtab' (SHT_SYMTAB)
