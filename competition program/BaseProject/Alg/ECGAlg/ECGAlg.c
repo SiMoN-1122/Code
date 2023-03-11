@@ -329,7 +329,7 @@ static void QRS_DrawWaveProc(void)
 * 输出参数: void
 * 返 回 值: void
 * 创建日期: 2022年01月01日
-* 注 	 意:
+* 注 	 意:  哈哈
 *********************************************************************************************************/ 
 static bool QRS_findQS(int rloc)
 {
@@ -343,7 +343,7 @@ static bool QRS_findQS(int rloc)
 	int calc_r_index = 0;
 	int QS_Width = 0;
 	
-	if(rloc > 0) 
+	if(rloc > 0) //如果前面找到R波，该值为R波相对位置，否则为0
 	{
 		s_iBuffOffset++;
 		if(s_iBuffOffset > 20*FS/100)	//多取250ms数据 
@@ -597,30 +597,30 @@ static int QRS_findPeaks(void)
 			
 			//printf("%d,%d,%d\r\n",rrAverage,s_iRRAverage2,s_iRRMiss);		  
        prevRRregularFlag = rrRegularFlag;//后者是RR波规律的标志位，这里把这次变为上次
-       if (s_iRRAverage == s_iRRAverage2)//如果两值相等意味回检次数足够（？？巧合怎么办）
+       if (s_iRRAverage == s_iRRAverage2)//如果两值相等意味回检次数足够（？？巧合怎么办），代表RR波规律（？？？）
        {
          rrRegularFlag = true;//RR波规律
          if(s_iRRAverage2 != 0)
          {
            s_iHeartRateAverage = 60*FS/s_iRRAverage2;//平均心率
-           g_structECGPara.HeartRateH   = s_iHeartRateAverage>>8;  
-           g_structECGPara.HeartRateL   = (u8)s_iHeartRateAverage;//高八位和低八位？？
+           g_structECGPara.HeartRateH   = s_iHeartRateAverage>>8;//高八位
+           g_structECGPara.HeartRateL   = (u8)s_iHeartRateAverage;//低八位
            
          }//在这里打住，我要回宿舍吃美味的pizza了
-         analyzStartFlag = true;		//心律失常算法开始 
+         analyzStartFlag = true;		//心律失常算法开始 ，为啥在这个条件下开始
          //printf("regular RR=%d, %d\r\n",s_iRRAverage2,s_iHeartRateAverage);
        }
        else
        {
-         rrRegularFlag = false;
-         if (prevRRregularFlag)
+         rrRegularFlag = false;//否则说明这次RR波不规律
+         if (prevRRregularFlag)//如果上次RR波规律，各阈值降为原来的一半
          {
            threshold_i1 /= 2;			//保留意见，没看到证据支撑 
            threshold_f1 /= 2;
          }
          if(s_iBackCheckNum2 >= BACK_CHK_CNT+1)
          {
-           s_iIrregularBeatNum++;              		
+           s_iIrregularBeatNum++;  //心律不齐次数增加
 			     //printf("irregular\r\n");
          }
        }
@@ -628,12 +628,12 @@ static int QRS_findPeaks(void)
 	}// RwaveFlag == 1
   
   
-	// If no R-peak was detected, it's important to check how long it's been since the last detection.
+	// If no R-peak was detected, it's important to check how long it's been since the last detection.未检测到R波时，测量距离上次R波到现在的时间间隔
 	else   //(RwaveFlag == 0)
 	{		
 	  // If no R-peak was detected for too long, use the lighter thresholds and do a back search.
 		// However, the back search must respect the 200ms limit and the 360ms one (check the slope).
-		if ((DataNum - LastRwaveNum > (long unsigned int)s_iRRMiss) && (DataNum > LastRwaveNum + FS/5))					
+		if ((DataNum - LastRwaveNum > (long unsigned int)s_iRRMiss) && (DataNum > LastRwaveNum + FS/5))//（时间太长）
 		{
 			//for (i = (DataNum - LastRwaveNum) - FS/5; i < (DataNum - LastRwaveNum); i++)
 			//while(1)
@@ -642,20 +642,20 @@ static int QRS_findPeaks(void)
 				if(s_arrIntegralResult[0] > threshold_i2)
 				{
           SquareMax = 0;
-          for (j = 0; j <= 10; j++)
+          for (j = 0; j <= 10; j++)//求低通->高通->微分->平方后结果的最大值
           {
             if (s_arrSquaredResult[j] > SquareMax)
             {
-              SquareMax = s_arrSquaredResult[j];                           
+              SquareMax = s_arrSquaredResult[j];
             }
           }         
 
-          if ((SquareMax < (int)(LastSquareMax/2)) && (0 + DataNum) < LastRwaveNum + 0.36*LastRwaveNum)                 
+          if ((SquareMax < (int)(LastSquareMax/2)) && (0 + DataNum) < LastRwaveNum + 0.36*LastRwaveNum)//意义不明的比例捏，时间长但是不太长，最大值小于上次的一半
           //if((0 + DataNum) < LastRwaveNum + 0.36*LastRwaveNum) 
           {
-            rWaveFlag = false;                        
+            rWaveFlag = false;//表示不是R波
           }
-          else
+          else//否则更新一下，不懂捏
           {	
             peak_i = s_arrIntegralResult[0];
             peak_f = s_arrHighPassResult[0];
@@ -676,18 +676,19 @@ static int QRS_findPeaks(void)
         }
 			}
 
-			if (rWaveFlag)				
+			if (rWaveFlag)//如果是R波！！！！！！！！！！！！！！！！！
       {
-        //printf("0. = %d\r\n",DataNum);               
+        //printf("0. = %d\r\n",DataNum);               ？？？
         //output(RwaveFlag);   
 			  //return;           
       }
 		}
 
 		// Definitely no signal peak was detected.
-		if (!rWaveFlag)		
+		if (!rWaveFlag)//如果不是R波
 		{
 			// If some kind of peak had been detected, then it's certainly a noise peak. Thresholds must be updated accordinly.
+      // 此时出现峰值，则一定为噪声，更新阈值
 			if ((s_arrIntegralResult[0] >= threshold_i1) || (s_arrHighPassResult[0] >= threshold_f1))
 			//if (s_arrIntegralResult[0] >= threshold_i1)
 			{
@@ -705,7 +706,7 @@ static int QRS_findPeaks(void)
 		}
 	}//else RwaveFlag = 0
 	
-	if(rWaveFlag)
+	if(rWaveFlag)//如果这次检测到的是R波，重置标志位，返回收到的数据个数，代表R波的相对位置（相对起始0）
 	{
 		//printf("9.%d\r\n",DataNum);	
 		rWaveFlag = false;
@@ -865,9 +866,9 @@ int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
 {
 	int cnt = 0;
 	int num = 0;
-	int res = 0;
-	int r_loc = 0; 
-	bool chk = false;
+	int res = 0;//R波峰的相对位置（DataNum）
+	int r_loc = 0; //同上
+	bool chk = false;//
 	int draw_wave = 0;
 
 	//if(cnt < 7000)
@@ -902,13 +903,13 @@ int ECG_Test(int data,int *hr)//data为adc那传来的数据，hr默认传入为NULL
 		//开始寻波
 		if(true == firstCalcuTHDFlag)	//在上面的QRS_CacuTHD中如果已经把各阈值参数确定下来了，就开始寻波，即在至少2ms*750=1.5s后才会开始寻波
 		{
-			res = QRS_findPeaks();		//找R峰波 
+			res = QRS_findPeaks();		//找R峰波，返回的是R峰的相对位置，即DataNum，如果没找到则返回0
 			if(res > 0) 	//如果找到R波 
 			{
-				r_loc = res;			
+				r_loc = res;
 			}
 			
-			chk = QRS_findQS(r_loc);
+			chk = QRS_findQS(r_loc);//QS寻波
 			if(true == chk)
 			{
 				r_loc = 0;
