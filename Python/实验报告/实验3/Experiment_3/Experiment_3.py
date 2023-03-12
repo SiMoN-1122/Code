@@ -85,9 +85,69 @@ def primes_ton(n):
     return outcome
 
 
+# Write a function that for any n, returns its Collatz sequence as a list
+def collatz_n(n, num):
+    if n == 1:  # 如果n=1
+        num.append(n)
+
+    elif n % 2 == 0:  # 如果n为偶数
+        num.append(n)
+        collatz_n(n/2, num)
+
+    elif n % 2 == 1 and n != 1:  # 如果n为奇数
+        num.append(n)
+        collatz_n(3*n + 1, num)
+
+    return len(num)
+
+
+# Write a function that finds the integer x that leads to the longest Collatz sequence with x < n.
+def collatz_longest(n, outcome):
+    num = []  # 用于临时存放每次的结果
+    cmax = 0  # 用于记录最长列表的长度
+    loc = 0  # 用于记录最长列表的位置
+    for i in range(1, n + 1):
+        num.clear()
+        if collatz_n(i, num) >= cmax:
+            loc = i  # 更新取最长的位置
+            outcome.clear()
+            cmax = collatz_n(i, outcome)  # 将当前最长的列表储存起来
+    return loc  # 返回取最大值时的x
+
+
+# Exercise 5
+# Write a function that takes a value x and a list ys, and returns a list that contains the value x and all elements of ys such that all values y in ys that are smaller than x come first, then we element x and then the rest of the values in ys
+def pivots(x, ys):
+    outcome = []
+    for ele in ys:
+        if ele < x:
+            outcome.append(ele)
+    outcome.append(x)
+    for ele in ys:
+        if ele >= x:
+            outcome.append(ele)
+    return outcome
+
+
 # main
 def main():
-    print(primes_ton((int(input()))))
+    x = 1200
+    ys = [10, 13 ,2, 7, 190, 5050, 1122, 74, 8000, 12]
+    print(pivots(x, ys))
+
+
+    # outcome = []
+    # print(f"longest list location x:{collatz_longest(1000000, outcome)}")
+    # print(f"longest list len:{len(outcome)}")
+
+
+    # num = []  # 用于存储数据的列表
+    # n = 105
+    # print(collatz_n(n, num))
+    # print(num)
+
+
+    # print(primes_ton((int(input()))))
 
 
     # print(primelist(int(input())))
