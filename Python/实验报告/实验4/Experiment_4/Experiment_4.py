@@ -49,20 +49,6 @@ def re_lookup(dic, val):
 
 
 # Exercise 5:Vector functions
-# list_to_dict
-def list_to_dict(m):
-    outcome = {}  # 创建空字典存储结果
-    cnt = 0  # 用于计数
-    if type(m) == list:
-        for i in m:
-            if i != 0:  # 如果列表元素不为0
-                outcome[cnt] = i  # 则将该元素转为字典格式存储起来
-            cnt += 1
-        return outcome
-    else:
-        return False
-
-
 # (a) Write a function that adds two (dense) vectors
 def add_dense(a, b):
     outcome = [i + j for i, j in zip(a, b)]  # 先将有重合部分相加
@@ -108,10 +94,50 @@ def mul_sparse(a, b):
     return outcome
 
 
+# (e) Write a function that adds a sparse vector and a dense vector
+def add_sp_den(a, b):  # 字典加列表，由于非零项较多，返回列表形式
+    outcome = []
+    if type(a) == list and type(b) == dict:  # 如果是列表加字典
+        for i in range(len(a)):  # 先将a中的元素赋给outcome
+            outcome.append(a[i])
+        for i in b.keys():
+            if i > len(outcome) - 1:  # 如果字典中键的维度大于结果中存放的最大维度
+                for j in range(i - len(outcome) + 1):  # 则向后补0
+                    outcome.append(0)
+                outcome[i] += b[i]  # 而后再加上值
+            else:
+                outcome[i] += b[i]  # 如果不大于，则直接赋值
+        return outcome  # 返回结果
+    else:  # 如果输入参数反向，则反向带入
+        return add_sp_den(b, a)
+
+
+# (f) Write a function that multiplies a sparse vector and a dense vector
+# list_to_dict
+def list_to_dict(m):
+    outcome = {}  # 创建空字典存储结果
+    cnt = 0  # 用于计数
+    if type(m) == list:  # 如果是列表表示法，则转为字典表示法
+        for i in m:
+            if i != 0:  # 如果列表元素不为0
+                outcome[cnt] = i  # 则将该元素转为字典格式存储起来
+            cnt += 1
+        return outcome
+    elif type(m) == dict:  # 如果已经是字典表示法
+        return m  # 则无需处理，返回其本身
+    else:
+        return False
+
+
+def mul_sp_den(a, b):
+    return mul_sparse(list_to_dict(a), list_to_dict(b))
+
+
 # main
 def main():
-    pass
-
+    b = [1, 1, 1, 8, 7]
+    a = {1: 8, 3: 6, 5: 7, 6: 10}  # 0 8 0 6 0 7 10
+    print(mul_sp_den(list_to_dict(a), list_to_dict(b)))
 
     # a = {0: 1, 1: 2, 4: 4}
     # b = {1: 8, 3: 6, 5: 7, 6: 10}
